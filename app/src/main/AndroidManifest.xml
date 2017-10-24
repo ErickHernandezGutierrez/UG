@@ -29,6 +29,11 @@
             android:label="Licenciatura Activity">
         </activity>
 
+        <activity
+            android:name=".OfferActivity"
+            android:label="Offer Activity">
+        </activity>
+
     </application>
 
 </manifest>

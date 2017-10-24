@@ -2,7 +2,6 @@ package app.ug;
 
 import java.util.ArrayList;
 
-import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -35,7 +34,7 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup parent, int viewType){
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_banner, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_banner, parent, false);
 
         return new CustomViewHolder(view);
     }

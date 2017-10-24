@@ -69,9 +69,9 @@ public class LicenciaturaActivity extends Activity {
                 Offer selectedOffer = (Offer) listView.getItemAtPosition(position);
                 String offerName = selectedOffer.getName();
 
-                /*Intent intent = new Intent(LicenciaturaActivity.this, OfferActivity.class);
+                Intent intent = new Intent(LicenciaturaActivity.this, OfferActivity.class);
                 intent.putExtra("jsonName", jsonNames.get(offerName));
-                startActivity(intent);//*/
+                startActivity(intent);
             }
         });
 
