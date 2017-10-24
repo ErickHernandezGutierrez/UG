@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Default colors -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- UG colors -->
+    <color name="pantone540c">#003057</color>
+    <color name="pantone451c">#b5a36a</color>
+    <color name="pantone121c">#fdd757</color>
+
+    <!-- Dots colors -->
+    <color name="dot_dark">#b5a36a</color>
+    <color name="dot_light">#ffffff</color>
+
+    <!-- Color Arrays -->
+    <array name="array_dots_inactive">
+        <item>@color/dot_dark</item>
+        <item>@color/dot_dark</item>
+    </array>
+    <array name="array_dots_active">
+        <item>@color/dot_light</item>
+        <item>@color/dot_light</item>
+    </array>
+
+</resources>
