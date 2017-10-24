@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Ingeniería en Geomática",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Español: conocer las funciones de la lengua, las formas del discurso, comprensión lectora, gramática, redacción y vocabulario.\n\n*Matemáticas: resolver operaciones con número reales, complejos y expresiones algebraicas, Productos notables y factorización, ecuaciones de primer y segundo grado, Desigualdades, Sistemas de ecuaciones, Funciones algebraicas, Trigonometría, Funciones exponenciales y logarítmicas, la Recta, Circunferencia, Parábola, Hipérbola, Ecuaciones de segundo grado, Límites, la Derivada y la Integral.\n\n*Física: Cinemática, Sistemas de Fuerzas y Ley Gravitacional Universal, Trabajo y Leyes de Conservación, Termodinámica, Ondas, Electromagnetismo, Fluidos, Óptica y Física Contemporánea.\n\n*Química: Sustancias Químicas, Estructura Atómica, Tabla Periódica, Agua, Aire, Alimentos y La energía y las reacciones químicas.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar conceptos y nociones.\n\n*Desarrollar la creatividad.\n\n*Analizar y encontrar solución a problemas.\n\n*Trabajo en equipo.",
+        "actitudes": "*Responsable.\n\n*Respetuosa.\n\n*Proactiva.\n\n*Propositiva.\n\n*Crítica.\n\n*Congruente.\n\n*Innovadora.\n\n*Emprendedora.\n\n*Ética",
+        "valores": "*Responsabilidad.\n\n*Honestidad.\n\n*Respeto.\n\n*Tolerancia.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Inglés Principiante.\n- Algebra Superior y Geometría Vectorial.\n-Cálculo Diferencial.\n- Dibujo y Diseño por Computadora.\n- Química.\n- Actividad 1 Área General.\n- Actividad 1 Área complementaria",
+                "2": "- Inglés Principiante Avanzado.\n- Cálculo Integral \n- Álgebra Lineal. \n-Cartografía Digital.\n- Metodología de la Investigación.\n- Planimetría y Prácticas de Planimetría.\n- Sistemas de Información Geográfica\n- Actividad 2 Área General.\n- Actividad 2 Área complementaria.",
+                "3": "- Inglés Intermedio.\n- Comunicación Oral y Escrita-\n- Ecuaciones Diferenciales.\n- Mecánica Analítica.\n- Altimetría y Prácticas de Altimetría.\n- Taller de Sistemas de Información Geográfica.\n- Probabilidad y Estadística.\n- Actividad 3 Área General.\n- Actividad 3 Área complementaria.",
+                "4": "- Inglés Intermedio Avanzado.\n- Base de Datos.\n- Cálculo Vectorial.\n- Geodesia.\n- Métodos Numéricos con Programación.\n-Termodinámica y Electromagnetismo\n- Actividad 4 Área General.\n- Actividad 4 Área complementaria.",
+                "5": "- Inglés Avanzado Principiante.\n- Estadística Geoespacial.\n- Geomorfología.\n- Hidrología Superficial.\n- Sistemas de Información Geográfica Avanzados.\n- Sistemas de Posicionamiento Global.\n- Sociología.\n- Actividad 5 Área General.\n- Actividad 5 Área complementaria.",
+                "6": "- Fotogrametría Digital.\n- Edafología.\n- Introducción a Vehículos No Tripulados.\n- Sensores Remotos.\n- Planeamiento Urbano Regional.\n- Topografía Subterránea.\n- Actividad 6 Área General.\n- Actividad 6 Área complementaria.",
+                "7": "- Desarrollo Empresarial.\n- Economía. \n- Fotointerpretación. \n- Legislación Laboral.\n- Procesamiento Digital de Imágenes.\n- Geología.\n- Programación y Aplicaciones en SIG.\n- Actividad 7 Área General.\n- Actividad 7 Área complementaria.",
+                "8": "- Administración.\n- Ética Profesional.\n- Relaciones Humanas.\n- Selectiva 1.\n- Selectiva 2.\n- SIG en los Recursos Minerales.\n- Actividad 8 Área General 8.\n- Actividad 8 Área Complementaria.",
+                "9": "- Selectiva 3.\n-Selectiva 4.\n-Selectiva 5.\n- Selectiva 6.\n- Estancia Profesionalizante.\n- Seminario de Titulación.\n- Actividad 9 Área General.\n- Actividad 9 Área Complementaria.",
+                "optativas": "-El Hombre y el Medio Ambiente.\n- Problemas Sociales, Económicos y Políticos de México.\n- Topografía Urbana.\n- Impacto Ambiental.\n- Prácticas Introducción a Vehículos No Tripulados.\n- Análisis de Cambio de Uso de Suelo y Vegetación.\n- Climatología.\n- Mapas Temáticos.\n- Topografía de Vías Terrestres.\n- Topografía Agraria.\n- Fraccionamientos.\n- Planeación Territorial.\n- Problemas Ambientales de los Asentamientos Humanos.\n- Marco Metodológico Plan de Ordenamiento Territorial.\n- Legislación Territorial.\n- Catastro Urbano y Rural.\n- Taller de Planeación Urbana y de Espacios Rural-Urbanos.\n- Taller de Ordenamientos Ecológicos y Territoriales.\n- Topografía Pericial.\n- SIG en los Recursos Forestales.\n- SIG en los Recursos Hídricos.\n- SIG en la Ecología"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

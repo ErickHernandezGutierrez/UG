@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Filosofía",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Un nivel aceptable de cultura general, reflejado en la posesión de conocimientos relativos a la historia de las doctrinas filosóficas; historia universal y de México; literatura universal, mexicana e iberoamericana; problemas sociales, económicos y culturales contemporáneos de México y el mundo.\n\n*Conocimientos, a nivel de bachillerato, de las ciencias sociales y humanas.\n\n*Conocimientos, a nivel de bachillerato, de las ciencias básicas, naturales y exactas.",
+        "habilidades": "*Habilidad para la expresión oral y escrita.\n\n*Capacidad de comprensión, reflexión y crítica de textos.\n\n*Pensamiento lógico, analítico y crítico.",
+        "actitudes": "*Hábito y gusto por la lectura.\n\n*Disposición para el trabajo individual y de grupo.\n\n*Disciplina para el estudio.\n\n*Actitud crítica y reflexiva.",
+        "valores": "*Respeto a sí mismo y al ser y hacer de los demás.\n\n*Honestidad en el trabajo intelectual.\n\n*Respeto a los derechos de las personas y al medio natural.\n\n*Responsabilidad moral e institucional.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Introducción a los problemas de la filosofía.\n-Métodos y técnicas de investigación.\n- Lógica y teoría de la argumentación.\n- Análisis y redacción de textos filosóficos.\n-Lengua clásica I (griego o latín).\n-Taller de integración.",
+                "2": "- Razón cognoscitiva I.\n-Razón práctica I.\n-Razón simbólica I.\n-Lectura de textos clásicos I.\n-Lengua clásica II (Griego o Latín).",
+                "3": "- Razón cognoscitiva II.\n-Razón práctica II.\n-Razón simbólica II.\n-Lectura de textos clásicos II.",
+                "4": "- Razón cognoscitiva III.\n-Razón práctica III.\n-Razón simbólica III.\n-Lectura de textos clásicos III.",
+                "5": "- Razón cognoscitiva IV.\n- Razón práctica IV.\n-Razón simbólica IV.\n-Lectura de textos clásicos IV.",
+                "6": "- Curso disciplinario I.\n-Curso disciplinario II.\n-Filosofía mexicana e iberoamericana I.\n-Seminario monográfico I.\n-Seminario de área I.",
+                "7": "- Curso disciplinario III.\n-Curso disciplinario IV.\n-Filosofía mexicana e iberoamericana II.\n-Seminario monográfico II.\n-Seminario de área II.",
+                "8": "- Curso disciplinario V.\n-Curso disciplinario VI.\n-Seminario monográfico III.\n-Seminario de tesis I.",
+               "9": "Seminario monográfico IV.\n-Seminario optativo I.\n-Seminario optativo II.\n-Seminario de tesis II.",
+                 "optativas": "-> Optativas"
+            }],
+           "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Sede Valenciana.",
+    "domicilio": "Ex-Convento de Valenciana s/n; C.P. 36240; Valenciana; Guanajuato, Gto.",
+    "telefono": "(473) 732 95 59",
+    "latitud": 21.041861,
+    "longitud": -101.2579135
+    }
+]

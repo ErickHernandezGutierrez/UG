@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Educación",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos y cultura general de acuerdo al perfil de egreso de la educación preparatoria.",
+        "habilidades": "*Habilidades académicas básicas como:\n-manejo de lengua escrita.\n-capacidad de análisis, síntesis y razonamiento.",
+        "actitudes": "*Actitudes de responsabilidad.\n-compromiso y de servicio a los demás.\n-Vocación de servicio y de apoyo a los demás.\n-Vocación para el desempeño en el campo educativo.\n-Empatía con las personas que requieren de su apoyo.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Fundamentos filosófico-epistemológicos del pensamiento social.\n- Cultura y sociedad.\n- Introducción  a las Ciencias Sociales.\n- Expresión Oral y Escrita.\n-Aplicaciones de la Computadora en la Educación I.\n- Integración Universitaria.",
+                "2": "- Análisis Social de México.\n-Modelos socio-antropológicos de la Educación.\n- Proceso Educativo en el Desarrollo Humano.\n- Ciencias de la Educación I.\n-Aplicaciones de la Computadora en la Educación II.\n- Metodología de la Investigación en Ciencias Socuales I.\n- Integración Universitaria.",
+                "3": "- Historia Comparada de la Educación.\n- Modelos Político-económicos de la educación.\n- Ciencias de la Educación II.\n- Estadística I.\n- Metodología de la Investigación en Ciencias Sociales II.",
+                "4": "- Sistema Educativo Nacional.\n- Teoría de la Comunicación Educativa.\n- Ciencias de la Educación III.\n- Estadística II.\n- Técnicas de Investigación Social.",
+                "5": "- Seminario de Investigación I.\n- Ética.\n- Habilidades de Comunicación y Trabajo en Equipo.",
+                "6": "- Seminario de Investigación II.\n- Prácticas Profesionales I.",
+                "7": "- Seminario de Titulación I.\n- Prácticas Profesionales II.",
+                "8": "- Seminario de Titulación II.\n-Prácticas Profesionales III.",
+                "optativas": "-> Teoría Curricular.\n-Tecnología Educativa.\n- Administración y Legislación Educativa.\n- Educación Formal y no Formal.\n- Evaluación Curricular.\n- Comportamiento Organizacional en Instituciones Educativas.\n- Educación  Abierta y a Distancia.\n- Nuevas Perspectivas en Diseño Curricular.\n- Innovación Educativa.\n- Taller de Diseño Curricular.\n-Teorías del Desarrollo Comunitario.\n- Instituciones para el Desarrollo Comunitario.\n- Educación y Desarrollo Comunitario.\n- Migración y Desarrollo Comunitario.\n-Psicología Comunitaria.\n- Modelos de Intervención Comunitaria.\n- Asesoría e Intervención Comunitaria.\n- Medio Ambiente y Salud.\n- Psicología Social del Mexicano.\n- Taller de Programas de Desarrollo Comunitario.\n- Administración Educativa.\n- Gestión y Política Educativa.\n- Liderazgo y toma de decisiones en Educación.\n- Dirección de Personal y Administración de Recursos Materiales y Financieros.\n-Legislación Educativa.\n-Comportamiento Organizacional en Instituciones Educativas.\n- Técnicas de Negociación en Educación.\n- Fundamentos de Diseño y Cambio Organizacional en Educación.\n- Planeación y Evaluación Institucional.\n- Taller de Gestión y Política Educativa.\n- Orientación Educativa en el Contexto Institucional.\n- Génesis y Desarrollo de la Orientación Educativa.\n- Influencias Socioculturales en el Desarrollo de la Identidad.\n- Proceso de Orientación Educativa.\n-Enfoques psicológicos en la Orientación Educativa.\n- Modelos para el Desarrollo de la Autonomía.\n- Programas Preventivos y Técnicas de Intervención.\n- Enfoques Socio-económicos en la Orientación Educativa.\n- Nuevas Perspectivas en Orientación Educativa.\n- Taller de Elaboración y Evaluación de Programas en Orientación Educativa."
+            }],
+       "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Marfil.",
+    "domicilio": "Calzada de Guadalupe S/N; Zona Centro; C.P. 36000; Guanajuato, Gto.",
+    "telefono": "(473) 732 00 06",
+    "latitud": 21.017753,
+    "longitud": -101.252838
+    }
+]

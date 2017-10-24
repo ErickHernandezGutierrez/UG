@@ -1,0 +1,35 @@
+[
+  {
+    "titulo": "Químico Farmacéutico Biólogo",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Semestral",
+    "conocimientos": "*Matemáticas: álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial e integral de manera tal que pueda acceder a los niveles requeridos de las matemáticas de licenciatura.\n\n*Física:conocimientos básicos de mecánica, estática, dinámica, electricidad y magnetismo que le permitan profundizar en sus cursos de Física y Fisicoquímica de Licenciatura en el conocimiento de la naturaleza.\n\n*Química:Nociones de nomenclatura, estequiometría, estados de agregación, conceptos básicos de estructura de la materia y del enlace. Contar con conocimiento de la importancia de la Química en el medio ambiente y de su importancia económica.\n\n*Biología: Conocimientos básicos de la célula, de su estructura y su funcionamiento, de los procesos respiratorios de las plantas y los animales, con el objeto de que durante sus cursos de Licenciatura pueda relacionar los procesos químicos con los seres vivos y con los problemas ambientales y sus posibles consecuencias y soluciones.",
+    "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar conceptos y nociones.\n\n*Analizar y encontrar solución a problemas.\n\n*Desarrollar su creatividad.",
+    "actitudes": "*Manifiesten su gusto e interés por el estudio que propicie su autoinformación, la creatividad y la investigación.\n\n*Manifiesten su compromiso de extender los beneficios de la cultura a todos los sectores de la comunidad.\n\n*Manifiesten su conciencia cívica, nacional y social.",
+    "valores": "*Fomenten el respeto a sí mismos, a los demás y a su entorno.\n\n*eflejen su responsabilidad, espíritu de lucha, constancia y disciplina.",
+    "totalSemestres": 9,
+    "planEstudios": [
+      {
+        "1": "- Cálculo Diferencial.\n-Física de los Procesos Biológicos.\n-Química General.\n-Laboratorio de Química General.\n-Biología Celular.\n-Comunicación Oral y Escrita.\n-Inglés I.",
+        "2": "- Cálculo Integral.\n-Fisicoquímica I.\n-Química Orgánica I.\n-Laboratorio de Química Orgánica I.\n-Anatomía y Fisiología Humanas.\n-Ética.\n-Inglés II.",
+        "3": "- Probabilidad y Estadística.\n-Química Analítica I.\n-Laboratorio de Química Analítica I.\n-Química Orgánica II.\n-Laboratorio de Química Orgánica II.\n-Fisicoquímica en Farmacia y Biología.\n-Inglés III.",
+        "4": "- Diseño de Experimentos.\n-Química Analítica II.\n-Laboratorio de Química Analítica II.\n-Química Orgánica III.\n-Laboratorio de Química Orgánica III.\n-Estructura de Biomoléculas y Cinética Enzimática.\n-Laboratorio de Estructura de Biomoléculas y Cinética Enzimática.\n-Inglés IV.",
+        "5": "- Farmacognosia.\n-Química Analítica III.\n-Laboratorio de Química Analítica III.\n-Genética.\n-Laboratorio de Genética.\n-Metabolismo Intermediario.\n-Microbiología.\n-Laboratorio de Microbiología.",
+        "6": "- Aseguramiento de la Calidad.\n-Química Analítica IV.\n-Inmunología.\n-Laboratorio de Inmunología.\n-Bacteriología Médica.\n-Liderazgo y Cultura Emprendedora.",
+        "7": "- Farmacia Química.\n-Legislación Sanitaria.\n-Biología Molecular.\n-Laboratorio de Biología Molecular.\n-Hematología.\n-Parasitología Médica.",
+        "8": "- Tecnología Farmacéutica.\n- Farmacología.\n-Bioquímica Clínica Básica.\n-Administración Gerencial.\n-Optativa de Carrera I.",
+        "9": "- Biofarmacia.\n-Farmacia Asistencial.\n-Toxicología.\n-Bioquímica Clínica de Pruebas Especiales.\n-Fisiopatología.\n-Optativa de Carrera II.",
+        "optativas": "-> Optativas"
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Ciencias Naturales y Exactas (DCNE)",
+    "sede": "Noria Alta.",
+    "domicilio": "Noria Alta s/n; C.P. 36050; Guanajuato, Gto.",
+    "telefono": "(473) 732 20 34",
+    "latitud": 21.011545,
+    "longitud": -101.267998
+  }
+]
+ 

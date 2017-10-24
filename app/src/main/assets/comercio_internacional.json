@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Comercio Internacional",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos generales sobre las ciencias económico administrativas.\n\n*Conocimientos básicos del Inglés tales como números, colores, el alfabeto, miembros de la familia, eventos del día, ropa, la hora, objetos de la vida cotidiana, saber presentarse y pedir o preguntar por cosas o servicios.\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+        "habilidades": "*Habilidad para usar matemática y estadística básica en solución de problemas.\n\n*Habilidad para trabajar con conceptos abstractos.\n\n*Habilidades para usar correctamente el lenguaje español, tanto de forma oral como de forma escrita.\n\n*Habilidad para interpretar lecturas.\n\n*Habilidad para razonar de manera inductiva y deductiva a partir de material escrito.\n\n*Habilidad para comprender a nivel básico el idioma inglés.",
+        "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Administración Contemporánea.\n-Geo-Política Económica.\n-Probabilidad y Estadística.\n-Álgebra Lineal.\n-Comunicación Profesional.\n-Comercio Internacional.\n-Complementaria I.",
+                "2": "- Comportamiento Organizacional.\n-Seminarios Económico Administrativo.\n-Estadística Inferencial.\n-Cálculo Diferencial.\n-Contabilidad Financiera.\n-Desarrollo del Comercio Exterior de México.\n-Derecho.\n-Complementaria II.",
+                "3": "- Microeconomía.\n-Desarrollo de Competencias Directivas.\n-Modelos y Teorías de la Calidad.\n-Contabilidad de Costos.\n-Mercadotecnia Internacional.\n-Administración de la Cadena de Suministro.\n-Marco Legal del Comercio Exterior.",
+                "4": "- Macroeconomía.\n-Innovación y Competitividad.\n-Investigación de Operaciones.\n-Comunicación de Negocios.\n-Investigación de Mercados Internacionales.\n-Negocios Internacionales.\n-Informática en los Negocios.\n-Negocios Electrónicos.\n-Optativa I.",
+                "5": "- Comunicación Organizacional.\n-Finanzas Internacionales.\n-Gestoría del Comercio Internacional.\n-Tratados Comerciales Internacionales.\n-Metodología y Elaboración de Protocolos.\n-Optativa II.\n-Complementaria III.\n-Optativa III.",
+                "6": "- Economía Internacional.\n-Finanzas Corporativas.\n-Sistemas de Información Logísticos.\n-Logística Internacional.\n-Legislación Aduanera.\n-Materia Aduanera de Tratados Comerciales.\n-Temas Selectos I.",
+                "7": "- Metodología y Elaboración de Informes.\n-Proyectos de Inversión.\n-Proyecto Integral de Comercio Exterior.\n-Regímenes Aduaneros.\n-Contratos Internacionales.\n-Temas Selectos II.\n-Temas Selectos III.\n-Temas Selectos IV.",
+                "8": "- Practicum.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Ciencias Económico Administrativas (DCEA).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

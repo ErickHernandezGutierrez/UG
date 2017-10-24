@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Ingeniería Civil",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: álgebra, trigonometría, geometría analítica y cálculo.\n\n*Física: mecánica, estática, dinámica, calor, electricidad y magnetismo.\n\n*Química: general.\n\n*Computación.\n\n*Español.\n\n*Ciencias Sociales.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Análizar y procesar información.\n\n*Integrar equipos de trabajo.\n\n*Aplicar conceptos matemáticos.\n\n*Adaptarse a diferentes ambientes escolares.",
+        "actitudes": "*Emprendedora.\n\n*Comprometida.\n\n*Participativa.\n\n*Tolerante.\n\n*Congruente.",
+        "valores": "*Honestidad.\n\n*Responsabilidad.\n\n*Verdad.\n\n*Libertad.\n\n*Respeto.\n\n*Justicia.",
+        "totalSemestres": 10,
+        "planEstudios":
+            [{
+                "1": "- Algebra Superior y Geometría Vectorial.\n- Cálculo Diferencial.\n-Dibujo Técnico.\n- Química.\n- Inglés Principiante.\n- Introducción a la Ingeniería Civil.\n- General.\n- Área Complementaria.",
+                "2": "- Inglés Principiante Avanzado.\n- Cálculo Integral \n- Álgebra Lineal. \n-Comunicación Oral y Escrita.\n- Topografía.\n- Geología.\n- General.\n- Complementaria.",
+                "3": "- Programación.\n- Cálculo Vectorial-\n- Inglés Intermedio.\n- Mecánica Analítica.\n- Sistemas de Información Geográfica.\n- General.\n- Complementaria",
+                "4": "- Inglés Intermedio Avanzado.\n- Métodos Numéricos con Programación.\n- Ética Profesional.\n- Estática.\n- Termodinámica y Electromagnetismo.\n- Hidrostática.\n- General.\n- Complementaria.",
+                "5": "- Inglés Avanzado Principiante.\n- Probabilidad y Estadística.\n- Economía.\n- Mecánica de Materiales.\n- Hidrodinámica.\n- Ecuaciones Diferenciales.\n- General.\n- Complementaria.",
+                "6": "- Mecánica del Medio Continuo.\n- Esfuerzos en Elementos Estructurales.\n- Obra Urbana.\n- Obras Hidráulicas.\n- Sistemas de Agua Potable.\n- Propiedades Básicas de los Suelos.\n- General.\n- Complementaria.",
+                "7": "- Análisis de Estructuras por Métodos Energéticos.\n- Obra Pesada. \n- Sistemas de Ingeniería. \n- Sistemas de Alcantarillado.\n- Comportamiento Mecánico de Suelos.\n- Transporte.\n- General.\n- Complementaria",
+                "8": "- Análisis Matricial de Estructuras.\n- Presupuestación de Obra.\n- Ingeniería Económica.\n- Teoría General del Concreto Reforzado.\n- Aguas y Sólidos Residuales.\n- Mecánica de Suelos Aplicada.\n- Prácticas.",
+              "9": "- Diseño de Elementos Especiales de Concreto Reforzado.\n- Estructuras de Acero.\n- Carreteras.\n- Evaluación de Impacto Ambiental.\n- Selectiva Básica Disciplinar.\n- Prácticas.",
+              "10": "- Administración de Empresas de Ingeniería Civil.\n- Evaluación Económica de Proyectos.\n- Taller de Estructuras.\n- Seminario de Titulación.\n- Selectiva de Profundización (1).\n- Selectiva de Profundización (2).\n- Prácticas",
+                "optativas": "-Planeamiento Urbano.\n- Logística de transporte.\n- Pavimentos.\n- Puertos.\n- Introducción a Métodos de Elemento Finito.\n- Instalaciones en Edificaciones.\n- Puentes.\n- Dinámica Estructural e Ingeniería Sísmica.\n- Métodos de Investigación Científica.\n- Taller de Proyectos de Ingeniería."
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Música(Composición)",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimiento sobre el manejo de instrumentos musicales básicos.\n\n*Conocimiento sobre la interpretación de la música.",
+        "habilidades": "*Manejo de instrumentos.\n\n*Facilidad para la música",
+        "actitudes": "*Afinidad por la música, los instrumentos y el canto.\n\n*actitud de aprender y disposición.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Instrumento Principal I.\n-Seminario de Historia del Arte y Música hasta el Siglo XIII.\n-Análisis de Formas y Sistemas Armónicos I.\n-Contrapunto.\n-Optativa I.\n-Música de Cámara I o Conjuntos Vocales.\n-Idioma I.",
+                "2": "- Instrumento Principal II.\n-Seminario de Historia del Arte y Música Siglos XIV a XVIII.\n-Análisis de Formas y Sistemas Armónicos II.\n-Laboratorio Midi.\n-Didáctica Musical I.\n-Música de Cámara II o Conjuntos Vocales II.\n-Idioma II.\n-Optativa II.",
+                "3": "- Instrumento Principal III.\n-Seminario de Historia del Arte y Música Siglos XIX a XXI.\n-Análisis de Formas y Sistemas Armónicos III.\n-Laboratorio Audio.\n-Didáctica Musical II.\n-Taller de Comportamiento Escénico.\n-Idioma III.\n-Optativa III.",
+                "4": "- Instrumento Principal IV.\n-Optativa IV.\n-Análisis de Formas y Sistemas Armónicos IV.\n-Música y Sociedad.\n-Didáctica Musical III.\n-Idioma IV.",
+                "5": "- Instrumento Principal V .\n-Informática Musical.\n-Manejo de Teclado I.\n-Composición I.\n-Selectiva I (Contrapunto Creativo I).\n-Técnicas de Dirección Coral e Instrumental I.",
+                "6": "- Instrumento Principal VI.\n-Instrumentación y Orquestación I.\n-Manejo de Teclado II.\n-Composición II.\n-Selectiva II (Contrapunto Creativo II).\n-Técnicas de Dirección Coral e Instrumental II.",
+                "7": "- Introducción a la Investigación Musical.\n-Instrumentación y Orquestación II.\n-Composición III.\n-Selectiva III (Contrapunto Creativo III).\n-Repertorio Camerístico I.\n-Optativa V.",
+                "8": "- Seminario de Titulación I.\n-Composición Electrónica, Electroacústica y por Computadora I.\n-Optativa VI.\n-Fuga I.\n-Repertorio Camerístico II.\n-Técnicas de Dirección Coral e Instrumental III.",
+              "9": "- Seminario de Titulación II.\n-Composición Electrónica, Electroacústica y por Computadora II.\n-Nuevas Técnicas Instrumentales.\n-Fuga II.\n-Repertorio Camerístico III.",
+                  "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Arquitectura, Arte y Diseño (DAAD)",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 732 00 06",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Relaciones Industriales",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos generales sobre las ciencias económico administrativas.\n\n*Conocimientos básicos del inglés tales como números, colores, el alfabeto, miembros de la familia, eventos del día, ropa, la hora, objetos de la vida cotidiana, saber presentarse y pedir o preguntar por cosas o servicios.\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+        "habilidades": "*Habilidad para usar matemática y estadística básica en solución de problemas.\n\n*-Habilidad para trabajar con conceptos abstractos.\n-Habilidades para usar correctamente el lenguaje español, tanto de forma oral como de forma escrita.\n-Habilidad para interpretar lecturas.\n\n*Habilidad para razonar de manera inductiva y deductiva a partir de material escrito.\n\n*Habilidad para comprender a nivel básico el idioma inglés.",
+        "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Microeconomía.\n-Administración Contemporánea.\n-Comunicación Profesional.\n-Contabilidad Financiera.\n-Derecho.\n-Recursos Humanos.",
+                "2": "- Macroeconomía.\n-Seminarios Económico Administrativo.\n-Contabilidad Administrativa.\n-Derecho Individual del Trabajo.\n-Administración de las Compensaciones.\n-Reclutamiento y Selección.\n-Complementaria I.",
+                "3": "- Probabilidad y Estadística.\n-Economía Laboral.\n-Administración Financiera.\n-Derecho Colectivo del Trabajo.\n-Diseño y Administración de Nóminas.\n-Optativa I.\n-Complementaria II.",
+                "4": "- Estadística Inferencial.\n-Metodología y Elaboración de Protocolos.\n-Comunicación de Negocios.\n-Derecho Procesal del Trabajo.\n-Capacitación y Desarrollo.\n-Comportamiento Organizacional.\n-Optativa II.",
+                "5": "- Comunicación Organizacional.\n-Negociación Laboral.\n-Sistemas de Información para Recursos Humanos.\n-Formación de Instructores.\n-Facilitación de Procesos Grupales.\n-Optativa III.\n-Complementaria III.",
+                "6": "- Administración Estratégica.\n-Metodología y Elaboración de Informes.\n-Seguridad Social.\n-Evaluación del Desempeño.\n-Plataformas Informáticas para Recursos Humanos.\n-Administración del Cambio.\n-Estudios de la Organización.\n-Temas Selectos I.",
+                "7": "- Orientación Social de las Relaciones Industriales.\n-Practicum.",
+                "8": "- Modelos y Teorías de la Calidad.\n-Seguridad y Salud Ocupacional.\n-Consultoría.\n-Desarrollo de Competencias Directivas.\n-Temas Selectos II.\n-Temas Selectos III.\n-Temas Selectos IV.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Ciencias Económico Administrativas (DCEA).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Contador Público",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos generales sobre las ciencias económico administrativas.\n\n*Conocimientos básicos del Inglés tales como números, colores, el alfabeto, miembros de la familia, eventos del día, ropa, la hora, objetos de la vida cotidiana, saber presentarse y pedir o preguntar por cosas o servicios.\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+        "habilidades": "*Habilidad para usar matemática y estadística básica en solución de problemas.\n\n*Habilidad para trabajar con conceptos abstractos.\n\n*Habilidades para usar correctamente el lenguaje español, tanto de forma oral como de forma escrita.\n\n*Habilidad para interpretar lecturas.\n\n*Habilidad para razonar de manera inductiva y deductiva a partir de material escrito.\n\n*Habilidad para comprender a nivel básico el idioma inglés.",
+        "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Microeconomía.\n-Administración Contemporánea.\n-Cálculo Diferencial.\n-Comunicación Profesional.\n-Derecho.\n-Contabilidad Financiera.\n-Matemáticas Financieras.\n-Derecho Tributario.",
+                "2": "- Macroeconomía.\n-Seminarios Económico Administrativo.\n-Probabilidad y Estadística.\n-Informática en los Negocios.\n-Contabilidad del Activo.\n-Fuentes de Financiamiento.\n-Derecho Mercantil.\n-Derecho Laboral.",
+                "3": "- Análisis de Estados Financieros.\n-Contabilidad de Conceptos Específicos.\n-Contribuciones de la Seguridad Social.\n-ISR Personas Morales.\n-Mercados e Instituciones Financieras.\n-Estadística Inferencial.\n-Análisis de Costos.\n-Complementaria I.",
+                "4": "- Contabilidad de Sociedades y Otros Conceptos.\n-ISR Personas Físicas.\n-Normas de Auditoría.\n-Comportamiento Organizacional.\n-Contabilidad de Costos.\n-Optativa I.",
+                "5": "- Contabilidad por Sectores.\n-Impuestos Federales, Estatales y Municipales.\n-Paquetería Contable.\n-Procedimientos de Auditoría.\n-Metodología y Elaboración de Protocolos.\n-Comunicación de Negocios.\n-Práctica Intermedia de Simulación.\n-Optativa II.",
+                "6": "- Comunicación Organizacional.\n-Tic's para Contabilidad.\n-Proyectos de Inversión.\n-Legislación Aduanera.\n-Contabilidad Gerencial.\n-Auditorías Especiales.\n-Optativa III.\n-Complementaria II.",
+                "7": "- Recursos Humanos.\n-Metodología y Elaboración de Informes.\n-Práctica Avanzada de Simulación.\n-Temas Selectos I.\n-Temas Selectos II.\n-Temas Selectos III.\n-Complementaria II.",
+                "8": "- Practica Final de Especialización.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Ciencias Económico Administrativas (DCEA).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

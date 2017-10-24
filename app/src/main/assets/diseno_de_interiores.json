@@ -1,0 +1,33 @@
+[
+  {
+    "titulo": "Diseño de Interiores",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Semestral",
+    "conocimientos": "*Conocimientos básicos en el dibujo.\n\n*Conocimientos básicos de las herramientas tecnológicas computacionales.",
+    "habilidades": "*Facilidad para crear, innovar e imaginar entornos visuales.\n\n*Experiencia en el dibujo técnico.\n\n* Manejo correcto de la escritura y oralidad del idioma.",
+    "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+    "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+    "totalSemestres": 8,
+    "planEstudios": [
+      {
+        "1": "- Geometría Descriptiva.\n-Comunicación Oral y Escrita.\n-Teoría del Diseño Interior.\n-Bocetos.\n-Representación del Espacio.\n-Materiales de Diseño.\n-Antropología Social e Identidad.\n-Inglés Básico.\n-Taller Integrador de Composición Formal.",
+        "2": "- Práctica Social Introductoria.\n-Manejo Digital del Lenguaje Gráfico.\n-Arte Popular Mexicano.\n-Perspectiva.\n-Técnicas de Representación.\n-Materiales y Recubrimientos del Diseño.\n-Administración.\n-Inglés Introductorio.\n-Taller Integrador de Composición Formal y Problematización del Diseño.",
+        "3": "- Ergonomía.\n-Tendencias del Diseño y Espacios Interiores a Través de la Historia.\n-Constructivo del Elemento.\n-Representación Métrica Digital.\n-Rotaciones Humanas en la Organización.\n-Inglés Medio.\n-Taller Conceptualizador de Espacios Autónomos.\n-Optativa.",
+        "4": "- Vanguardias del Diseño.\n-Introducción al Diseño Lumínico.\n-Arte Contemporáneo Mexicano.\n-Construcción e Instalaciones.\n-Representación Digital Tridimensional.\n-Mercadotecnia.\n-Inglés Avanzado.\n-Taller Conceptualizador de Espacios Conectados.\n-Práctica Profesional Básica.\n-Optativa.",
+        "5": "- Taller de Habilidades de Interacción y Liderazgo.\n-Arte Prehispánico y Colonial.\n-Construcción e Instalaciones Especiales.\n-Modelo Digital.\n-Inglés Preespecializado.\n-Taller Conceptualizador de Espacios Integrales.\n-Optativa.",
+        "6": "- Diseño Lumínico.\n-Jardinería.\n-Recorridos Virtuales.\n-Administración de Obra.\n-Inglés.\n-Taller Conceptualizador de Espacios Especializados.\n-Práctica Profesional Avanzada.\n-Optativa.",
+        "7": "- Metodología, Análisis y Principios de la Conservación de Espacios.\n-Diseño de Jardines.\n-Historia de la Cultura Antigua.\n-Administración y Supervisión Laboral.\n-Inglés Especializado.\n-Taller Conceptualizador de Espacios Simbólicos.\n-Optativa.",
+        "8": "- Seminario de Tesis.\n-Taller de Gestión de Negocios.\n-Historia de la Cultura Moderna.\n-Inglés Disciplinar.\n-Taller Conceptualizador de Espacios Complejos.\n-Práctica Profesionalizante.\n-Optativa.",
+        "optativas": "-> Optativas"
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Arquitectura, Arte y Diseño (DAAD)",
+    "sede": "Los Santos.",
+    "domicilio": "Calle Alfredo Pérez Bolde; Fraccionamiento ASTAUG; C.P. 36250; Guanajuato, Gto.",
+    "telefono": "(473) 734 04 53 y 734 09 09",
+    "latitud": 21.012868,
+    "longitud": -101.279697
+  }
+]

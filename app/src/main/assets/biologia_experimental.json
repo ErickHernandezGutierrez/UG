@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Biología Experimental",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Biología: Concepto de célula, composición y función de los diferentes organelos, diferencia entre anabolismo y catabolismo y diferentes tipos de organismos.\n\n*Matemáticas:Álgebra, trigonometría plana, geometría analítica así como conocimientos básicos de cálculo diferencial.\n\n*Física: Mecánica, electricidad y magnetismo.\n\n*Química: Estructura de la materia, nomenclatura, enlaces, estequiometria, estados de agregación y la química y el medio ambiente.\n\n* Conocimientos Humanísticos: Capacidad de redacción y comprensión del idioma español.\n\n* Inglés: Capacidad de lectura y comprensión de textos escritos en inglés.",
+        "habilidades": "*Utilizar diferentes métodos en el conocimiento de la naturaleza y su realidad social.\n\n*Creatividad.\n\n*Utilizar conceptos y notaciones.\n\n*Analisis y solución de problemas.\n\n*Realizar demostraciones.\n\n*La construcción gráfica descriptiva.\n\n*Usar los programas básicos de computación.",
+        "actitudes": "*Manifiesten su gusto e interés hacia el estudio que propicie su autoformación, la creatividad y la investigación.\n\n*Manifiesten su compromiso de servicio en la transformación de su entorno.\n\n*Reflejen su compromiso de extender los beneficios de la cultura a todos los sectores de la comunidad.\n\n*Manifieste su conciencia cívica, nacional y social.",
+        "valores": "*Fomenten el respeto a si mismos, a los demás y a su entorno.\n\n*Reflejen su responsabilidad, espíritu de lucha, constancia y disciplina.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Biología General.\n-Biología Celular.\n-Taller de Autoaprendizaje.\n-Física.\n-Cálculo.\n-Química General.\n-Laboratorio de Química General.",
+                "2": "- Filosofía de la Ciencia.\n-Biología del Desarrollo.\n-Laboratorio de Biología del Desarrollo.\n-Diseño Experimental.\n-Bioestadística (paramétrica y no paramétrica).\n-Fisicoquímica en Biología y Farmacia.\n-Química Orgánica I.\n-Laboratorio de Química Orgánica I.",
+                "3": "- Anatomía e Histología Vegetal.\n-Laboratorio de Anatomía e Histología Vegetal.\n-Anatomía e Histología Animal.\n-Laboratorio de Anatomía e Histología Animal.\n-Química Analítica III.\n-Laboratorio de Química Analítica III.\n-Estructura de Biomoléculas y Cinética Enzimática.\n-Laboratorio de Estructura de Biomoléculas y Cinética Enzimática.",
+                "4": "- Fisiología Vegetal.\n-Laboratorio de Fisiología Vegetal.\n-Biología de Invertebrados.\n-Laboratorio de Biología de Invertebrados.\n-Metabolismo Intermediario.\n-Laboratorio de Metabolismo Intermediario.\n-Microbiología.\n-Laboratorio de Microbiología.\n-Liderazgo y Emprendedurismo.",
+                "5": "- Bioinorgánica.\n-Fisiología Animal.\n-Laboratorio de Fisiología Animal.\n-Genética.\n-Laboratorio de Genética.\n-Conocimiento del Entorno y Desarrollo Sustentable.\n-Fisiología Microbiana.\n-Laboratorio de Fisiología Microbiana.",
+                "6": "- Ecología.\n-Laboratorio de Ecología.\n-Bioética y Normatividad.\n-Biología Molecular.\n-Laboratorio de Biología Molecular.\n-Administración y Propiedad Intelectual.\n-Optativa.\n-Optativa.",
+                "7": "- Evolución.\n-Laboratorio de Evolución.\n-Inmunología Comparada.\n-Laboratorio de Inmunología.\n-Biotecnología.\n-Ingeniería Genética.\n-Laboratorio de Ingeniería Genética.\n-Bioinformática.\n-Optativa.",
+                "8": "- Estancia.\n-Optativa.",
+                "optativas": "-> Optativas"
+            }],
+            "campus": "Guanajuato.",
+    "division": "División de Ciencias Naturales y Exactas (DCNE)",
+    "sede": "Noria Alta.",
+    "domicilio": "Noria Alta s/n; C.P. 36050; Guanajuato, Gto.",
+    "telefono": "(473) 732 20 34",
+    "latitud": 21.011545,
+    "longitud": -101.267998
+    }
+]

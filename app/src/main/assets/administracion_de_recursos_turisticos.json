@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Administración de Recursos Turísticos",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+       "conocimientos": "*Conocimientos generales sobre las ciencias económico administrativas.\n\n*Conocimientos básicos del Inglés tales como números, colores, el alfabeto, miembros de la familia, eventos del día, ropa, la hora, objetos de la vida cotidiana, saber presentarse y pedir o preguntar por cosas o servicios.\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+        "habilidades": "*Habilidad para usar matemática y estadística básica en solución de problemas.\n\n*Habilidad para trabajar con conceptos abstractos.\n\n*Habilidades para usar correctamente el lenguaje español, tanto de forma oral como de forma escrita.\n\n*Habilidad para interpretar lecturas.\n\n*Habilidad para razonar de manera inductiva y deductiva a partir de material escrito.\n\n*Habilidad para comprender a nivel básico el idioma inglés.",
+        "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Microeconomía.\n-Seminarios Económico Administrativo.\n-Administración Contemporánea.\n-Probabilidad y Estadística.\n-Comunicación Profesional.\n-Contabilidad Financiera.\n-Derecho.\n-Introducción al Turismo.",
+                "2": "- Macroeconomía.\n-Comportamiento Organizacional.\n-Estadística Inferencial.\n-Informática en los Negocios.\n-Geografía e Historia de México.\n-Técnicas y Bases Culinarias.",
+                "3": "- Cálculo Diferencial.\n-Recursos Humanos.\n-Antropología y Sociología del Turismo.\n-Psicología del Turismo.\n-Nutrición e Higiene de los Alimentos.\n-Política y Ética del Turismo.\n-Complementaria I.",
+                "4": "- Metodología y Elaboración de Protocolos.\n-Comunicación de Negocios.\n-Contabilidad de Costos.\n-Turismo Cultural.\n-Empresas de Hospedaje.\n-Intermediación Turística.\n-Temas Selectos I.\n-Complementaria II.",
+                "5": "- Administración Financiera.\n-Derecho Turístico.\n-Empresas de Alimentos y Bebidas.\n-Interpretación del Patrimonio.\n-Investigación de Mercados.\n-Protocolo e Imagen.\n-Temas Selectos II.\n-Complementaria III.",
+                "6": "- Desarrollo de Proyectos Turísticos.\n-Comunicación Organizacional.\n-Modelos y Teorías de la Calidad.\n-Competitividad Turística.\n-Mercadotecnia de Servicios.\n-Logística de Eventos.\n-Temas Selectos III.",
+                "7": "- Metodología y Elaboración de Informes.\n-Gestión de Recursos Patrimoniales.\n-Proyectos de Inversión.\n-Gestión Aplicada a MIPYMES.\n-Temas Selectos IV.\n-Optativa I.\n-Optativa II.\n-Optativa III.",
+                "8": "- Practicum.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Ciencias Económico Administrativas (DCEA).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

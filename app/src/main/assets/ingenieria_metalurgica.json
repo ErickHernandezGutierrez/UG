@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Ingeniería en Metalúrgia",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial.\n\n*Física: mecánica, electricidad, magnetismo y termodinámica.\n\n*Química: estructura de la materia, nomenclatura, enlaces, estequiometria, estados de agregación, y química y medio ambiente.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar diferentes métodos en el conocimiento de la naturaleza y su realidad social.\n\n*Análisis y solución de problemas.\n\n*Utilizar conceptos y notaciones.\n\n*Trabajar en equipo.\n\n*Realizar demostraciones.\n\n*Desarrollar su creatividad.\n\n*Innovar.",
+        "actitudes": "*Manifiesten su gusto e interés hacia el estudio que propicie su autoformación, la creatividad y la investigación.\n\n*Reflejen su compromiso de extender los beneficios de la cultura a todos los sectores de la comunidad.\n\n*Manifieste su conducta cívica, nacional y social.",
+        "valores": "*Ética.\n\n*Disciplina.\n\n*Responsabilidad.\n\n*Honestidad.\n\n*Respeto.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Química Orgánica.\n- Cálculo Diferencial.\n- Dibujo Asistido por Computadora.\n- Algebra Superior y Geometría.\n- Optativa/Área General.\n- Inglés Principiante.\n- Introducción a la Metalurgia.\n- Actividad I Complementaria.",
+                "2": "- Cálculo II.\n- Probabilidad y Estadística.\n- Física II.\n- Química II.\n- Lenguaje de Programación.\n- Optativa II.",
+                "3": "- Métodos Numéricos.\n- Ecuaciones Diferenciales.\n- Balance de Materia y Energía.\n- Química Orgánica.\n- Dibujo.\n- Optativa III.",
+                "4": "- Química Analítica.\n- Procesamiento de Minerales I.\n- Termodinámica.\n- Mineralogía y Cristalografía.\n- Mecánica.\n- Optativa IV.",
+                "5": "- Cinética Química.\n- Fisicoquímica.\n- Fenómenos de Transporte.\n- Ciencias e Ingeniería de los Materiales.\n- Procesamiento de Minerales II.\n- Taller de Simulación de Proce.",
+              "6": "- Metalurgia No Ferrosa I.\n- Siderurgia.\n- Diseño de Experimentos.\n- Flotación.\n- Mecánica de Fluidos.\n- Optativa V.",
+            "7": "- Metalurgia No Ferrosa II.\n- Metalurgia Mecánica.\n- Metalurgia No Metálicos.\n- Ingeniería de la Construcción.\n- Ecología.\n- Optativa VI.",
+                "8": "- Ingeniería Eléctrica.\n- Investigación de Operaciones.\n- Técnicas para Caract. de Materiales.\n- Metalurgia Física.\n- Diseño de Plantas.\n- Seminario de Tesis.",
+                "9": "- Electrometalurgia.\n- Metalurgia Adaptativa.\n-Ingeniería Económica.\n- Relaciones Humanas.\n- Control de Calidad.\n- Optativa VII.",
+               
+                "optativas": "- No disponible por el momento."
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

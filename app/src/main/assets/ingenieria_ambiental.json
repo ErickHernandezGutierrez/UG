@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Ingeniería Ambiental",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial e integral.\n\n*Física: conocimientos básicos de mecánica, estática, dinámica, calor, electricidad y magnetismo.\n\n*Química: general.\n\n*Biología.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar conceptos y nociones.\n\n*Desarrollar la creatividad.\n\n*Analizar y encontrar solución a problemas.\n\n*Trabajo en equipo.",
+        "actitudes": "*Emprendedor.\n\n*Liderazgo.",
+        "valores": "*Ética.\n\n*Honestidad.\n\n*Responsabilidad.\n\n*Verdad.\n\n*Libertad.\n\n*Respeto.\n\n*Justicia.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Inglés Principiante.\n- Cálculo Diferencial.\n-Ecología.\n- Química.\n- Herramientas Computacionales.\n- Introducción a la Ingeniería Ambiental.\n- Comunicación Oral y Escrita.\n- Área General 1.\n- Área Complementaria 1.",
+                "2": "- Inglés Principiante Avanzado.\n- Cálculo Integral \n- Álgebra Lineal. \n-Química Orgánica.\n- Métodos Numéricos.\n- Climatología y Meteorología\n- Metodología de la Investigación\n- Área General 2.\n- Área Complementaria 2.",
+                "3": "- Inglés Intermedio.\n- Mecánica Analítica-\n- Ecuaciones Diferenciales.\n- Bioquímica.\n- Dibujo Técnico.\n- Fisicoquímica.\n- Probabilidad y Estadística.\n- Área General 3.\n- Área Complementaria 3",
+                "4": "- Inglés Intermedio Avanzado.\n- Termodinámica y Electromagnetismo.\n- Ingeniería Económica.\n- Química Analítica Cuantitativa.\n- Topografía y Sistemas de Información Geográfica.\n- Balance de Materia y Energía.\n- Seminario de Ética Profesional.\n- Área General 4.\n- Área Complementaria 4",
+                "5": "- Inglés Avanzado Principiante.\n- Geología Ambiental.\n- Hidráulica y Mecánica de Fluidos.\n- Química Ambiental.\n- Selectiva Disciplinaria I.\n- Operaciones Unitarias.\n- Selectiva Disciplinar II.\n- Área General 5.\n- Área Complementaria 5.",
+                "6": "- Selectiva de Profundización I.\n- Edafología.\n- Hidrología.\n- Microbiología.\n- Toxicología Ambiental.\n- Contaminación del Aire.\n- Área General 6.\n- Área Complementaria 6.",
+                "7": "- Formulación, Evaluación y Gestión de Proyectos.\n- Gestión Integral de Residuos. \n- Legislación Ambiental. \n- Bioprocesos.\n- Selectiva de Profundización II.\n- Fuentes Alternas de Energía.\n- Área General 7.\n- Área Complementaria 7",
+                "8": "- Administración de la Seguridad.\n- Evaluación de Riesgos.\n- Sistemas de Gestión y Auditoría Ambiental.\n- Tratamiento de Aguas Residuales.\n- Impacto Ambiental.\n- Seminario de Titulación.\n- Área General 8.\n- Área Complementaria 8.",
+                "9": "- Prácticas Profesionales.\n- Área General 9.\n- Área Complementaria 9.",
+                "optativas": "-Creatividad e Innovación.\n- Desarrollo Sustentable.\n- Administración.\n- Hidrogeoquímica.\n- Ecología Industrial.\n- Economía Ambiental.\n- Química Analítica Instrumental.\n- Potabilización del Agua.\n- Uso Eficiente del Agua.\n- Remediación de Suelos.\n- Contaminación de Suelos.\n- Análisis de Ciclo de Vida.\n- Procesos Químicos Unitarios.\n- Producción de Biocombustibles.\n- Modelación de Aguas Subterráneas.\n- Exploración y Evaluación de Aguas Subterráneas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

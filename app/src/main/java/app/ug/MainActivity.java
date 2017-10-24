@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         licenciaturaButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, LicenciaturaActivity.class));
+                startActivity(new Intent(MainActivity.this, LicenciaturaActivity.class));
             }
         });
 

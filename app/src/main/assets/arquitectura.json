@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Arquitectura",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "conocimientos": "*Español.\n\n*Matemáticas.\n\n*Ciencias Naturales.\n\n*Ciencias Sociales.\n\n* Humanidades.\n\n*Dibujo técnico.\n\n*Conocimientos básicos de arquitectura.",
+        "habilidades": "*Comunicarse eficaz y eficientemente de manera oral, escrita y gráfica.\n\n*Integrarse y dirigir, técnica y humanamente equipos de trabajo.\n\n*Desarrollar su creatividad.\n\n*Utilizar conceptos y notaciones.\n\n*Analizar y resolver problemas.\n\n*Realizar presentaciones grupales.\n\n*Utilizar adecuadamente la computadora.",
+        "actitudes": "*Proactiva.\n\n*Propositiva.\n\n*Crítica.\n\n*Responsable.\n\n*Congruente.\n\n*Innovadora.\n\n*Liderazgo.\n\n*Emprendedora.",
+        "valores": "*Respeto.\n\n*Libertad\n\n*Responsabilidad.",
+        "totalSemestres": 10,
+        "planEstudios":
+            [{
+                "1": "- Diseño Básico.\n-Estructuras I.\n-Construcción I.\n-Técnicas de Representación I.\n-Geometría Descriptiva I.\n-Dibujo del Natural I.\n-Teoría de la Arquitectura I.\n-Metodología I.",
+                "2": "- Diseño Arquitectónico.\n-Estructuras II.\n-Construcción II.\n-Técnicas de Representación II.\n-Medio Ambiente.\n-Dibujo del Natural II.\n-Metodología II.Historia de la Arquitectura I.",
+                "3": "- Taller de Proyectos I.\n-Técnicas de Representación III.\n-Estructuras III.\n-Estereotomía y Perspectiva.\n-Dibujo de Natural III.\n-Construcción III.\n-Teoría de la Arquitectura II.\n-Historia de la Arquitectura II.",
+                "4": "- Taller de Proyectos II.\n-Taller de Representación IV.\n-Estructuras IV.\n-Construcción IV.\n-Instalaciones en Edificios I.\n-Teoría de la Arquitectura III.\n-Historia de la Arquitectura III.",
+                "5": "- Taller de Proyectos III.\n-Técnicas de Representación V.\n-Instalación en Edificios II.\n-Estructuras V.\n-Construcción V.\n-Teoría de la Arquitectura IV.\n-Historia de la Arquitectura IV.\n-Taller de Proyectos IV.\n-Arquitectura del Paisaje.\n-Instalación en Edificios III.\n-Construcción VI.\n-Historia de la Arquitectura V.\n-Optativa.",
+                "6": "- Taller de Proyectos IV.\n-Arquitectura del Paisaje.\n-Instalación en Edificios III.\n-Construcción VI.\n-Historia de la Arquitectura V.\n-Optativa.",
+                "7": "- Taller de Proyectos V.\n-Física de la Construcción.\n-Administración de Obras I.\n-Historia de la Arquitectura VI.\n-Urbanismo II.\n-Prácticas Profesionales I.\n-Optativa.\n-Optativa.",
+                "8": "- Taller Integral I.\n-Historia de la Arquitectura VII.\n-La Empresa Constructora.\n-Teoría de la Arquitectura V.\n-Diseño Urbano I.\n-Prácticas Profesionales II.\n-Optativa.",
+              "9": "-Taller Integral II.\n-Teoría de la Arquitectura VI.\n-Diseño Urbano II.\n-Gerencia de Proyectos.\n-Administración de Obras III.\n-Prácticas Profesionales III.\n-Optativa.\n-Optativa.",
+              "10": "Taller Terminal.",
+                 "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Arquitectura, Arte y Diseño (DAAD).",
+        "sede": "Belén.",
+        "domicilio": "Mendizábal no. 19-B. C.P. 36000. Guanajuato, Gto.",
+        "telefono": "(473) 102 01 00",
+        "latitud": 21.018025,
+        "longitud": -101.257198
+    }
+]

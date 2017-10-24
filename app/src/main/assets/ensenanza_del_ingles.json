@@ -1,0 +1,33 @@
+[
+  {
+    "titulo": "Licenciatura en Enseñanza del Inglés",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Semestral",
+    "conocimientos": "*Sólido conocimiento del idioma inglés y habilidad de comunicación oral y escrita, demostrado a través de un examen.",
+    "habilidades": "*Capacidad de análisis y de síntesis.",
+    "actitudes": "*Poseer una inclinación humanística hacia el trabajo y ser flexibles y abiertos a los cambios.\n\n*Compromiso con su formación profesional y vocación para la docencia.",
+    "valores": "*No disponible.",
+    "totalSemestres": 8,
+    "planEstudios": [
+      {
+        "1": "- Redacción en Español.\n-Descripción y Análisis del Idioma Inglés.\n-Principios y Técnicas del Aprendizaje Auto-Dirigido I.\n-Fundamentos de la Enseñanza del Inglés.\n-Tecnología Educativa I: Computación.",
+        "2": "- Redacción en Inglés.\n-Principios y Técnicas del Aprendizaje Auto-Dirigido.\n-Fundamentos de la Enseñanza del Inglés.\n-Tecnología Educativa II: Medios Educativos.\n-Optativa I.",
+        "3": "- Técnicas de la Enseñanza de Expresión Oral y Comprensión Auditiva.\n-Técnicas de la Enseñanza de Lectura y Redacción.\n-Técnicas de la Enseñanza de la Gramática.\n-Vocabulario y Pronunciación de la Lengua Extranjera.\n-Sociolingüística.",
+        "4": "- Teoría y Técnicas de Evaluación.\n-Psicolingüística.\n-Metodología de la Enseñanza del Inglés como Lengua Extranjera.\n-Análisis del Discurso.\n-Optativa II.",
+        "5": "- Taller de Diseño de Evaluaciones.\n-Análisis y Elaboración de Material Didáctico.\n-Tecnología Educativa III: Análisis y Evaluación Material para la Computadora.\n-Optativa III.",
+        "6": "- Análisis de la Práctica de la Enseñanza del Inglés.\n-Tecnología Educativa: Diseño de Material para la Computadora.\n-Optativa IV.",
+        "7": "- Análisis y Reflexión de la Práctica de la Enseñanza del Inglés.\n-Observación de Clase.\n-Metodología y Técnicas de la Investigación.\n-Optativa V.",
+        "8": "- Desarrollo del Proyecto de Titulación.\n-Práctica de Enseñanza Supervisada.\n-Optativa VI.",
+        "optativas": "-> Optativas"
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Marfil.",
+    "domicilio": "Calzada de Guadalupe S/N; Zona Centro; C.P. 36000; Guanajuato, Gto.",
+    "telefono": "(473) 732 00 06",
+    "latitud": 21.017753,
+    "longitud": -101.252838
+  }
+]

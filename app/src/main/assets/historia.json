@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Licenciatura en Historia",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+       "conocimientos": "*Conocimientos formativos básicos del área: nociones generales de las humanidades y las artes, distinción general de la literatura entre otros géneros artísticos y discursivos.\n\n*Ubicación básica de los géneros literarios.\n\n*Elementos básicos de la lengua española y la construcción de textos.\n\n*Herramientas y procedimientos de lectura.",
+    "habilidades": "*Distinción general de textos y géneros literarios entre otros discursos.\n\n*Capacidad para apreciar e interpretar de forma básica textos literarios.\n\n*Habilidades para el aprendizaje.\n\n*Redacción coherente, clara y eficaz en español.\n\n*Ubicación de los componentes fundamentales de una oración simple y su función.\n\n*Capacidad de abstracción, reflexión y síntesis de textos.",
+    "actitudes": "*Hábito y gusto por la lectura.\n\n*Sensibilidad ante el fenómeno literario.\n\n*Interés en otras formas de expresión artística y de manifestación cultural.\n\n*Disposición para el trabajo de investigación en estudios literarios.\n\n*Deseo por el conocimiento.\n\n*Disciplina para el estudio.\n\n*Actitud crítico-reflexiva.\n\n*Respeto a sí mismo y a los demás.",
+    "valores": "*Respeto.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Pensamiento filosófico y científico.\n-Historia Mundial I.\n- Historia de México I.\n- Metodología de la investigación social.\n- Redacción de textos académicos.\n- Lengua Clásicas I.",
+                "2": "- Filosofía de la historia I.\n-Historia Mundial II.\n-Historia de México II.\n- Metodología de la investigación histórica.\n-Comprensión y crítica de textos históricos.\n-Lengua Clásica II.",
+                "3": "- Filosofía de la historia II.\n-Producción y difusión de textos históricos.\n-Teoría de la historia I.\n-Historiografía general I.\n- Paleografía.\n-Optativa temática.",
+                "4": "- Teoría de la historia II.\n-Historiografía general II.\n-Archivística.\n- Optativa temática.\n-Optativa temática.",
+                "5": "- Patrimonio histórico y cultural.\n- Enseñanza y aprendizaje de la historia I.\n- Historiografía de México I.\n-Seminario Especializado.\n- Optativa temática.\n- Optativa temática.",
+                "6": "- Enseñanza y aprendizaje de la historia II.\n-Historiografía de México II.\n-Seminario Especializado.\n-Optativa temática.",
+                "7": "- Seminario Especializado de Investigación I.\n- Seminario de titulación I.\n- Lengua moderna.",
+                "8": "- Seminario Especializado de Investigación II.\n-Seminario de Titulación II.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Sede Valenciana.",
+    "domicilio": "Ex-Convento de Valenciana s/n; C.P. 36240; Valenciana; Guanajuato, Gto.",
+    "telefono": "(473) 732 95 59",
+    "latitud": 21.041861,
+    "longitud": -101.2579135
+    }
+]

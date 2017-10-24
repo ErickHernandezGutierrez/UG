@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Enseñanza del Español como Segunda Lengua",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos del español que permita la realización de tareas que exigen cierto dominio académico/cognitivo del lenguaje.\n\n*Conocimientos formativos básicos del área de las Ciencias Sociales y las Humanidades.\n\n*",
+        "habilidades": "*Habilidad de expresión oral y escrita.\n\n*Vocación para la docencia.\n\n*Habilidad crítica y analítica.\n\n*Capacidad de comprensión, reflexión y síntesis de textos.",
+        "actitudes": "*Compromiso con su formación profesional.\n\n*Disposición al trabajo tanto en equipo como autónomo.\n\n*Actitud crítica constructiva.",
+        "valores": "*Respeto a sí mismo y a los demás.\n\n*Valoración y respeto a la diversidad cultural.\n\n*Honestidad académica.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Redacción I\n-Principios y técnicas del aprendizaje autodirigido I.\n-Fundamentos de la enseñanza del español I.\n-Medios educativos I.\n-Teorías del lenguaje.\n-Lingüística general I.",
+                "2": "- Lengua y redacción.\n- Principios y técnicas del aprendizaje autodirigido II.\n-Fundamentos de la enseñanza del español II.\n-Medios educativos II.\n-Metodología de la investigación.\n-Lingüística general II.",
+                "3": "- Lectura crítica y redacción.\n- Fonética y fonología.\n- Medios educativos III.\n- Didáctica de la expresión oral y comprensión auditiva.\n- Optativa.\n- Optativa.",
+                "4": "- Morfología del español.\n- Sociolingüística.\n-Medios educativos IV.\n- Didáctica de la lectura y redacción.\n-Teorías y técnicas de evaluación.\n-Optativa.",
+                "5": "- Sintaxis del español I.\n-Análisis del discurso.\n-Psicolingüística.\n-Didáctica de la gramática española.\n-Metodología de la enseñanza del español.\n-Optativa.",
+                "6": "- Sintaxis del español II.\n-Adquisición y aprendizaje de una segunda lengua.\n-Análisis de la práctica de la enseñanza del español.\n-Seminario de métodos de investigación.\n-Optativa.",
+                "7": "- Análisis y reflexión de la práctica de la enseñanza del español.\n-Proyecto de titulación I.\n-Observación de clase.\n-Optativa.",
+                "8": "- Práctica de la enseñanza supervisada.\n-Proyecto de titulación II.\n-Práctica profesional.\n-Optativa.",
+                "optativas": "-> Optativas"
+            }],
+         "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Marfil.",
+    "domicilio": "Calzada de Guadalupe S/N; Zona Centro; C.P. 36000; Guanajuato, Gto.",
+    "telefono": "(473) 732 00 06",
+    "latitud": 21.017753,
+    "longitud": -101.252838
+    }
+]

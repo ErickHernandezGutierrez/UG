@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Ingenieria Química",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: Álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial e integral de manera tal que pueda acceder a los niveles requeridos de las matemáticas de licenciatura con mayor posibilidad de éxito.\n\n*Física: Mecánica, estática, dinámica, electricidad y magnetismo que le permitan aplicar leyes físicas a la explicación e interpretación de los fenómenos naturales y de la vida diaria.\n\n* Química: Estructura de la materia, nomenclatura, enlaces, estequiometría, estados de agregación y la química en el medio ambiente de una manera especialmente estructurada que le permita reconocer fácilmente términos químicos y con ello explicar fenómenos de transformación química que ocurren en la naturaleza.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar diferentes métodos en el conocimiento de la naturaleza y su realidad social\n\n*Desarrollar su creatividad.\n\n*Utilizar conceptos y notaciones.\n\n*Análisis y solución de problemas.\n\n*Realizar demostraciones sobre la base de principios o conocimientos.\n\n*La construcción gráfica descriptiva.",
+        "actitudes": "*Manifiesten su gusto e interés hacia el estudio que propicie su autoformación, la creatividad y la investigación.\n\n*Manifiesten su compromiso de servicio en la transformación de su entorno.\n\n*Reflejen su compromiso de extender los beneficios de la cultura a todos los sectores de la comunidad.\n\n*Manifieste su conciencia cívica, nacional y social.",
+        "valores": "*Fomenten el respeto a si mismos, a los demás y a su entorno.\n\n*Reflejen su responsabilidad, espíritu de lucha, constancia y disciplina.",
+        "totalSemestres": 10,
+        "planEstudios":
+            [{
+                "1": "- Álgebra Lineal\n-Cálculo Diferencial\n- Estática y Cinemática Dinámica.\n-Fisicoquímica I.\n-Laboratorio de Física.\n-Probabilidad y Estadística.\n-Química General e Inorgánica.",
+                "2": "- Balance de Materia.\n-Cálculo de Varias Variables.\n-Cálculo Integral.\n-Fisicoquímica II.\n-Laboratorio de Química General.\n-Programación y Métodos Numéricos I.\n-Química Analítica.\n-Química Orgánica.",
+                "3": "- Análisis Instrumental.\n-Balance de Energía.\n-Cálculo Vectorial.\n-Ecuaciones Diferenciales Ordinarias.\n-Laboratorio de Química Orgánica.\n-Mecánica de Sólidos.\n-Programación y Métodos Numéricos II.\n-Termodinámica I.",
+                "4": "- Administración.\n-Dinámica de Fluidos.\n-Ecuaciones Diferenciales Parciales.\n-Ingeniería de los Materiales.\n-Ingeniería Eléctrica.\n-Inglés I.\n-Laboratorio de Fisicoquímica.\n-Termodinámica II.",
+                "5": "- Administración del Capital Humano.\n-Cinética Química y Catálisis.\n-Hidráulica.\n-Inglés II.\n-Laboratorio de Ingeniería Química I.\n-Procesos de Separación I.\n-Transferencia de Calor.\n-Transferencia de Masa.",
+                "6": "- Diseño de Equipo Térmico.\n-Cultura Emprendedora.\n-Electrónica e Instrumentación.\n-Ingeniería de Reactores.\n-Inglés III.\n-Laboratorio de Ingeniería Química II.\n-Procesos de Separación II.\n-Procesos de Separación III.",
+                "7": "- Ciencia y Tecnología Ambiental I.\n-Diseño de Plantas y Diagramas.\n-Gestión de la Calidad.\n-Inglés IV.\n-Laboratorio de Ingeniería Química III.\n-Procesos de Separación IV.\n-Procesos Sustentables.\n-Química Industrial.",
+              "8": "- Diseño y Simulación de Procesos y Productos.\n-Estadística Industrial.\n-Ingeniería de Proyectos.\n-Ingeniería Económica.\n-Laboratorio de Ingeniería Química IV.\n-Operación y Seguridad de Procesos.\n-Procesos Industriales.",
+              "9": "- Estancia Profesional.",
+               "10": "- Competencias Directivas.\n-Control de Procesos.\n-Laboratorio de Ingeniería Química V.\n-Optimización de Procesos.\n-Proyecto Integrador.\n-Técnicas de Ingeniería Industrial.",
+                "optativas": "-> Optativas"
+            }],
+         "campus": "Guanajuato.",
+    "division": "División de Ciencias Naturales y Exactas (DCNE)",
+    "sede": "Noria Alta.",
+    "domicilio": "Noria Alta s/n; C.P. 36050; Guanajuato, Gto.",
+    "telefono": "(473) 732 20 34",
+    "latitud": 21.011545,
+    "longitud": -101.267998
+    }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "titulo": "Diseño de Gráfico",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Anual",
+    "conocimientos": "*Conocimientos básicos en el dibujo.\n\n*Conocimientos básicos de las herramientas tecnológicas computacionales.",
+    "habilidades": "*Facilidad para crear, innovar e imaginar entornos visuales.\n\n*Experiencia en el dibujo técnico.\n\n* Manejo correcto de la escritura y oralidad del idioma.",
+    "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+    "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+    "totalSemestres": 9,
+    "planEstudios": [
+      {
+        "1": "-Metodología.\n-Diseño Básico.\n-Dibujo Técnico.\n-Historia de la Cultura I.\n-Dibujo Natural I.\n-Técnicas Auxiliares Computación.\n-Teoría del Diseño Gráfico I.",
+        "2": "-Fotografía I.\n-Teoría del Diseño Gráfico II.\n-Diseño Básico Tridimensional.\n-Estética.\n-Historia de la Cultura II.\n-Psicología Aplicada.\n-Dibujo Natural II.",
+        "3": "-Fotografía II.\n-Arte Prehispánico.\n-Taller de Diseño I.\n-Computación I.\n-Técnicas de Representación I.\n-Sociología.\n-Optativa.",
+        "4": "-Administración.\n-Taller de Diseño II.\n-Arte Colonial Mexicano.\n-Computación II.\n-Sistemas de Impresión I.\n-Técnicas de Representación II.\n-Optativa.",
+        "5": "-Mercadotecnia.\n-Taller de Diseño III.\n-Arte Contemporáneo Mexicano.\n-Técnicas de Representación III.\n-Computación III.\n-Sistemas de Impresión II.\n-Optativa.",
+        "6": "-Publicidad.\n-Nuevas Tendencias del Diseño.\n-Taller de Diseño IV.\n-Técnicas de Representación IV.\n-Técnicas Audiovisuales I.\n-Sistemas de Impresión III.\n-Optativa.",
+        "7": "-Taller de Diseño V.\n-Relaciones Humanas.\n-Técnicas de Representación V.\n-Técnicas Audiovisuales II.\n-Sistemas de Impresión IV.\n-Optativa.",
+        "8": "-Presupuesto y Marco Legal.\n-Taller de Diseño VI.\n-Presentación de Trabajos.\n-Optativa.",
+         "9": "-Trabajo de Titulación.",
+         "optativas": "-> Optativas"
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Arquitectura, Arte y Diseño (DAAD)",
+    "sede": "Los Santos.",
+    "domicilio": "Calle Alfredo Pérez Bolde; Fraccionamiento ASTAUG; C.P. 36250; Guanajuato, Gto.",
+    "telefono": "(473) 734 04 53 y 734 09 09",
+    "latitud": 21.012868,
+    "longitud": -101.279697
+  }
+]

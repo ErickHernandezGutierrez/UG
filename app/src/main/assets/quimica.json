@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Química",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: Álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial e integral de manera tal que pueda acceder a los niveles requeridos de las matemáticas de licenciatura.\n\n*Física: Conocimientos básicos de mecánica, estática, dinámica, electricidad y magnetismo que le permitan profundizar en sus cursos de Física y Fisicoquímica de Licenciatura en el conocimiento de la naturaleza.\n\n*Química: Nociones de nomenclatura, estequiometría, estados de agregación, conceptos básicos de estructura de la materia y del enlace. Contar con conocimiento de la importancia de la Química en el medio ambiente y de su importancia económica.\n\n*Biología: Conocimientos básicos de la célula, de su estructura y su funcionamiento, de los procesos respiratorios de las plantas y los animales, con el objeto de que durante sus cursos de Licenciatura pueda relacionar los procesos químicos con los seres vivos y con los problemas ambientales y sus posibles consecuencias y soluciones. ",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar conceptos y nociones.\n\n*Analizar y encontrar solución a problemas.",
+        "actitudes": "*Manifiesten su gusto e interés por el estudio que propicie su autoinformación, la creatividad y la investigación.\n\n*Manifiesten su compromiso de extender los beneficios de la cultura a todos los sectores de la comunidad.\n\n*Manifiesten su conciencia cívica, nacional y social.",
+        "valores": "*Fomenten el respeto a sí mismos, a los demás y a su entorno.\n\n*eflejen su responsabilidad, espíritu de lucha, constancia y disciplina.",
+        "totalSemestres": 9 ,
+        "planEstudios":
+            [{
+                "1": "- Álgebra Lineal.\n-Cálculo Diferencial-\n-Laboratorio de Química General.\n-Química General.\n-Biología Celular.\n-Comunicación Oral y Escrita.\n-Inglés I.",
+                "2": "- Laboratorio de Química Orgánica I.\n-Química Orgánica I.\n-Cálculo Integral.\n-Programación.\n-Probabilidad y Estadística.\n-Ética.\n-Inglés II.",
+                "3": "- Laboratorio de Química Orgánica II.\n-Química Inorgánica I.\n-Química Orgánica II.\n-Fisicoquímica I.\n-Química Analítica I.\n-Laboratorio de Química Analítica I.\n-Ecuaciones Diferenciales.\n-Inglés III.",
+                "4": "- Laboratorio de Química Orgánica III.\n-Química Orgánica III.\n-Fisicoquímica II.\n-Química Analítica II.\n-Laboratorio de Química Analítica II.\n-Laboratorio de Fisicoquímica.\n-Física I.\n- Inglés IV.",
+                "5": "- Laboratorio de Química Inorgánica.\n-Química Inorgánica II.\n-Cinética Química.\n-Química Analítica III.\n-Laboratorio de Química Analítica III.\n-Laboratorio de Cinética.\n-Física II.\n-Humanística III.",
+                "6": "- Laboratorio de Microbiología.\n-Microbiología.\n-Química Analítica IV.\n-Laboratorio de Química Analítica IV.\n-Química Cuántica.\n-Física III.\n-Administración I.\n-Optativa I.",
+                "7": "- Laboratorio de Física.\n-Química Ambiental.\n-Bioquímica.\n-Optativa II.Diseño de Proyectos I.\n- Humanística IV.\n-Administración II.\n- Optativa III.",
+              "8": "- Estancia Profesional.",
+              "9": "- \n-Optativa IV.\n-Diseño de Proyectos II.\n-Optativa Humanística.\n-Optativa V.\n-Optativa VI.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+    "division": "División de Ciencias Naturales y Exactas (DCNE)",
+    "sede": "Noria Alta.",
+    "domicilio": "Noria Alta s/n; C.P. 36050; Guanajuato, Gto.",
+    "telefono": "(473) 732 20 34",
+    "latitud": 21.011545,
+    "longitud": -101.267998
+    }
+]

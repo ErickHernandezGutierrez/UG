@@ -1,0 +1,35 @@
+[
+  {
+    "titulo": "Letras Españolas",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Semestral",
+    "conocimientos": "*Conocimientos formativos básicos del área: nociones generales de las humanidades y las artes, distinción general de la literatura entre otros géneros artísticos y discursivos.\n\n*Ubicación básica de los géneros literarios.\n\n*Elementos básicos de la lengua española y la construcción de textos.\n\n*Herramientas y procedimientos de lectura.",
+    "habilidades": "*Distinción general de textos y géneros literarios entre otros discursos.\n\n*Capacidad para apreciar e interpretar de forma básica textos literarios.\n\n*Habilidades para el aprendizaje.\n\n*Redacción coherente, clara y eficaz en español.\n\n*Ubicación de los componentes fundamentales de una oración simple y su función.\n\n*Capacidad de abstracción, reflexión y síntesis de textos.",
+    "actitudes": "*Hábito y gusto por la lectura.\n\n*Sensibilidad ante el fenómeno literario.\n\n*Interés en otras formas de expresión artística y de manifestación cultural.\n\n*Disposición para el trabajo de investigación en estudios literarios.\n\n*Deseo por el conocimiento.\n\n*Disciplina para el estudio.\n\n*Actitud crítico-reflexiva.\n\n*Respeto a sí mismo y a los demás.",
+    "valores": "*Respeto.",
+    "totalSemestres": 8,
+    "planEstudios": [
+      {
+        "1": "- Literaturas Clásicas Europeas.\n- Literatura Castellana Medieval.\n- Teoría y Poética Literaria I.\n- Comunicación Oral y Escrita.\n- Estudios Humanísticos y Sociales I.\n- Latín I.",
+        "2": "- Literatura Española de los Siglos de Oro.\n- Literatura Colonial.\n- Teoría y Poética Literaria II.\n- Estrategias Discursivas I.\n- Estudios Humanísticos y Sociales II.\n- Latín II.",
+        "3": "- Literatura Europea Moderna.\n- Literatura Hispanoamericana S. XIX.\n- Teoría y Poética Literaria III.\n- Estrategias Discursivas II.\n- Lingüística General.\n- Lengua Moderna.",
+        "4": "- Literatura Española Moderna.\n- Literatura Mexicana S. XIX.\n- Teoría y Poética Literaria IV.\n-Estrategias Discursivas III.\n- Gramática del Español I.\n- Lengua Moderna.",
+        "5": "- Literatura Norteamericana.\n- Literatura Hispanoamericana Moderna.\n- Teoría y Poética Literaria V.\n- Taller de Crítica Literaria I.\n- Gramática del Español II.\n- Lengua Moderna.",
+        "6": "- Literatura Europea Contemporánea.\n- Literatura Mexicana Moderna.\n- Teoría y Poética Literaria VI.\n- Taller de Crítica Literaria II.\n- Gramática del Español III.\n- Lengua Moderna.",
+        "7": "- Literatura Española Contemporánea.\n-Literatura Hispanoamericana Contemporánea.\n-Teoría y Poética Literaria VII.\n- Lengua Moderna.\n- Líneas Profesionales Selectivas.",
+        "8": "- Literatura Mexicana Contemporánea.\n- Teoría y Poética Literaria VIII.\n- Integración de Experiencias Formativas.\n- Lengua Moderna.\n- Líneas Profesionales Selectivas.",
+        "9": "- Seminario de Titulación I.\n- Cultura Crítica y Responsabilidad Social.\n- Tópicos - Unidades de Aprendizaje Optativas.",
+        "10": "- Seminario de Titulación II.\n- Tópicos - Unidades de Aprendizaje Optativas.",
+        "optativas": "-> Inglés I.\n-Inglés II.\n-Inglés III.\n-Inglés IV.\n-Inglés V.\n- Francés I.\n-Francés II.\n-Francés III.\n-Francés IV.\n-Francés V\n-Alemán I.\n-Alemán II.\n-Alemán III.\n-Alemán IV.Alemán V.\n-Didáctica y Currículum.\n-Planeación y Gestión Cultural.\n- Corrección y Edición Textos I.\n- Seminario de Investigación I.\n-Planeación y Evaluación del Aprendizaje.\n- Fomento a la Lectura.\n-Corrección y Edición Textos II.\n- Seminario de Investigación II.\n-Taller de Lectura y Escritura Básico.\n- Estudios Culturales.\n- Ensayo Latinoamericano.\n-Literatura y Cine.\n- Estudios del Lenguaje.\n-Teoría y Análisis del Discurso.\n-Temas de Literatura.\n-Semiótica General.\n-Estudios de Género.\n-Filosofía y Literatura.\n- Literatura y Artes Visuales.\n-Semántica.\n- Teoría y Análisis Crítico del Discurso."
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Ciencias Sociales y Humanidades (DCSH).",
+    "sede": "Sede Valenciana.",
+    "domicilio": "Ex-Convento de Valenciana s/n; C.P. 36240; Valenciana; Guanajuato, Gto.",
+    "telefono": "(473) 732 95 59",
+    "latitud": 21.041861,
+    "longitud": -101.2579135
+  }
+]

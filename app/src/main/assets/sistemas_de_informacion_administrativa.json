@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Sistemas de Información Administrativa",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Conocimientos generales sobre las ciencias económico administrativas.\n\n*Conocimientos básicos del inglés tales como números, colores, el alfabeto, miembros de la familia, eventos del día, ropa, la hora, objetos de la vida cotidiana, saber presentarse y pedir o preguntar por cosas o servicios.\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+        "habilidades": "*Habilidad para usar matemática y estadística básica en solución de problemas.\n\n*Habilidad para trabajar con conceptos abstractos.\n\n*Habilidades para usar correctamente el lenguaje español, tanto de forma oral como de forma escrita.\n\n*Habilidad para interpretar lecturas.\n\n*Habilidad para razonar de manera inductiva y deductiva a partir de material escrito.\n\n*Habilidad para comprender a nivel básico el idioma inglés.",
+        "actitudes": "*Automotivación.\n\n*Poseer iniciativa.\n\n*Deseo de aprender.\n\n*Interés en contribuir al desarrollo regional y nacional.",
+        "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Administración Contemporánea.\n-Álgebra Lineal.\n-Comunicación Profesional.\n-Contabilidad Financiera.\n-Algoritmos.\n-Sistemas de Información.",
+                "2": "- Comportamiento Organizacional.\n-Seminarios Económico Administrativo.\n-Cálculo Diferencial.\n-Programación Básica.\n-Estructura de Datos.\n-Matemáticas Aplicadas a la Computación.\n-Arquitectura de Sistemas de Cómputo.",
+                "3": "- Microeconomía.\n-Probabilidad y Estadística.\n-Programación Orientada a Objetos.\n-Diseño de Base de Datos.\n-Redes de Telecomunicaciones.\n-Inteligencia de Negocios.\n-Investigación de Operaciones.",
+                "4": "- Aplicaciones de Ofimática Aplicada a los Negocios.\n-Metodología y Elaboración de Protocolos.\n-Estadística Inferencial.\n-Comunicación de Negocios.\n-Ingeniería de Software.\n-Lenguajes para DBMS.\n-Administración de Proyectos.\n-Complementaria I.",
+                "5": "- Comunicación Organizacional.\n-Derecho.\n-Arquitectura de Software.\n-Administración de Base de Datos.\n-Transmisión de Datos.\n-Auditoria de Sistemas.\n-Optativa I.",
+                "6": "- Metodología y Elaboración de Informes.\n-Modelos de Sistemas.\n-Seguridad Informática.\n-Administración de la Tecnología.\n-Administración Financiera.\n-Optativa II.\n-Complementaria II.",
+                "7": "- Practicum.\n-Optativa III.\n-Complementaria III.",
+                "8": "- Cómputo Avanzado.\n-Lenguajes de Desarrollo.\n-Programación para DBMS.\n-Temas Selectos I.\n-Temas Selectos II.\n-Temas Selectos III.\n-Temas Selectos IV.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Ciencias Económico Administrativas (DCEA).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

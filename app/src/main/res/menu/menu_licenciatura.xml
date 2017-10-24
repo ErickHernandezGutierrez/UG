@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/actionShowEverything"
+        android:orderInCategory="100"
+        android:title="Mostrar Todo"/>
+
+    <item
+        android:id="@+id/actionShowDAAD"
+        android:orderInCategory="101"
+        android:title="Mostrar División de Arquitectura, Arte y Diseño"/>
+
+    <item
+        android:id="@+id/actionShowDCEA"
+        android:orderInCategory="102"
+        android:title="Mostrar División de Ciencias Económico Administrativas"/>
+
+    <item
+        android:id="@+id/actionShowDCNE"
+        android:orderInCategory="103"
+        android:title="Mostrar División de Ciencias Naturales y Exactas"/>
+
+    <item
+        android:id="@+id/actionShowDCSH"
+        android:orderInCategory="104"
+        android:title="Mostrar División de Ciencias Sociales y Humanidades"/>
+
+    <item
+        android:id="@+id/actionShowDDPG"
+        android:orderInCategory="105"
+        android:title="Mostrar División de Derecho, Política y Gobierno"/>
+
+    <item
+        android:id="@+id/actionShowDI"
+        android:orderInCategory="106"
+        android:title="Mostrar División de Ingenierías"/>
+
+</menu>

@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Ingeniería en Minas",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Álgebra: concepto y operaciones con conjuntos, números reales y complejos, conceptos y operaciones algebraicas fundamentales (binomios, polinomios funciones - relaciones y gráficas), factorización y simplificación de polinomios, desigualdades, funciones exponenciales y logarítmicas, matrices. Trigonometría: ángulos y sistemas de medidas angulares, Funciones trigonométricas, identidades y ecuaciones trigonométricas, solución de triángulos rectángulos y oblicuángulos. Geometría analítica plana: fundamentos, la recta, la circunferencia, la parábola, la elipse, la hipérbola, ecuación general de segundo grado. Geometría analítica del espacio: fundamentos, el plano. Cálculo diferencial e integral: límites, derivada de una función, antiderivadas..\n\n*Física: Mecánica: Cantidades escalares y vectoriales, cinemática, dinámica.Electricidad y magnetismo: Electrostática, electrodinámica, electromagnetismo. Termodinámica: Estados de la materia Temperatura, gases. Hidráulica: Teorema de Bernoulli, Principio de Pascal.\n\n*Química general:Estructura atómica. Nomenclatura química. Enlaces químicos. Estequiometria. Estados de agregación de la materia. La química y el medio ambiente.\n\n*Conocimientos generales sobre: Lengua Española, Ciencias Sociales y Ciencias Naturales.\n\n*Conocimientos de inglés.",
+        "habilidades": "*Interpretar conceptos físico-químico-matemáticos.\n\n*Interpretar y plantear soluciones a problemas de ingeniería.\n\n*Comunicarse eficientemente de manera oral y escrita.\n\n*Manejo de equipo de cómputo y softwares comerciales (Microsoft office).\n\n*Integrarse a quipos de trabajo.",
+        "actitudes": "*Interés por interactuar con la naturaleza.\n\n*Interés por el desarrollo del estado, región y país. \n\n*Interés por el cuidado del entorno ecológico y aprovechamiento sustentable de los recursos naturales.\n\n*Interés por conocer, analizar y mejorar procesos productivos.\n\n*Interés por comprender la importancia del factor humano dentro de las organizaciones.\n\n*Interés por el autodesarrollo y un gran sentido crítico positivista.\n\n*Alto sentido de organización e iniciativa.\n\n*Creatividad, imaginación e inventiva.\n\n*Dinamismo.\n\n*Inquietud de cambio.\n\n*Conciencia cívica, nacional, social y ecológica.",
+        "valores": "*Ética.\n\n*Disciplina.\n\n*Responsabilidad.\n\n*Libertad.\n\n*Respeto.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Inglés Principiante.\n- Cálculo Diferencial.\n-Álgebra Superior y Geometría Vectorial.\n- Geología General.\n- Química General.\n- Geometría Descriptiva y Taller de Dibujo.\n- Fundamentos de Minería.\n- Actividades o Materias Optativas del Área General.",
+                "2": "- Inglés Principiante Avanzado.\n- Cálculo Integral \n- Álgebra Lineal. \n-Física.\n- Métodos Numéricos con Programación.\n- Planimetría y Altimetría y Meteorología.\n- Mineralogía.\n- Actividades o Materias Optativas del Área General.",
+                "3": "- Inglés Intermedio.\n- Mecánica Analítica-\n- Ecuaciones Diferenciales.\n- Topografía Subterránea.\n- Petrología General.\n- Probabilidad y Estadística.\n- Actividades o Materias Optativas del Área General",
+                "4": "- Inglés Intermedio Avanzado.\n- Ingeniería Eléctrica.\n- Resistencia de Materiales.\n- Seguridad industrial.\n- Yacimientos Minerales.\n- Optativa Grupo II.\n- Optativa Grupo II.\n- Optativa Grupo III.\n- Actividades o Materias Optativas del Área General",
+                "5": "- Inglés Avanzado .\n- Ecología.\n- Geología Estructural.\n- Legislación Minera.\n- Preparación Mecánica de Minerales.\n- Estancia en la Industria I.\n- Optativa Grupo II.\n- Optativa Grupo II.\n- Actividades o Materias Optativas del Área General.",
+                "6": "- Impacto y Sistemas de Gestión Ambiental.\n- Concentración de Minerales.\n- Geología de Minas.\n- Hidrogeología Minera.\n- Mecánica de Rocas.\n- Estancia en la Industria II.\n- Optativa de Grupo II.\n- Actividades o Materias Optativas del Área General.",
+                "7": "- Contabilidad de Costos.\n- Diseño de Instalaciones Mineras I. \n- Explotación de Minas a Cielo Abierto. \n- Explotación de Minas Subterráneas.\n- Modelación y Diseño de Minas I.\n- Estancia en la Industria III.\n- Optativa de Grupo III.\n- Actividades o Materias Optativas del Área General",
+                "8": "- Ingeniería Económica y Evaluación de Proyectos.\n- Diseño de Instalaciones Mineras II.\n- Modelación y Diseño de Minas II.\n- Operaciones Unitarias en Minería a Cielo Abierto.\n- Operaciones Unitarias en Minería Subterránea.\n- Optativa Grupo III.\n- Optativa Grupo III.\n- Seminario de Especialidad.\n-Optativa Grupo IV",
+                "optativas": "-Computación.\n- Desarrollo de Habilidades del Pensamiento.\n- El Hombre y el Medio Ambiente.\n- Cálculo Vectorial.\n- Termodinámica y Electro Magnetismo.\n- Metodología de la Investigación.\n- Comunicación y Redacción de Informes.\n- Ingeniería Industrial.\n- Análisis Cuantitativo.\n- Seminario de Calidad y Planeación Estratégica.\n- Administración de Recursos Humanos.\n- Construcción.\n- Congreso.\n- Supervisión y Liderazgo.\n- Ingeniería Geológica.\n- Seminario de Desarrollo de Emprendedores.\n- Seminario de Titulación I.\n- Seminario de Titulación II.\n- Cierre de Minas.\n- Seminario de Ventilación.\n- Seminario de Explosivos.\n- Seminario de Seguridad."
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Licenciatura en Geografía",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Nociones de geografía y matemáticas (estadística, álgebra).\n\n*Elaboración sintética de una problemática socioambiental de su entorno.\n\n*Lectura y comprensión de un texto de divulgación en inglés.",
+        "habilidades": "*Manejo apropiado del lenguaje oral y escrito a nivel preparatoria o bachillerato que incluya capacidad de razonamiento.\n\n*Disposición para el autoaprendizaje.\n\n*Habilidad para la reflexión y argumentación, emisión de juicios, autocrítica.\n\n*Iniciativa, curiosidad para conjuntar información.\n\n*capacidad de síntesis, observación, percepción y crear gráficas y croquis de ubicación.\n\n*habilidad para leer mapas.\n\n*acercamiento a nuevas tecnologías como Google Maps o Google Earth.",
+        "actitudes": "*Aprovechamiento del tiempo.\n\n*Disposición al aprendizaje participativo.\n\n*Iniciativa y disposición de colaboración, actitud solidaria y responsable que permita el trabajo en equipo.\n\n*Deseo de viajar y conocer los paisajes locales y regionales, gusto por las actividades al aire libre, curiosidad por explorar.\n\n*Participación y respeto por el trabajo en equipo.\n\n*disposición para el trabajo de campo y para interactuar con los actores sociales en forma horizontal y vertical.\n\n*Interés por cultivar y promover una conciencia ambiental,respeto por la diversidad cultural, social, étnica y biológica.\n\n*Hábitos de lectura e interés por el trabajo científico multi-disciplinario.",
+        "valores": "*Honestidad.\n\n*Solidaridad.\n\n*Generosidad.\n\n*Equitativo y respetuoso de la dignidad y de los derechos humanos, con un alto sentido de responsabilidad y compromiso socio-ambiental.\n\n*Probidad",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "- Cartografía.\n- Climatología.\n-Introducción a los Sistemas Terrestres.\n-Historia del Pensamiento Geográfico.\n- Geografía Mundial y de México.\n- Redacción y Comunicación Especializada.\n- Actividades Formativas I.\n-Actividades Complementarias I.",
+                "2": "- Taller de Cartografía.\n- Estadística Descriptiva e Inferencial.\n- Introducción a la Geografía Humana.\n- Ciudades, Espacios y Políticas.\n-Biogeografía.\n-Métodos de Investigación en las Ciencias Sociales.\n- Actividades Formativas II.\n- Actividades Complementarias II.",
+                "3": "- Sistemas de Información Geográfica.\n- Sociedad, Territorio y Ambiente.\n- Geoestadística.\n- Geomorfología.\n- Geografía de la Población Mundial y de México.\n- Campamento de Diagnóstico Socio-Ambiental y Paisaje.\n- Actividades Formativas III.\n- Actividades Complementarias III.",
+                "4": "- Sistemas de Información Geográfica Avanzado.\n- Hidrología.\n- Geografía Histórica.\n- Geografía de las Minorías y de los Grupos Vulnerables.\n- Patrimonio y Desarrollo Participativo.\n- Geografía del Turismo.\n- Optativa Disciplinar I.\n- Actividades Formativas IV.\n- Actividades Complementarias IV.",
+                "5": "- Modelación Espacial.\n- Geopolítica de los Recursos Naturales.\n- Geografía de los Peligros, Riesgos Naturales y Antrópicos.\n- Optativa Disciplinar II.\n- Optativa Disciplinar III.\n- Optativa de Profundización I.\n- Actividades Formativas V.\n- Actividades Complementarias V.",
+                "6": "- Geografía de la Violencia y Conflictos.\n- Geografía de la Salud.\n- Geografía Económica.\n- Taller de Investigación: Trabajo de Campo.\n- Taller de Lectura de Temas Geográficos en Segunda Lengua I.\n- Optativa Disciplinar IV.\n- Optativa de Profundización II.\n- Actividades Formativas VI.\n- Actividades Complementarias VI.",
+                "7": "- Geoprospectiva.\n- Seminario de Titulación I.\n- Seminarios Trans-Disciplinarios: Estudios de Caso.\n- Taller de Lectura de Temas Geográficos en Segunda Lengua II.\n- Optativa de Profundización III.\n- Optativa de Profundización IV.\n- Optativa de Profundización V.\n- Actividades Formativas VII.\n- Actividades Complementarias VII.",
+              "8": "- Seminario de Titulación II.\n- Ética para el Ejercicio Profesional.\n- Taller de Lectura de Temas Geográficos en Segunda Lengua III.\n- Actividades Formativas VIII.\n- Actividades Complementarias VIII.",
+              "9": "- Práctica Profesionalizante.\n- Optativa de Profundización VI.",
+                "optativas": "-> Fotogrametría y Fotointerpretación.\n- Legislación ambiental y Evaluación de Impacto Ambiental.\n- Agricultura y Ambiente.\n- Ecología del Paisaje.\n- Teorías y prácticas del Desarrollo, Organismos y Convenios Internacionales.\n- Diálogos entre la Geografía y las Ciencias.\n- Diálogos entre la Geografía y las Artes.\n- Geografía y Gestión del Patrimonio Cultural y Natural.\n- Geografía Urbana.\n- Edafología y Degradación de los Suelos.\n- Geografía Rural.\n- Cambio de Uso del Suelo.\n- Manejo y Gestión de Recursos Naturales.\n- Didáctica General.\n- Didáctica de la Geografía.\n- Seminario de Enseñanza de la Geografía en Educación Básica y Media Superior.\n- Análisis Político, Económico y Social Regional.\n- Planeamiento y Políticas Urbanas y Regionales.\n- Administración y Legislación Laboral.\n- Gestión y Servicios de Consultoría (Emprendimiento).\n- Ordenamiento Ecológico y Territorial."
+            }],
+          "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

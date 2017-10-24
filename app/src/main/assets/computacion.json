@@ -1,0 +1,34 @@
+[
+    {
+        "titulo": "Computación",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "conocimientos": "*Sin Información.",
+        "habilidades": "*Sin Información.",
+        "actitudes": "*Curiosidad intelectual.\n\n*Gusto por las matemáticas.\n\n*Ganas de aprender.",
+        "valores": "*Constancia.\n\n*Disiplina.",
+        "totalSemestres": 10,
+        "planEstudios":
+            [{
+                "1": "- Calculo I.\n- Matemáticas Elementales.\n- Elementos de Geometría.\n- Introducción a la Computación.",
+                "2": "- Calculo II.\n- Álgebra Lineal I.\n- Elementos de Probabilidad y Estadística.\n- Computación y Algoritmos.",
+                "3": "- Calculo III.\n- Álgebra Lineal II.\n- Probabilidad.\n- Optativa.",
+                "4": "- Calculo IV.\n- Álgebra Moderna.\n- Métodos Estadísticos.\n- Ecuaciones Diferenciales Oridinarias I.",
+                "5": "- Métodos Numéricos.\n- Optativa.\n- Optativa.\n- Optativa.",
+                "6": "- Optativa.\n- Optativa.\n- Optativa.\n- Optativa.\n",
+                "7": "- Optativa.\n- Optativa.\n- Optativa.\n- Optativa.\n",
+                "8": "- Optativa.\n- Optativa.\n- Optativa.\n- Optativa.\n",
+                "9": "- Optativa.\n- Optativa.\n- Optativa.\n- Optativa.\n",
+                "10": "- Optativa.\n- Optativa.\n- Optativa.\n- Optativa.\n",
+                "optativas": "- Álgebra Superior.\n- Temas Selectos de Algebra.\n- Variable Compleja.\n- Análisis Matemático II.\n- Temas Selectos de Análisis.\n- Temas Selectos de Estadística.\n- Temas Selectos de Cómputo.\n- Matemáticas Discretas.\n- Análisis de Algoritmos I.\n- Análisis Lógico.\n- Graficación por Computadora.\n- Diseño y Programación Orientado a Objetos.\n- Diseño de Interfaces.\n- Lógica Matemática.\n- Programación Entera.\n- Programación Lineal.\n- Ingeniería de Software.\n- Teoría de la Computación.\n- Lenguajes de Programación y sus Paradigmas.\n- Sistemas de Bases de Datos.\n- Compiladores.\n- Computación Simbólica.\n- Programación Funcional y Lógica.\n- Programación no Lineal.\n- Prácticas Profesionales.\n- Arquitectura de Computadoras.\n- Grandes Bases de Datos.\n- Herramientas de Computación para la Ciencia.\n- Redes Neuronales y Autómatas Celulares.\n- Lógicas no Clásicas.\n- Métodos Probabilísticos en Computación.\n- Redes de Computadora.\n- Procesamiento Digital de Imágenes.\n- Lingüística Computacional.\n- Procesos Paralelos y Distribuidos.\n- Semántica y Verificación.\n"
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ciencias Naturales y Exactas (DCNE)",
+        "sede": "Valenciana.",
+        "domicilio": "Callejón de Jalisco s/n; Mineral de Valenciana; C.P. 36240; Guanajuato, Gto.",
+        "telefono": "(473) 102 61 02 y 102 61 03",
+        "latitud": 21.04173637,
+        "longitud": -101.26062289
+    }
+]

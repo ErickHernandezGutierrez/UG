@@ -16,6 +16,13 @@
     <color name="dot_dark">#b5a36a</color>
     <color name="dot_light">#ffffff</color>
 
+    <!-- List colors -->
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
     <!-- Color Arrays -->
     <array name="array_dots_inactive">
         <item>@color/dot_dark</item>

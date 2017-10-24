@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Artes Escénicas",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Español.\n\n*Matemáticas.\n\n*Ciencias Naturales.\n\n*Ciencias Sociales.\n\n* Humanidades.\n\n*Dibujo técnico.",
+        "habilidades": "*Comunicarse eficaz y eficientemente de manera oral, escrita y gráfica.\n\n*Integrarse y dirigir, técnica y humanamente equipos de trabajo.\n\n*Desarrollar su creatividad.\n\n*Utilizar conceptos y notaciones.\n\n*Analizar y resolver problemas.\n\n*Realizar presentaciones grupales.\n\n*Utilizar adecuadamente la computadora.",
+        "actitudes": "*Proactiva.\n\n*Propositiva.\n\n*Crítica.\n\n*Responsable.\n\n*Congruente.\n\n*Innovadora.\n\n*Liderazgo.\n\n*Emprendedora.",
+        "valores": "*Respeto.\n\n*Libertad\n\n*Responsabilidad.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+              "1": "- Identidad universitaria.\n-Expresión corporal I.\n-Expresión Verbal.\n-Taller de Redacción.\n-Materiales Musicales.\n-Dibujo.\n-Desarrollo del Fenómeno Teatral.\n-Taller de ejecución (danza y actuación) I.",
+              "2": "- Kinesiología.\n-Instrumento musical I.\n-Interpretación verbal I.\n-Taller de práctica escénica I.\n-Taller de ejecución (danza y actuación) II.\n-Escenología Clásica.\n-Taller de Guion.",
+              "3": "- Escenología Mexicana.\n-Taller de práctica escénica II.\n-Computación para la Escena.\n-Técnicas para el Análisis de la indumentaria.\n-Taller de Didáctica.\n-Taller de ejecución III (Danza o actuación).\n-Taller de producción para la escena I.\n-Instrumento musical II.",
+              "4": "- Teorías Escénicas Contemporáneas I.\n-Canto.\n-Taller de ejecución IV (Danza o actuación).\n-Taller de práctica Escénica III.\n-Clase magistral I.\n-Ética.\n-Pantomima.\n-Movimientos escénicos en Latinoamérica.\n-Taller de Administración escénica.\n-Temas fundamentales para la historia del arte.",
+              "5": "- Temas fundamentales para la historia del arte.\n-Artes Escénicas, Sociedad y Educación.\n-Puesta en escena I.\n-Taller de dirección escénica I.\n-Didáctica de las Artes Escénicas.",
+              "6": "- Escenotecnia.\n-Puesta en escena II.\n-Signo y análisis escénico (Semiótica).\n-Técnicas para la Investigación.\n-Composición visual.\n-El Verso y sus técnicas.\n-Taller de dirección escénica II.",
+              "7": "- Clase magistral II.\n-Recursos Técnicos de Radio Televisión y Video.\n-Puesta en escena III.\n-Hermenéutica Escénica.",
+              "8": "- Puesta en escena IV.\n-Trabajo de titulación.\n-Investigación escénica.\n-Conceptualización del Personaje.\n-Sociología Aplicada al Montaje.",
+
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Arquitectura, Arte y Diseño (DAAD).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

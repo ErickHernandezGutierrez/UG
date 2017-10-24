@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Ingeniería Hidráulica",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Matemáticas: álgebra, trigonometría plana, geometría analítica y conocimientos básicos de cálculo diferencial e integral.\n\n*Física: mecánica, electricidad y magnetismo y termodinámica.\n\n*Química: estructura de la materia, nomenclatura, enlaces, estequiometria, estados de agregación, y química y medio ambiente.\n\n*Conocimientos generales sobre: Lengua Española, Ciencias Sociales y Ciencias Naturales.",
+        "habilidades": "*Comunicarse correctamente en forma oral y escrita.\n\n*Utilizar diferentes métodos en el conocimiento de la naturaleza y su realidad social.\n\n*Desarrollar su creatividad.\n\n*Utilizar conceptos y notaciones.",
+        "actitudes": "*Utilizar diferentes métodos en el conocimiento de la naturaleza y su realidad social.",
+        "valores": "*Ética.\n\n*Disciplina.\n\n*Responsabilidad.\n\n*Respeto.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Inglés Principiante.\n- Cálculo Diferencial.\n-Álgebra Superior y Geometría Vectorial.\n- Dibujo Asistido por Computadora.\n- Química General.\n- Servicio Social Universitario.\n- Introducción a la Ingeniería Hidráulica.\n- Comunicación Oral y Escrita. \n- Complementaria.",
+                "2": "- Inglés Principiante Avanzado.\n- Cálculo Integral \n- Álgebra Lineal. \n-Física.\n- Métodos Numéricos con Programación.\n- Planimetría y Altimetría y Meteorología.\n- Cartografía.\n- Redacción y Presentación de Reportes de Ingeniería.\n- General.\n- Servicio Social Universitario.",
+                "3": "- Inglés Intermedio.\n- Mecánica Analítica-\n- Ecuaciones Diferenciales.\n- Fundamentos de Hidráulica.\n- Laboratorio de Fundamentos de Hidráulica.\n- Prácticas de Planimetría y Altimetría.\n- Cálculo Vectorial.\n-  Complementaria.\n- Servicio Social Universitario.",
+                "4": "- Probabilidad y Estadística.\n- Mecánica de Fluidos.\n- Termodinámica y Electromagnetismo.\n- Mecánica de Suelos.\n- Sistemas de Información Geográfica.\n- Ingeniería Económica.\n- Inglés Intermedio Avanzado.\n- Complementaria.\n- Servicio Social Universitario",
+                "5": "- Fundamentos de Hidrología.\n- Laboratorio de Fundamentos de Hidrología.\n- Ciencias Atmosféricas.\n- Hidráulica de Conductos a Presión.\n- Geología.\n- Costos y Presupuestos.\n- Inglés Avanzado.\n- General.\n- Servicio Social Universitario.",
+                "6": "- Estudios de Hidrología Superficial.\n- Química del Agua.\n- Hidráulica de Canales.\n- Sistemas de Abastecimiento de Agua.\n- Máquinas Hidráulicas.\n- Administración en la Ingeniería.\n- General.\n- Servicio Social Universitario.",
+                "7": "- Impacto del Cambio Climático en los Recursos Hídricos.\n- Métodos de Tratamiento de Agua. \n- Hidráulica Fluvial. \n- Hidrogeología.\n- Sistemas de Drenaje Sanitario y Pluvial.\n- Gestión Integral del Agua.\n- General.\n- Complementaria.\n- Servicio Social Universitario.",
+              "8": "- Modelado en Hidrología.\n- Plantas de Tratamiento de Agua.\n- Modelado en Hidráulica.\n- Construcción de Obras Hidráulicas.\n- Selectiva I.\n- Selectiva II.\n- Taller de preparación a la vida laboral.\n- Complementaria.\n-Servicio Social Universitario.",
+              "9": "- Proyecto Final de Carrera.\n- Estancia Profesionalizante.\n- Impacto Ambiental.\n- Selectiva III.\n- Liderazgo.\n- Complementaria.\n- Servicio Social Universitario.\n- Servicio Social Profesional.",
+                "optativas": "- Tratamiento Biológico del Agua.\n- Tratamiento de Agua por Métodos Físico-Químicos.\n- Temas Selectos de Hidráulica Urbana.\n- Ingeniería de Riego.\n- Sistemas de Captación y Aprovechamiento de Agua de Lluvia.\n- Instalaciones Hidráulicas en Edificios e Industria.\n- Evaluación de Proyectos Hidráulicos.\n- Hidrología Ambiental.\n- Modelos Atmosféricos.\n- Evaluación de Fuentes de Agua.\n- Transporte de Flujos y Sedimentos."
+            }],
+        "campus": "Guanajuato.",
+        "division": "Campus Guanajuato, División de Ingenierías (DI)",
+        "sede": "Belén.",
+        "domicilio": "Avenida Juárez No. 77; Col. Centro; C.P. 36000; Guanajuato, Gto.",
+        "telefono": " (473) 102 01 00",
+        "latitud": 21.017239,
+        "longitud":  -101.253279
+    }
+]

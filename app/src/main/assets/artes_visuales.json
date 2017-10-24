@@ -1,0 +1,33 @@
+[
+    {
+        "titulo": "Artes Visuales",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Semestral",
+        "conocimientos": "*Español.\n\n*Matemáticas.\n\n*Ciencias Naturales.\n\n*Ciencias Sociales.\n\n* Humanidades.",
+        "habilidades": "*Comunicarse eficaz y eficientemente de manera oral, escrita y gráfica.\n\n*Integrarse y dirigir, técnica y humanamente equipos de trabajo.\n\n*Desarrollar su creatividad.\n\n*Utilizar conceptos y notaciones.\n\n*Analizar y resolver problemas.\n\n*Realizar presentaciones grupales.\n\n*Utilizar adecuadamente la computadora.",
+        "actitudes": "*Proactiva.\n\n*Propositiva.\n\n*Crítica.\n\n*Responsable.\n\n*Congruente.\n\n*Innovadora.\n\n*Liderazgo.\n\n*Emprendedora.",
+        "valores": "*Respeto.\n\n*Libertad\n\n*Responsabilidad.",
+        "totalSemestres": 9,
+        "planEstudios":
+            [{
+                "1": "- Técnicas Auxiliares de Computación.\n-Estética I.\n-Inglés I.\n-Dibujo I.\n-Taller de Color y Composición.\n-Técnicas de Investigación.",
+                "2": "- Computación.\n-Estética II.\n-Inglés II.\n-Dibujo II.\n-Taller de Exploración Espacial.\n-Desarrollo Artístico Prehistoria al Románico.",
+                "3": "- Desarrollo Artístico México Prehispánico.\n-Fotografía I.\n-Inglés III.\n-Dibujo III.\n-Grabado I.\n-Desarrollo Artístico Siglo XII a XVII.",
+                "4": "- Pintura I.\n-Computación Avanzada.\n-Inglés IV.\n-Dibujo IV.\n-Escultura I.\n-Desarrollo Artístico Siglo XVIII y XIX",
+                "5": "- Optativa Formativa I.\n-Inglés V.\n-Desarrollo Artístico Siglo XX hasta la 2da. Guerra Mundial.\n-Comunicación y Teoría del Arte.\n-Optativa.\n-Optativa.",
+                "6": "- Optativa Formativa II.\n-Inglés VI.Desarrollo Artístico Contemporáneo.\n-Optativa.\n-Optativa.\n-Optativa",
+                "7": "- Optativa Formativa III.\n-Estudios Visuales.\n-Optativa.\n-Optativa.\n-Optativa.\n-Optativa.", 
+              "8": "- Taller Terminal I.\n-Crítica y Evaluación de la Obra.\n-Optativa.\n-Taller de Titulación.",
+              "9": "- Taller Terminal II.",
+                "optativas": "-> Optativas"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Arquitectura, Arte y Diseño (DAAD).",
+        "sede": "Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250; Guanajuato, Gto.",
+        "telefono": "(473) 735 29 00",
+        "latitud": 21.003143,
+        "longitud": -101.271676
+    }
+]

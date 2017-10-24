@@ -1,0 +1,35 @@
+[
+  {
+    "titulo": "Administración Pública",
+    "modalidad": "Escolarizada",
+    "periodoEstudio": "Semestral",
+    "periodoIngreso": "Anual",
+    "conocimientos": "*Conocimientos básicos  sobre Historia de México y Mundial; Geografía; Sistemas Políticos; Economía; Filosofía.\n\n*Conocimientos de técnicas de redacción y paqueteria básica de cómputo(procesadores de texto, hojas de cálculo e internet).\n\n*Conocimiento del perfil de egreso del programa educativo que desea estudiar.",
+    "habilidades": "*Habilidades analíticas  para distinguir y caracterizar los factores que explican fenómenos sociales complejos.\n\n*Habilidades para el aprendizaje de métodos cuantitativos de las ciencias sociales.\n\n*Capacidad para la abstaccion teórica, aptitudes para desarrollar pensamiento original y creativo; capacidad  para el trabajo bajo presión.\n\n*Habilidad para comprender contextos y procesos institucionales públicos; aptitud para la indagación científica en fuentes de información primarias y secundarias.\n\n*Facilidad para la comunicación escrita y oral.",
+    "actitudes": "*Interés por la función pública y la ética que debe regirla.\n\n*Sentido de responsabilidad y honestidad.\n\n*.\n\n*Interés por conocer el funcionamiento de las instituciones y el comportamiento de los actores que intervienen en los asuntos públicos.\n\n*Disposición y compromiso fehaciente para contribuir en la solución de problemas  sociales locales, nacionales y globales.\n\n*Proactividad en la búsqueda de fuentes de información y disposición para el trabajo en equipo.",
+    "valores": "*Respeto.\n\n*Honestidad.\n\n*Solidaridad.",
+    "totalSemestres": 8,
+    "planEstudios": [
+      {
+        "1": "- Introducción a la Administración Pública.\n- Introducción a la Ciencia Política.\n- Teoría Sociológica.\n- Geografría Humana, Económica y Política.\n- Metodologías de la Investigación.\n- Taller de Comprensión de Lectura y Redacción.",
+        "2": "- Teoría de la Administración Pública I.\n- Ciencia Política I.\n- Análisis Político, Económico y Social de México I.\n-Introducción a la Teoría Económica.\n- Métodos Cuantitativos I.\n- Taller de Comprensión Lectura y Redacción II.",
+        "3": "- Teoría de la Administración Pública II.\n- Ciencia Política II\n- Microeconomía I\n- Métodos Cuantitativos II\n- Análisis Político, Económico y Social de México I",
+        "4": "- Relaciones Internacionales\n- Microeconomía II.\n- Fundamentos de Macroeconomía.\n- Introducción al Estudio del Derecho y Derecho Constitucional.\n- Teoría y Análisis de Política Pública.\n- Ciencia Política III",
+        "5": "- Administración Pública Federal.\n- Teoría Organizacional.\n- Finanzas Públicas.\n- Derecho Administrativo.\n- Macroeconomía I.\n- Optativa I",
+        "6": "- Gestión Pública.\n- Planeación Estratégica del Sector Público.\n- Administración Pública Estatal y Municipal.\n- Optativas II.\n- Optativa III.\n- Optativa IV.\n- Tercer Nivel de Lengua Extranjera.",
+        "7": "- Presupuesto Público.\n- Planeación del Desarrollo.\n- Gestión de Proyectos I: Planeacion y Diseño.\n- Derecho Internacional Público.\n- Optativa V.\n- Optativa VI.",
+        "8": "- Contabilidad Gubernamental.\n- Planeación Regional.\n- Fiscalización, Evaluación del Desempeño y Rendición de Cuentas.\n- Reforma y Modernización Administrativa de las Instituciones Públicas.\n- Optativa VII.\n- Optativa VIII.",
+        "9": "- Seminario de Modalidad de Titulación",
+        "optativas": "- Procesos Legislativos.\n- Género y Política Pública.\n- Temas Selectos de Administración Pública. \n- Sistema Político Comparado.\n- Política y Gestión Ambiental.\n- Relaciones Intergubernamentales.\n- Seminario de Ética Pública.\n- Comunicación y Relaciones Públicas.\n- Teoría de los Derechos Humanos.\n- Competitividad y Desarrollo Regional.\n- Evaluación Economica de Proyectos.\n- Administración Financiera.\n- Taller de Introducción al Ejercicio Profesional."
+      }
+    ],
+    "campus": "Guanajuato.",
+    "division": "División de Derecho, ´Política y Gobierno (DDPG).",
+    "sede": "Centro.",
+    "domicilio": "Lascuraín de Retana No. 5 2do piso; Col. Centro  C.P. 36000; Guanajuato, Gto.",
+    "telefono": "(473) 735 50 51",
+    "latitud": 21.017239,
+    "longitud": -101.25327
+  }
+]
+ 

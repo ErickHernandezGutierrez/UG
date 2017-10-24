@@ -24,6 +24,11 @@
             android:label="Main Activity">
         </activity>
 
+        <activity
+            android:name=".LicenciaturaActivity"
+            android:label="Licenciatura Activity">
+        </activity>
+
     </application>
 
 </manifest>
