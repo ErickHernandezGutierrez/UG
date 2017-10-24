@@ -110,7 +110,7 @@ public class WelcomeActivity extends AppCompatActivity{
 
     private void launchHomeScreen(){
         preferencesManager.setFirstTimeLaunch(false);
-        //startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
     }
 
     OnPageChangeListener viewPagerPageChangeListener = new ViewPager.OnPageChangeListener(){
