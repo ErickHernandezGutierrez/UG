@@ -20,8 +20,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.VideoView;
 import android.net.Uri;
+import android.app.Activity;
 
-public class WelcomeActivity extends AppCompatActivity{
+public class WelcomeActivity extends Activity{
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
     private LinearLayout dotsLayout;

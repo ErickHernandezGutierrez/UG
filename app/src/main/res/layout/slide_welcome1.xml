@@ -13,10 +13,10 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <ImageView
+        <!-- <ImageView
             android:layout_width="330.8dp"
             android:layout_height="281.4dp"
-            android:src="@drawable/escudolinea_white"/>
+            android:src="@drawable/escudolinea_white"/> -->
 
         <TextView
             android:layout_width="wrap_content"

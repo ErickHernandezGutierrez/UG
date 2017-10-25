@@ -15,8 +15,9 @@ import android.widget.TextView;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 
     private TextView culturalOffersTitle;
     private TextView offersTitle;
