@@ -1,7 +1,6 @@
 package app.ug;
 
 import java.util.ArrayList;
-
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.graphics.Typeface;
@@ -12,9 +11,6 @@ import android.net.Uri;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.TextView;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 
 public class MainActivity extends Activity {
@@ -149,7 +145,7 @@ public class MainActivity extends Activity {
         instructionsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, InstructionsExam.class));
+                startActivity(new Intent(MainActivity.this, InstructionsActivity.class));
             }
         });
 
@@ -157,7 +153,7 @@ public class MainActivity extends Activity {
         startTestButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this, WelcomeExam.class));
+                startActivity(new Intent(MainActivity.this, InterestsActivity.class));
             }
         });
 

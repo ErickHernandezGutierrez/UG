@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.ug">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -49,6 +51,21 @@
             android:label="Maps Activity">
         </activity>
 
+        <activity
+            android:name=".InstructionsActivity"
+            android:label="Instructions Activity">
+        </activity>
+
+        <activity 
+            android:name=".InterestsActivity"
+            android:label="Interests Activity">
+        </activity>
+        
+        <activity
+            android:name=".AptitudesActivity"
+            android:label="Aptitudes Activity">
+        </activity>
+        
     </application>
 
 </manifest>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/testInstructionsTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/pantone540c"
+        android:text="Instrucciones"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/pantone451c"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:background="#D9D9D9">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/border">
+
+            <TextView
+                android:id="@+id/testTargetTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Objetivo:"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testTargetText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|left"
+                android:text="@string/instr_1"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testStructureTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Estructura:"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testStructureText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|left"
+                android:text="@string/instr_2"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testInterestsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Intereses:"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testInterestsText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|left"
+                android:text="@string/instr_3"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testInterestsOption1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opti_1"/>
+
+            <TextView
+                android:id="@+id/testInterestsOption2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opti_2"/>
+
+            <TextView
+                android:id="@+id/testInterestsOption3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opti_3"/>
+
+            <TextView
+                android:id="@+id/testInterestsOption4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opti_4"/>
+
+            <TextView
+                android:id="@+id/testInterestsOption5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opti_5"/>
+
+            <TextView
+                android:id="@+id/testAptitudesTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Aptitudes:"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testAptitudesText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|left"
+                android:text="@string/instr_4"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testAptitudesOption1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opta_1"/>
+
+            <TextView
+                android:id="@+id/testAptitudesOption2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opta_2"/>
+
+            <TextView
+                android:id="@+id/testAptitudesOption3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opta_3"/>
+
+            <TextView
+                android:id="@+id/testAptitudesOption4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opta_4"/>
+
+            <TextView
+                android:id="@+id/testAptitudesOption5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/opta_5"/>
+
+            <TextView
+                android:id="@+id/testResultsTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="Resultados:"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/testResultsText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center|left"
+                android:text="@string/instr_5"
+                android:textSize="15dp"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:id="@+id/startTestButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bookline"/>
+
+                <TextView
+                    android:id="@+id/startTestText"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="5dp"
+                    android:text="Comenzar"
+                    android:textSize="12dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -10,4 +10,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!-- RatingBar theme -->
+    <style
+        name="RatingBar"
+        parent="Theme.AppCompat">
+
+        <item name="colorControlActivated">@color/pantone121c</item>
+    </style>
+
 </resources>

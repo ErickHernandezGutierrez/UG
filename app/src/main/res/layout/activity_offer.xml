@@ -2,19 +2,18 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:background="#D9D9D9">
 
     <TextView
+        android:id="@+id/offerTitle"
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:gravity="center"
         android:textColor="#FFFFFF"
-        android:background="@color/pantone540c"
-        android:id="@+id/offerTitle"/>
+        android:background="@color/pantone540c"/>
 
     <View
         android:layout_width="fill_parent"
