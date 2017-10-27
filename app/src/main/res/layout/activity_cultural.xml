@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/auditorio"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/culturalTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Concierto en el Auditorio UG"
+                        android:textSize="20dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/descriptionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Descripción"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/descriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Orquesta Sinfónica de la Universidad de Guanajuato"/>
+
+            <TextView
+                android:id="@+id/costTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Costo"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/costText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="General: $500"/>
+
+            <TextView
+                android:id="@+id/locationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ubicación"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Auditorio de la Universidad de Guanajuato"/>
+
+            <TextView
+                android:id="@+id/dateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Fecha"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Viernes 27 de Octubre del 2017"/>
+
+            <TextView
+                android:id="@+id/timeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hora"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/timeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="10:00pm"/>
+
+            <TextView
+                android:id="@+id/durationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Duración"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/durationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="90 minutos"/>
+
+            <!-- <TextView
+                android:id="@+id/coordinatorTitle"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Coordinador"
+                android:textSize="18dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/coordinatorText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Paco"/> -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

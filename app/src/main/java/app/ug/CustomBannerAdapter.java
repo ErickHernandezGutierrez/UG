@@ -2,6 +2,7 @@ package app.ug;
 
 import java.util.ArrayList;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -48,8 +49,8 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
         holder.cover.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Toast.makeText(context, "Click...", Toast.LENGTH_SHORT).show();
-                //context.startActivity(new Intent(context, CulturalActivity.class));
+                //Toast.makeText(context, "Click...", Toast.LENGTH_SHORT).show();
+                context.startActivity(new Intent(context, CulturalActivity.class));
             }
         });
     }

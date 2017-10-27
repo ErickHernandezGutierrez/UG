@@ -195,9 +195,9 @@ public class MainActivity extends Activity {
 
         //Setup Banners
         ArrayList<Banner> banners = new ArrayList<>();
-        banners.add(new Banner("Banner1", R.drawable.desfile_ugto));
-        banners.add(new Banner("Banner2", R.drawable.brigadas_ugto));
-        banners.add(new Banner("Banner3", R.drawable.convocatoria_ugto));
+        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
+        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
+        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
 
         bannersAdapter = new CustomBannerAdapter(this, banners);
         bannersManager = new LinearLayoutManager(this);

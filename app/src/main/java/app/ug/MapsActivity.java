@@ -20,11 +20,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
-
 
     /**
      * Manipulates the map once available.
@@ -44,7 +42,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Double latitud  = intent.getExtras().getDouble("latitud");
         Double longitud = intent.getExtras().getDouble("longitud");
 
-        // Add a marker in Sydney and move the camera
+        // Add a marker and move the camera
         LatLng offerLocation = new LatLng(latitud, longitud);
         mMap.addMarker(new MarkerOptions().position(offerLocation).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(offerLocation));

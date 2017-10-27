@@ -15,10 +15,10 @@
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
-        <!-- <ImageView
+        <ImageView
             android:layout_width="fill_parent"
             android:layout_height="73.3dp"
-            android:src="@drawable/campus_guanajuato_white"/> -->
+            android:src="@drawable/campus_guanajuato_white"/>
 
         <VideoView
             android:id="@+id/videoview"
