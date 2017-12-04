@@ -1,6 +1,26 @@
 package app.ug;
 
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.TimeZone;
+
+import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.graphics.Typeface;
@@ -12,6 +32,11 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.TextView;
 import android.app.Activity;
+
+import org.apache.http.NameValuePair;
+import org.apache.http.message.BasicNameValuePair;
+
+import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends Activity {
 
@@ -193,11 +218,45 @@ public class MainActivity extends Activity {
             }
         });
 
+
+
+        /*SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT-06:00"));
+        String temp = dateFormat.format(new Date().getTime());
+        Timestamp aux = Timestamp.valueOf(temp);
+        System.out.println(temp);
+        System.out.println(aux);//*/
+
+        /*Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        System.out.println(timestamp);//*/
+
+        String dateText = "02/12/2017 16:21:12";
+        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        try {
+            Date date = dateFormat.parse(dateText);
+            long timestamp = (long) date.getTime()/1000;
+            System.out.println(timestamp);
+
+
+            HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
+            task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
+        }
+        catch (ParseException pe){
+
+        }
+
+
+    }
+
+    public void setupBanners(String json){
         //Setup Banners
         ArrayList<Banner> banners = new ArrayList<>();
-        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
-        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
-        banners.add(new Banner("Concierto UG", R.drawable.auditorio));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
 
         bannersAdapter = new CustomBannerAdapter(this, banners);
         bannersManager = new LinearLayoutManager(this);
@@ -205,5 +264,131 @@ public class MainActivity extends Activity {
         bannersView = (RecyclerView) findViewById(R.id.bannersView);
         bannersView.setAdapter(bannersAdapter);
         bannersView.setLayoutManager(bannersManager);
+
+        System.out.println(json);
     }
+
+    public class HttpPostAsyncTask extends AsyncTask<String, Void, String> {
+
+        Long timestamp;
+
+        // This is a constructor that allows you to pass in the JSON body
+        public HttpPostAsyncTask(Long timestamp) {
+            this.timestamp = timestamp;
+        }
+
+        @Override
+        protected void onPostExecute(String json){
+            setupBanners(json);
+        }
+
+        // This is a function that we are overriding from AsyncTask. It takes Strings as parameters because that is what we defined for the parameters of our async task
+        @Override
+        protected String doInBackground(String... params) {
+
+            try {
+                // This is getting the url from the string we passed in
+                URL url = new URL(params[0] + Long.toString(1508487720));
+
+                System.out.println(params[0] + Long.toString(this.timestamp));
+
+                // Create the urlConnection
+                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+
+                urlConnection.setReadTimeout(15000);
+                urlConnection.setConnectTimeout(15000);
+                urlConnection.setDoInput(true);
+                urlConnection.setDoOutput(true);
+                urlConnection.setRequestMethod("POST");
+
+            /*OutputStream os = urlConnection.getOutputStream();
+            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+            writer.write(Long.toString(1508487720));
+            writer.flush();
+            writer.close();
+            os.close();//*/
+
+            /*OutputStreamWriter writer = new OutputStreamWriter(urlConnection.getOutputStream());
+            writer.write(1508487720);
+            writer.flush();
+            urlConnection.connect();//*/
+
+                /*List<NameValuePair> params2 = new ArrayList<NameValuePair>();
+                params2.add(new BasicNameValuePair("timestamp", Long.toString(1508487720)));
+
+                OutputStream os = urlConnection.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+                writer.write(getQuery(params2));
+                writer.flush();
+                writer.close();
+                os.close();
+                urlConnection.connect();//*/
+
+                int statusCode = urlConnection.getResponseCode();
+
+                System.out.println(statusCode);
+
+                if (statusCode ==  200) {
+
+                    InputStream inputStream = urlConnection.getInputStream();
+
+                    byte[] buffer = new byte[1024];
+
+                    int num_bytes;
+                    String json = "";
+                    while ( ( num_bytes = inputStream.read(buffer)) != -1 ) {
+                        byte[] temp = new byte[num_bytes];
+                        for(int i = 0; i < num_bytes; i++)
+                            temp[i] = buffer[i];
+                        json +=  new String(temp, "UTF-8");
+                    }
+                    inputStream.close();
+
+                    //System.out.println(json);
+                    System.out.println("Chido");
+
+                    return json;
+
+                /*JSONParser parser = new JSONParser();
+                JSONArray arr = (JSONArray) parser.parse(json);
+                JSONObject offer = (JSONObject) arr.get(0);
+
+                System.out.println((String) offer.get("title"));//*/
+
+                    // From here you can convert the string to JSON with whatever JSON parser you like to use
+                    // After converting the string to JSON, I call my custom callback. You can follow this process too, or you can implement the onPostExecute(Result) method
+                } else {
+                    // Status code is not 200
+                    // Do something to handle the error
+                    System.out.println("Error");
+                }//*/
+
+            } catch (Exception e) {
+                //Log.d(TAG, e.getLocalizedMessage());
+            }
+            return null;
+        }
+
+        private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException {
+            StringBuilder result = new StringBuilder();
+            boolean first = true;
+
+            for (NameValuePair pair : params)
+            {
+                if (first)
+                    first = false;
+                else
+                    result.append("&");
+
+                result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
+                result.append("=");
+                result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));
+            }
+
+            return result.toString();
+        }
+
+    }
+
+
 }

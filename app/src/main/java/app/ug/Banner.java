@@ -4,12 +4,14 @@ public class Banner {
     //Members
     private String name;
     private int imageID;
+    private int tag;
 
     //Constructors
     public Banner(){}
-    public Banner(String name, int imageID){
+    public Banner(String name, int imageID, int tag){
         this.name = name;
         this.imageID = imageID;
+        this.tag = tag;
     }
 
     //Setters
@@ -19,6 +21,9 @@ public class Banner {
     public void setImageID(int imageID){
         this.imageID = imageID;
     }
+    public void setTag(int tag){
+        this.tag = tag;
+    }
 
     //Getters
     public String getName(){
@@ -26,5 +31,8 @@ public class Banner {
     }
     public int getImageID(){
         return this.imageID;
+    }
+    public int getTag(){
+        return this.tag;
     }
 }
