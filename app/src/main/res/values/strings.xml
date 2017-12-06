@@ -14,26 +14,21 @@
     <string name="opta_3">3. Me considero medianamente competente</string>
     <string name="opta_4">4. Me considero poco competente</string>
     <string name="opta_5">5. Me considero incompetente</string>
-    <string
-        name="instr_1">
+    <string name="instr_1">
         El objetivo del examen es sugerirte carreras tomando en cuenta tus intereses y aptitudes.
     </string>
-    <string
-        name="instr_2">
+    <string name="instr_2">
         El examen consta de 120 preguntas de opción multiple divididas en dos grupos: Intereses y Aptitudes.
     </string>
-    <string
-        name="instr_3">
+    <string name="instr_3">
         La primer parte el examen se enfoca a reunir información sobre tus intereses.
         En cada una de las preguntas de esta sección aparecerán las siguientes opciones y debes escoger una de ellas.
     </string>
-    <string
-        name="instr_4">
+    <string name="instr_4">
         La segunda parte el examen se enfoca a reunir información sobre tus aptitudes.
         En cada una de las preguntas de esta sección aparecerán las siguientes opciones y debes escoger una de ellas.
     </string>
-    <string
-        name="instr_5">
+    <string name="instr_5">
         Después de responder todas las preguntas la aplicación te dará un resumen de tus respuestas y te dará algunas
         recomendaciones sobre las carreras del campus en las que podrías desempeñarte bien.
     </string>

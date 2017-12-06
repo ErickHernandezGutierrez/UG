@@ -66,6 +66,7 @@ public class MainActivity extends Activity {
     private TextView twitterText;
     private TextView instagramText;
     private TextView youtubeText;
+    private LinearLayout chestButton;
     private LinearLayout licenciaturaButton;
     //private LinearLayout especialidadButton;
     //private LinearLayout maestriaButton;
@@ -142,6 +143,13 @@ public class MainActivity extends Activity {
         youtubeText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
 
         //Setup all Buttons
+        chestButton = (LinearLayout) findViewById(R.id.chestButton);
+        chestButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ChestActivity.class));
+            }
+        });
 
         licenciaturaButton = (LinearLayout) findViewById(R.id.licenciaturaButton);
         licenciaturaButton.setOnClickListener(new View.OnClickListener(){
@@ -227,8 +235,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
-
         /*SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
         dateFormat.setTimeZone(TimeZone.getTimeZone("GMT-06:00"));
         String temp = dateFormat.format(new Date().getTime());
@@ -247,8 +253,8 @@ public class MainActivity extends Activity {
             System.out.println(timestamp);
 
 
-            HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
-            task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
+            //HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
+            //task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
         }
         catch (ParseException pe){
 

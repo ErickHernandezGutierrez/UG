@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.ug">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,72 +10,58 @@
 
     <application
         android:allowBackup="true"
+        android:configChanges="orientation|screenSize|keyboardHidden"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:configChanges="orientation|screenSize|keyboardHidden">
-
+        android:theme="@style/AppTheme">
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
         <activity
             android:name=".WelcomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="Welcome Activity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize|keyboardHidden">
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:label="Main Activity">
-        </activity>
-
+            android:label="Main Activity"></activity>
         <activity
             android:name=".LicenciaturaActivity"
-            android:label="Licenciatura Activity">
-        </activity>
-
+            android:label="Licenciatura Activity"></activity>
         <activity
             android:name=".OfferActivity"
-            android:label="Offer Activity">
-        </activity>
-
+            android:label="Offer Activity"></activity>
         <activity
             android:name=".MapsActivity"
-            android:label="Maps Activity">
-        </activity>
-
+            android:label="Maps Activity"></activity>
         <activity
             android:name=".InstructionsActivity"
-            android:label="Instructions Activity">
-        </activity>
-
-        <activity 
+            android:label="Instructions Activity"></activity>
+        <activity
             android:name=".InterestsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="Interests Activity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-        </activity>
-        
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".AptitudesActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="Aptitudes Activity"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".CulturalActivity"
-            android:label="Cultural Activity">
-        </activity>
-
+            android:label="Cultural Activity"></activity>
+        <activity
+            android:name=".ChestActivity"
+            android:label="Chest Activity"></activity>
     </application>
 
 </manifest>
