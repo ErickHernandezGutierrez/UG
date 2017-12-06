@@ -20,6 +20,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
+import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -28,13 +29,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.net.Uri;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.widget.TextView;
 import android.app.Activity;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -251,12 +260,58 @@ public class MainActivity extends Activity {
     public void setupBanners(String json){
         //Setup Banners
         ArrayList<Banner> banners = new ArrayList<>();
+        /*banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
         banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
         banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
         banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
         banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
+        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));//*/
+
+        System.out.println(json);
+
+        try {
+            JSONParser parser = new JSONParser();
+            JSONArray arr = (JSONArray) parser.parse(json);
+
+            //Parse each JSON object
+            for(int i = 0; i < arr.size(); i++) {
+                JSONObject culturalOffer = (JSONObject) arr.get(i);
+                final Banner banner = new Banner();
+
+                String title = (String) culturalOffer.get("title");
+                String tag = (String) culturalOffer.get("tags");
+                String date = (String) culturalOffer.get("eventdate");
+                String imageURL = (String) culturalOffer.get("url");
+
+                System.out.println("Object:");
+                System.out.println(title);
+                System.out.println(tag);
+                System.out.println(date);
+                System.out.println(imageURL);
+                System.out.println();
+
+                //Load image from server
+                Glide.with(MainActivity.this).load(imageURL).asBitmap().into(new SimpleTarget<Bitmap>() {
+                    @Override
+                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
+                        banner.setImage(resource);
+                        /*bitmap = resource;
+                        saveBitmapToExternalStorage();//*/
+                    }
+                });//*/
+
+                //Set banner data
+                banner.setTitle(title);
+                banner.setImageID(R.drawable.notimage);
+                banner.setTag(Integer.parseInt(tag));
+
+                //Add banner to array
+                banners.add(banner);
+            }
+        }
+        catch(org.json.simple.parser.ParseException pe){
+            pe.printStackTrace();
+        }
 
         bannersAdapter = new CustomBannerAdapter(this, banners);
         bannersManager = new LinearLayoutManager(this);
@@ -264,8 +319,6 @@ public class MainActivity extends Activity {
         bannersView = (RecyclerView) findViewById(R.id.bannersView);
         bannersView.setAdapter(bannersAdapter);
         bannersView.setLayoutManager(bannersManager);
-
-        System.out.println(json);
     }
 
     public class HttpPostAsyncTask extends AsyncTask<String, Void, String> {
@@ -389,6 +442,5 @@ public class MainActivity extends Activity {
         }
 
     }
-
 
 }

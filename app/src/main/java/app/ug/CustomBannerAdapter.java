@@ -44,12 +44,12 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
     public void onBindViewHolder(final CustomViewHolder holder, int position){
         Banner banner = banners.get(position);
 
-        holder.title.setText(banner.getName());
-        holder.cover.setImageResource(banner.getImageID());
+        holder.title.setText(banner.getTitle());
+        //holder.cover.setImageResource(banner.getImageID());
+        holder.cover.setImageBitmap(banner.getImage());
         holder.cover.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //Toast.makeText(context, "Click...", Toast.LENGTH_SHORT).show();
                 context.startActivity(new Intent(context, CulturalActivity.class));
             }
         });
