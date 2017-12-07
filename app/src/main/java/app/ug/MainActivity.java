@@ -1,8 +1,15 @@
 package app.ug;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
@@ -20,6 +27,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
 
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
@@ -44,6 +52,7 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.w3c.dom.Text;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -51,6 +60,7 @@ public class MainActivity extends Activity {
 
     private TextView culturalOffersTitle;
     private TextView offersTitle;
+    private TextView chestTitle;
     private TextView licenciaturaText;
     private TextView especialidadText;
     private TextView maestriaText;
@@ -88,11 +98,42 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /*SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT-06:00"));
+        String temp = dateFormat.format(new Date().getTime());
+        Timestamp aux = Timestamp.valueOf(temp);
+        System.out.println(temp);
+        System.out.println(aux);//*/
+
+        /*Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+        System.out.println(timestamp);//*/
+
+        String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
+        String lastTimestamp = readStringFromFile(this, "timestamp.txt");
+        String currentTimestamp = Long.toString(new Date().getTime()/1000);
+        //String dateText = "02/12/2017 16:21:12";
+        //DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        //try {
+            Date date = new Date();//dateFormat.parse(dateText);
+            long timestamp = date.getTime()/1000;
+            System.out.println(currentTimestamp);
+
+
+            //HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
+            //task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
+        //}
+        //catch(ParseException pe){}
+
+        //writeStringToFile(this, "1508487720");
+        System.out.println(lastTimestamp);
+
         //Set font for all TextViews
         culturalOffersTitle = (TextView) findViewById(R.id.culturalOffersTitle);
         culturalOffersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
         offersTitle = (TextView) findViewById(R.id.offersTitle);
         offersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        chestTitle = (TextView) findViewById(R.id.chestTitle);
+        chestTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
         licenciaturaText = (TextView) findViewById(R.id.licenciaturaText);
         licenciaturaText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
         especialidadText = (TextView) findViewById(R.id.especialidadText);
@@ -124,6 +165,7 @@ public class MainActivity extends Activity {
             }
         });//*/
 
+        //Setup Test
         testTitle = (TextView) findViewById(R.id.testTitle);
         testTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
         instructionsText = (TextView) findViewById(R.id.instructionsText);
@@ -234,33 +276,75 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/televisionug")));
             }
         });
+    }
 
-        /*SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT-06:00"));
-        String temp = dateFormat.format(new Date().getTime());
-        Timestamp aux = Timestamp.valueOf(temp);
-        System.out.println(temp);
-        System.out.println(aux);//*/
+    private void writeBannersToFile(Context context, ArrayList<Banner> banners, String filename){
+        try{
+            FileOutputStream fileWriter = context.openFileOutput(filename, Context.MODE_PRIVATE);
+            ObjectOutputStream objectWriter = new ObjectOutputStream(fileWriter);
 
-        /*Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        System.out.println(timestamp);//*/
+            objectWriter.writeObject(banners);
+            objectWriter.flush();
+            objectWriter.close();
+            fileWriter.close();
+        }
+        catch(Exception e){}
+    }
 
-        String dateText = "02/12/2017 16:21:12";
-        DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+    private ArrayList<Banner> readBannersFromFile(Context context, String filename){
+        ArrayList<Banner> output;
+
+        try{
+            FileInputStream fileReader = context.openFileInput(filename);
+            ObjectInputStream objectReader = new ObjectInputStream(fileReader);
+
+            output = (ArrayList<Banner>) objectReader.readObject();
+            objectReader.close();
+        }
+        catch(FileNotFoundException fnfe){output = new ArrayList<>();}
+        catch(IOException e){output = new ArrayList<>();}
+        catch(ClassNotFoundException cnfe){output = new ArrayList<>();}
+
+        return output;
+    }
+
+    private void writeStringToFile(Context context, String data) {
         try {
-            Date date = dateFormat.parse(dateText);
-            long timestamp = (long) date.getTime()/1000;
-            System.out.println(timestamp);
-
-
-            //HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
-            //task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("timestamp.txt", Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
         }
-        catch (ParseException pe){
+        catch (IOException e) {}
+    }
 
+    private String readStringFromFile(Context context, String filename) {
+
+        String ret = "";
+
+        try {
+            InputStream inputStream = context.openFileInput(filename);
+
+            if ( inputStream != null ) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString = "";
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                    stringBuilder.append(receiveString);
+                }
+
+                inputStream.close();
+                ret = stringBuilder.toString();
+            }
+        }
+        catch (FileNotFoundException e) {
+            //Log.e("login activity", "File not found: " + e.toString());
+        } catch (IOException e) {
+            //Log.e("login activity", "Can not read file: " + e.toString());
         }
 
-
+        return ret;
     }
 
     public void setupBanners(String json){
@@ -329,17 +413,8 @@ public class MainActivity extends Activity {
 
     public class HttpPostAsyncTask extends AsyncTask<String, Void, String> {
 
-        Long timestamp;
-
         // This is a constructor that allows you to pass in the JSON body
-        public HttpPostAsyncTask(Long timestamp) {
-            this.timestamp = timestamp;
-        }
-
-        @Override
-        protected void onPostExecute(String json){
-            setupBanners(json);
-        }
+        public HttpPostAsyncTask() {}
 
         // This is a function that we are overriding from AsyncTask. It takes Strings as parameters because that is what we defined for the parameters of our async task
         @Override
@@ -348,8 +423,6 @@ public class MainActivity extends Activity {
             try {
                 // This is getting the url from the string we passed in
                 URL url = new URL(params[0] + Long.toString(1508487720));
-
-                System.out.println(params[0] + Long.toString(this.timestamp));
 
                 // Create the urlConnection
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
@@ -426,6 +499,11 @@ public class MainActivity extends Activity {
                 //Log.d(TAG, e.getLocalizedMessage());
             }
             return null;
+        }
+
+        @Override
+        protected void onPostExecute(String json){
+            setupBanners(json);
         }
 
         private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException {

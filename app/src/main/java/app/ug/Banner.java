@@ -2,8 +2,9 @@ package app.ug;
 
 import android.graphics.Bitmap;
 import java.util.Date;
+import java.io.Serializable;
 
-public class Banner {
+public class Banner implements Serializable {
     //Members
     private String title;
     private Bitmap image;
