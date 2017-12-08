@@ -2,6 +2,7 @@ package app.ug;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -26,9 +27,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.TimeZone;
+import java.util.concurrent.ExecutionException;
 
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -44,6 +48,8 @@ import android.widget.TextView;
 import android.app.Activity;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.FutureTarget;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 
@@ -119,8 +125,11 @@ public class MainActivity extends Activity {
             System.out.println(currentTimestamp);
 
 
-            //HttpPostAsyncTask task = new HttpPostAsyncTask(timestamp);
-            //task.execute("http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=");
+            //ArrayList<Banner> banners = readBannersFromFile(this, "banners.ser");
+            //ArrayList<Banner> banners = new ArrayList<>();
+
+            HttpPostAsyncTask task = new HttpPostAsyncTask(this);
+            task.execute(serverURL + lastTimestamp);
         //}
         //catch(ParseException pe){}
 
@@ -143,7 +152,7 @@ public class MainActivity extends Activity {
         doctoradoText = (TextView) findViewById(R.id.doctoradoText);
         doctoradoText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));//*/
 
-        /*// Setup Store
+        /*//Setup Store
         storeTitle = (TextView) findViewById(R.id.storeTitle);
         storeTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
         storeText = (TextView) findViewById(R.id.storeText);
@@ -284,11 +293,12 @@ public class MainActivity extends Activity {
             ObjectOutputStream objectWriter = new ObjectOutputStream(fileWriter);
 
             objectWriter.writeObject(banners);
-            objectWriter.flush();
             objectWriter.close();
             fileWriter.close();
         }
-        catch(Exception e){}
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     private ArrayList<Banner> readBannersFromFile(Context context, String filename){
@@ -301,16 +311,25 @@ public class MainActivity extends Activity {
             output = (ArrayList<Banner>) objectReader.readObject();
             objectReader.close();
         }
-        catch(FileNotFoundException fnfe){output = new ArrayList<>();}
-        catch(IOException e){output = new ArrayList<>();}
-        catch(ClassNotFoundException cnfe){output = new ArrayList<>();}
+        catch(FileNotFoundException fnfe){
+            output = new ArrayList<>();
+        }
+        catch(IOException e){
+            output = new ArrayList<>();
+        }
+        catch(ClassNotFoundException cnfe){
+            output = new ArrayList<>();
+        }
+
+        for(int i = 0; i < output.size(); i++)
+            output.get(i).setImage(readBitmapFromFile(context, "", output.get(i).getTitle()));
 
         return output;
     }
 
-    private void writeStringToFile(Context context, String data) {
+    private void writeStringToFile(Context context, String data, String filename) {
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput("timestamp.txt", Context.MODE_PRIVATE));
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(filename, Context.MODE_PRIVATE));
             outputStreamWriter.write(data);
             outputStreamWriter.close();
         }
@@ -347,103 +366,104 @@ public class MainActivity extends Activity {
         return ret;
     }
 
-    public void setupBanners(String json){
-        //Setup Banners
-        ArrayList<Banner> banners = new ArrayList<>();
-        /*banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));
-        banners.add(new Banner("Concierto UG", R.drawable.cartel, 0));//*/
+    private void writeBitmapToFile(Context context, Bitmap bitmapImage, String filename){
+        ContextWrapper contextWrapper = new ContextWrapper(context);
+        // path to /data/data/yourapp/app_data/imageDir
+        File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
+        File mypath=new File(directory, filename + ".jpg");
 
-        System.out.println(json);
-
+        FileOutputStream fos = null;
         try {
-            JSONParser parser = new JSONParser();
-            JSONArray arr = (JSONArray) parser.parse(json);
-
-            //Parse each JSON object
-            for(int i = 0; i < arr.size(); i++) {
-                JSONObject culturalOffer = (JSONObject) arr.get(i);
-                final Banner banner = new Banner();
-
-                String title = (String) culturalOffer.get("title");
-                String tag = (String) culturalOffer.get("tags");
-                String date = (String) culturalOffer.get("eventdate");
-                String imageURL = (String) culturalOffer.get("url");
-
-                System.out.println("Object:");
-                System.out.println(title);
-                System.out.println(tag);
-                System.out.println(date);
-                System.out.println(imageURL);
-                System.out.println();
-
-                //Load image from server
-                Glide.with(MainActivity.this).load(imageURL).asBitmap().into(new SimpleTarget<Bitmap>() {
-                    @Override
-                    public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
-                        banner.setImage(resource);
-                        /*bitmap = resource;
-                        saveBitmapToExternalStorage();//*/
-                    }
-                });//*/
-
-                //Set banner data
-                banner.setTitle(title);
-                banner.setImageID(R.drawable.notimage);
-                banner.setTag(Integer.parseInt(tag));
-
-                //Add banner to array
-                banners.add(banner);
+            fos = new FileOutputStream(mypath);
+            bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                fos.close();
+            }
+            catch(IOException e) {
+                e.printStackTrace();
             }
         }
-        catch(org.json.simple.parser.ParseException pe){
-            pe.printStackTrace();
+
+        //return directory.getAbsolutePath();
+        System.out.println("pakito = " + directory.getAbsolutePath());
+    }
+
+    private Bitmap readBitmapFromFile(Context context, String path, String filename) {
+        try {
+            ContextWrapper contextWrapper = new ContextWrapper(context);
+            File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
+            File file = new File(directory, filename + ".jpg");
+            //File file = new File(path, filename + ".jpg");
+            return BitmapFactory.decodeStream(new FileInputStream(file));
+        }
+        catch(FileNotFoundException e) {
+            e.printStackTrace();
         }
 
+        return null;
+    }
+
+    public void setupBanners(ArrayList<Banner> banners){
+        //Show banners
         bannersAdapter = new CustomBannerAdapter(this, banners);
         bannersManager = new LinearLayoutManager(this);
         bannersManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         bannersView = (RecyclerView) findViewById(R.id.bannersView);
         bannersView.setAdapter(bannersAdapter);
         bannersView.setLayoutManager(bannersManager);
+
+        //Save banners for future
+        writeBannersToFile(this, banners, "banners.ser");
+
+        //Update timestamp
+        writeStringToFile(this, Long.toString(new Date().getTime()/1000), "timestamp.txt");
     }
 
-    public class HttpPostAsyncTask extends AsyncTask<String, Void, String> {
+    public class HttpPostAsyncTask extends AsyncTask<String, Void, ArrayList<Banner>> {
+
+        private Context context;
+        //private ArrayList<Banner> banners;
 
         // This is a constructor that allows you to pass in the JSON body
-        public HttpPostAsyncTask() {}
+        public HttpPostAsyncTask(Context context) {
+            this.context = context;
+            //this.banners = banners;
+        }
 
         // This is a function that we are overriding from AsyncTask. It takes Strings as parameters because that is what we defined for the parameters of our async task
         @Override
-        protected String doInBackground(String... params) {
+        protected ArrayList<Banner> doInBackground(String... params) {
 
             try {
                 // This is getting the url from the string we passed in
-                URL url = new URL(params[0] + Long.toString(1508487720));
+                URL url = new URL(params[0]);
 
                 // Create the urlConnection
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
 
+                //Set connection parameters
                 urlConnection.setReadTimeout(15000);
                 urlConnection.setConnectTimeout(15000);
                 urlConnection.setDoInput(true);
                 urlConnection.setDoOutput(true);
                 urlConnection.setRequestMethod("POST");
 
-            /*OutputStream os = urlConnection.getOutputStream();
-            BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-            writer.write(Long.toString(1508487720));
-            writer.flush();
-            writer.close();
-            os.close();//*/
+                /*OutputStream os = urlConnection.getOutputStream();
+                BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+                writer.write(Long.toString(1508487720));
+                writer.flush();
+                writer.close();
+                os.close();//*/
 
-            /*OutputStreamWriter writer = new OutputStreamWriter(urlConnection.getOutputStream());
-            writer.write(1508487720);
-            writer.flush();
-            urlConnection.connect();//*/
+                /*OutputStreamWriter writer = new OutputStreamWriter(urlConnection.getOutputStream());
+                writer.write(1508487720);
+                writer.flush();
+                urlConnection.connect();//*/
 
                 /*List<NameValuePair> params2 = new ArrayList<NameValuePair>();
                 params2.add(new BasicNameValuePair("timestamp", Long.toString(1508487720)));
@@ -456,16 +476,13 @@ public class MainActivity extends Activity {
                 os.close();
                 urlConnection.connect();//*/
 
+                //Get status code
                 int statusCode = urlConnection.getResponseCode();
 
-                System.out.println(statusCode);
-
                 if (statusCode ==  200) {
-
+                    //Load content of JSON file
                     InputStream inputStream = urlConnection.getInputStream();
-
                     byte[] buffer = new byte[1024];
-
                     int num_bytes;
                     String json = "";
                     while ( ( num_bytes = inputStream.read(buffer)) != -1 ) {
@@ -476,10 +493,78 @@ public class MainActivity extends Activity {
                     }
                     inputStream.close();
 
-                    //System.out.println(json);
-                    System.out.println("Chido");
+                    System.out.println(json);
 
-                    return json;
+                    //ArrayList<Banner> banners = new ArrayList<>();
+                    ArrayList<Banner> banners = readBannersFromFile(context, "banners.ser");
+
+                    //Before add new banners we remove old banners
+                    Date currentDate = new Date();
+                    for(int i = 0; i < banners.size(); i++) {
+                        Date bannerDate = banners.get(i).getDate();
+                        System.out.println(currentDate + " versus " + bannerDate);
+                        if(currentDate.compareTo(bannerDate) > 0)
+                            System.out.println("Remove: " + i);
+                    }
+
+                    //Add new banners
+                    try {
+                        JSONParser parser = new JSONParser();
+                        JSONArray arr = (JSONArray) parser.parse(json);
+
+                        //Parse each JSON object
+                        for(int i = 0; i < arr.size(); i++) {
+                            JSONObject culturalOffer = (JSONObject) arr.get(i);
+                            Banner banner = new Banner();
+
+                            String title = (String) culturalOffer.get("title");
+                            String tag = (String) culturalOffer.get("tags");
+                            String date = (String) culturalOffer.get("eventdate");
+                            String imageURL = (String) culturalOffer.get("url");
+
+                            System.out.println("Object:");
+                            System.out.println(title);
+                            System.out.println(tag);
+                            System.out.println(date);
+                            System.out.println(imageURL);
+                            System.out.println();
+
+                            //Set banner title
+                            banner.setTitle(title);
+
+                            //Set banner tag
+                            banner.setTag(Integer.parseInt(tag));
+
+                            //Set banner date
+                            try {
+                                DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy,HH.mm");
+                                banner.setDate(dateFormat.parse(date));
+                            }
+                            catch (ParseException pe){
+                                pe.printStackTrace();
+                            }
+
+                            //Load image from server, set banner image and save image to internal storage
+                            try {
+                                banner.setImage(Glide.with(context).load(imageURL).asBitmap().into(500, 500).get());
+                                writeBitmapToFile(context, banner.getImage(), banner.getTitle());
+                            }
+                            catch (InterruptedException ie){
+                                ie.printStackTrace();
+                            }
+                            catch (ExecutionException ee){
+                                ee.printStackTrace();
+                            }
+
+                            //Add banner to array
+                            banners.add(banner);
+                        }
+                    }
+                    catch(org.json.simple.parser.ParseException pe){
+                        pe.printStackTrace();
+                    }
+
+                    return banners;
 
                 /*JSONParser parser = new JSONParser();
                 JSONArray arr = (JSONArray) parser.parse(json);
@@ -495,15 +580,17 @@ public class MainActivity extends Activity {
                     System.out.println("Error");
                 }//*/
 
-            } catch (Exception e) {
-                //Log.d(TAG, e.getLocalizedMessage());
             }
+            catch(Exception e) {
+                e.printStackTrace();
+            }
+
             return null;
         }
 
         @Override
-        protected void onPostExecute(String json){
-            setupBanners(json);
+        protected void onPostExecute(ArrayList<Banner> banners){
+            setupBanners(banners);
         }
 
         private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException {

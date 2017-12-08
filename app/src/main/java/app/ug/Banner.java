@@ -7,7 +7,7 @@ import java.io.Serializable;
 public class Banner implements Serializable {
     //Members
     private String title;
-    private Bitmap image;
+    private transient Bitmap image;
     private Date date;
     private int imageID;
     private int tag;
