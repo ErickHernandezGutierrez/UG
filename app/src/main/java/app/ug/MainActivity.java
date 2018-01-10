@@ -34,15 +34,20 @@ import android.content.ContextWrapper;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.graphics.Typeface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.net.Uri;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.Toast;
 import android.widget.TextView;
 import android.app.Activity;
@@ -62,7 +67,7 @@ import org.w3c.dom.Text;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     private TextView culturalOffersTitle;
     private TextView offersTitle;
@@ -98,43 +103,25 @@ public class MainActivity extends Activity {
     private RecyclerView bannersView;
     private CustomBannerAdapter bannersAdapter;
     private LinearLayoutManager bannersManager;
+    private Button filterButton;
+    private ArrayList<Banner> banners;
+    private ArrayList<Banner> filteredBanners;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        dateFormat.setTimeZone(TimeZone.getTimeZone("GMT-06:00"));
-        String temp = dateFormat.format(new Date().getTime());
-        Timestamp aux = Timestamp.valueOf(temp);
-        System.out.println(temp);
-        System.out.println(aux);//*/
-
-        /*Timestamp timestamp = new Timestamp(System.currentTimeMillis());
-        System.out.println(timestamp);//*/
+        //writeStringToFile(this, "1508487720", "timestamp.txt");
 
         String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
         String lastTimestamp = readStringFromFile(this, "timestamp.txt");
         String currentTimestamp = Long.toString(new Date().getTime()/1000);
-        //String dateText = "02/12/2017 16:21:12";
-        //DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-        //try {
-            Date date = new Date();//dateFormat.parse(dateText);
-            long timestamp = date.getTime()/1000;
-            System.out.println(currentTimestamp);
-
-
-            //ArrayList<Banner> banners = readBannersFromFile(this, "banners.ser");
-            //ArrayList<Banner> banners = new ArrayList<>();
-
-            HttpPostAsyncTask task = new HttpPostAsyncTask(this);
-            task.execute(serverURL + lastTimestamp);
-        //}
-        //catch(ParseException pe){}
-
-        //writeStringToFile(this, "1508487720");
         System.out.println(lastTimestamp);
+
+        //Connect with server to download all new banners
+        HttpPostAsyncTask task = new HttpPostAsyncTask(this);
+        task.execute(serverURL + lastTimestamp);
 
         //Set font for all TextViews
         culturalOffersTitle = (TextView) findViewById(R.id.culturalOffersTitle);
@@ -285,6 +272,55 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/televisionug")));
             }
         });
+
+        filterButton = (Button) findViewById(R.id.filterButton);
+        filterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PopupMenu popupMenu = new PopupMenu(MainActivity.this, filterButton);
+                popupMenu.getMenuInflater().inflate(R.menu.menu_filter, popupMenu.getMenu());
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
+                    public boolean onMenuItemClick(MenuItem item){
+                        int optionOrder = item.getOrder();
+
+                        int mask = 0;
+                        filteredBanners.clear();
+
+                        if(optionOrder == 100) {
+                            mask = ~(mask & 0);
+                        }
+                        else if(optionOrder == 101) {
+                            mask = 1;
+                        }
+                        else if(optionOrder == 102) {
+                            mask = 1<<1;
+                        }
+                        else if(optionOrder == 103) {
+                            mask = 1<<2;
+                        }
+                        else if(optionOrder == 104) {
+                            mask = 1<<3;
+                        }
+                        else if(optionOrder == 105) {
+                            mask = 1<<4;
+                        }
+                        else if(optionOrder == 106) {
+                            mask = 1<<5;
+                        }
+
+                        for(int i = 0; i < banners.size(); i++){
+                            int tag = banners.get(i).getTag();
+                            if((mask & tag) > 0)
+                                filteredBanners.add(banners.get(i));
+                        }
+                        bannersAdapter.notifyDataSetChanged();
+
+                        return true;
+                    }
+                });
+                popupMenu.show();
+            }
+        });
     }
 
     private void writeBannersToFile(Context context, ArrayList<Banner> banners, String filename){
@@ -322,7 +358,7 @@ public class MainActivity extends Activity {
         }
 
         for(int i = 0; i < output.size(); i++)
-            output.get(i).setImage(readBitmapFromFile(context, "", output.get(i).getTitle()));
+            output.get(i).setImage(readBitmapFromFile(context, output.get(i).getTitle()));
 
         return output;
     }
@@ -337,13 +373,12 @@ public class MainActivity extends Activity {
     }
 
     private String readStringFromFile(Context context, String filename) {
-
         String ret = "";
 
         try {
             InputStream inputStream = context.openFileInput(filename);
 
-            if ( inputStream != null ) {
+            if (inputStream != null) {
                 InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
                 BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
                 String receiveString = "";
@@ -358,9 +393,9 @@ public class MainActivity extends Activity {
             }
         }
         catch (FileNotFoundException e) {
-            //Log.e("login activity", "File not found: " + e.toString());
+            ret = "1508487720";
         } catch (IOException e) {
-            //Log.e("login activity", "Can not read file: " + e.toString());
+            ret = "1508487720";
         }
 
         return ret;
@@ -393,12 +428,11 @@ public class MainActivity extends Activity {
         System.out.println("pakito = " + directory.getAbsolutePath());
     }
 
-    private Bitmap readBitmapFromFile(Context context, String path, String filename) {
+    private Bitmap readBitmapFromFile(Context context, String filename) {
         try {
             ContextWrapper contextWrapper = new ContextWrapper(context);
             File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
             File file = new File(directory, filename + ".jpg");
-            //File file = new File(path, filename + ".jpg");
             return BitmapFactory.decodeStream(new FileInputStream(file));
         }
         catch(FileNotFoundException e) {
@@ -409,16 +443,36 @@ public class MainActivity extends Activity {
     }
 
     public void setupBanners(ArrayList<Banner> banners){
+        //Save banners for future
+        this.banners = banners;
+        this.filteredBanners = (ArrayList<Banner>) banners.clone();
+        writeBannersToFile(this, banners, "banners.ser");
+
         //Show banners
-        bannersAdapter = new CustomBannerAdapter(this, banners);
+        bannersAdapter = new CustomBannerAdapter(this, filteredBanners);
         bannersManager = new LinearLayoutManager(this);
         bannersManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         bannersView = (RecyclerView) findViewById(R.id.bannersView);
         bannersView.setAdapter(bannersAdapter);
         bannersView.setLayoutManager(bannersManager);
+        bannersView.addOnItemTouchListener(new CustomBannerAdapter.RecyclerTouchListener(getApplicationContext(), bannersView, new CustomBannerAdapter.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("banners", filteredBanners);
+                bundle.putInt("position", position);
 
-        //Save banners for future
-        writeBannersToFile(this, banners, "banners.ser");
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                CustomDialogFragment newFragment = CustomDialogFragment.newInstance();
+                newFragment.setArguments(bundle);
+                newFragment.show(ft, "slideshow");
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
 
         //Update timestamp
         writeStringToFile(this, Long.toString(new Date().getTime()/1000), "timestamp.txt");
@@ -427,12 +481,10 @@ public class MainActivity extends Activity {
     public class HttpPostAsyncTask extends AsyncTask<String, Void, ArrayList<Banner>> {
 
         private Context context;
-        //private ArrayList<Banner> banners;
 
         // This is a constructor that allows you to pass in the JSON body
         public HttpPostAsyncTask(Context context) {
             this.context = context;
-            //this.banners = banners;
         }
 
         // This is a function that we are overriding from AsyncTask. It takes Strings as parameters because that is what we defined for the parameters of our async task
@@ -495,16 +547,19 @@ public class MainActivity extends Activity {
 
                     System.out.println(json);
 
-                    //ArrayList<Banner> banners = new ArrayList<>();
-                    ArrayList<Banner> banners = readBannersFromFile(context, "banners.ser");
+                    ArrayList<Banner> banners = new ArrayList<>();
+                    ArrayList<Banner> temp = readBannersFromFile(context, "banners.ser");
+                    System.out.println("Temp banners size = " + temp.size());
 
                     //Before add new banners we remove old banners
                     Date currentDate = new Date();
-                    for(int i = 0; i < banners.size(); i++) {
-                        Date bannerDate = banners.get(i).getDate();
+                    for(int i = 0; i < temp.size(); i++) {
+                        Date bannerDate = temp.get(i).getDate();
                         System.out.println(currentDate + " versus " + bannerDate);
-                        if(currentDate.compareTo(bannerDate) > 0)
+                        if(currentDate.compareTo(bannerDate) <= 0) {
                             System.out.println("Remove: " + i);
+                            banners.add(temp.get(i));
+                        }
                     }
 
                     //Add new banners
@@ -537,7 +592,7 @@ public class MainActivity extends Activity {
 
                             //Set banner date
                             try {
-                                DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy,HH.mm");
+                                DateFormat dateFormat = new SimpleDateFormat("dd.MM.yy,HH.mm");
                                 banner.setDate(dateFormat.parse(date));
                             }
                             catch (ParseException pe){
@@ -566,20 +621,7 @@ public class MainActivity extends Activity {
 
                     return banners;
 
-                /*JSONParser parser = new JSONParser();
-                JSONArray arr = (JSONArray) parser.parse(json);
-                JSONObject offer = (JSONObject) arr.get(0);
-
-                System.out.println((String) offer.get("title"));//*/
-
-                    // From here you can convert the string to JSON with whatever JSON parser you like to use
-                    // After converting the string to JSON, I call my custom callback. You can follow this process too, or you can implement the onPostExecute(Result) method
-                } else {
-                    // Status code is not 200
-                    // Do something to handle the error
-                    System.out.println("Error");
-                }//*/
-
+                }
             }
             catch(Exception e) {
                 e.printStackTrace();
@@ -591,25 +633,6 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(ArrayList<Banner> banners){
             setupBanners(banners);
-        }
-
-        private String getQuery(List<NameValuePair> params) throws UnsupportedEncodingException {
-            StringBuilder result = new StringBuilder();
-            boolean first = true;
-
-            for (NameValuePair pair : params)
-            {
-                if (first)
-                    first = false;
-                else
-                    result.append("&");
-
-                result.append(URLEncoder.encode(pair.getName(), "UTF-8"));
-                result.append("=");
-                result.append(URLEncoder.encode(pair.getValue(), "UTF-8"));
-            }
-
-            return result.toString();
         }
 
     }

@@ -8,6 +8,8 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.view.View;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.widget.TextView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -17,6 +19,12 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
     private Context context;
     private ArrayList<Banner> banners;
 
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
+    }
+
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
         public ImageView cover;
@@ -25,6 +33,49 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
             super(view);
             title = (TextView) view.findViewById(R.id.bannerTitle);
             cover = (ImageView) view.findViewById(R.id.bannerCover);
+        }
+    }
+
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private CustomBannerAdapter.ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final CustomBannerAdapter.ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
         }
     }
 
@@ -45,14 +96,13 @@ public class CustomBannerAdapter extends RecyclerView.Adapter<CustomBannerAdapte
         Banner banner = banners.get(position);
 
         holder.title.setText(banner.getTitle());
-        //holder.cover.setImageResource(banner.getImageID());
         holder.cover.setImageBitmap(banner.getImage());
-        holder.cover.setOnClickListener(new View.OnClickListener(){
+        /*holder.cover.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 context.startActivity(new Intent(context, CulturalActivity.class));
             }
-        });
+        });//*/
     }
 
     @Override
