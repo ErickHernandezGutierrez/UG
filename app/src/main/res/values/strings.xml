@@ -4,6 +4,8 @@
     <string name="google_maps_key">AIzaSyCnPP5JeMD_zyVaDDqbOA7kjCiz26986To</string>
 
     <!-- Strings for test -->
+    <string name="start_test">Examen Vocacional</string>
+    <string name="instr_0">Si conoces las instrucciones da click en comenzar</string>
     <string name="opti_1">1. Me gusta mucho</string>
     <string name="opti_2">2. Me gusta algo o en parte</string>
     <string name="opti_3">3. Me es indiferente, no me gusta ni disgusta</string>
@@ -34,13 +36,15 @@
     </string>
     <string name="interests_question">  ¿Qué tanto te gustaría &#8230; </string>
     <string name="aptitudes_question">  ¿Qué tan apto te consideras para &#8230; </string>
+    <string name="intereses">Parte I: Intereses</string>
+    <string name="aptitudes">Parte II: Aptitudes</string>
     <string name="instr_8">Resultados: Intereses</string>
     <string name="instr_9">Manejar con habilidad pequeñas piezas y herramientas como agujas, manecillas, joyas, piezas de relojería, etc.</string>
     <string name="instr_10">Conclusiones</string>
     <string name="instr_11">Las áreas que presentan las mayores posibilidades de combinar tus intereses y aptitudes son:</string>
     <string name="instr_12">Te sugerimos considerar las siguientes licenciaturas:</string>
     <string name="autor_ex">Valdez, S. &amp; Bustos, X. (1995). Mi elección de carrera, un proyecto de vida. México: UNAM, Dirección General de Orientación Vocacional. </string>
-    <string name="start">COMENZAR</string>
+    <string name="start">Comenzar</string>
     <string name="next">Siguiente</string>
     <string name="prev">Anterior</string>
     <string name="finish">Finalizar</string>

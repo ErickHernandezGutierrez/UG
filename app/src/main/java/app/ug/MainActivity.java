@@ -112,12 +112,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //writeStringToFile(this, "1508487720", "timestamp.txt");
+        writeStringToFile(this, "1508487720", "timestamp.txt");
 
         String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
         String lastTimestamp = readStringFromFile(this, "timestamp.txt");
         String currentTimestamp = Long.toString(new Date().getTime()/1000);
-        System.out.println(lastTimestamp);
+        System.out.println("Timestamp desde archivo = " + lastTimestamp);
 
         //Connect with server to download all new banners
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity {
         startTestButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, InterestsActivity.class));
+                startActivity(new Intent(MainActivity.this, MainTestActivity.class));
             }
         });
 
