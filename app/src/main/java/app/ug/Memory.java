@@ -10,15 +10,17 @@ public class Memory {
     private String campus;
     private String title;
     private String description;
+    private ArrayList<String> links;
     private ArrayList<Bitmap> images;
 
     //Constructors
     public Memory(){}
-    public Memory(String date, String campus, String title, String description, ArrayList<Bitmap> images) {
+    public Memory(String date, String campus, String title, String description, ArrayList<String> links, ArrayList<Bitmap> images) {
         this.date = date;
         this.campus = campus;
         this.title = title;
         this.description = description;
+        this.links = links;
         this.images = images;
     }
     public Memory(String date, String campus, String title, String description) {
@@ -41,7 +43,10 @@ public class Memory {
     public void setDescription(String description) {
         this.description = description;
     }
-    public void setImages(ArrayList<Bitmap> images) {
+    public void setLinks(ArrayList<String> links) {
+        this.links = links;
+    }
+    public void setImages(ArrayList<Bitmap> images){
         this.images = images;
     }
 
@@ -58,7 +63,10 @@ public class Memory {
     public String getDescription() {
         return this.description;
     }
-    public ArrayList<Bitmap> getImages() {
+    public ArrayList<String> getLinks() {
+        return this.links;
+    }
+    public ArrayList<Bitmap> getImages(){
         return this.images;
     }
 }

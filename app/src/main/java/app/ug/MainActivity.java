@@ -100,9 +100,12 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout twitterButton;
     private LinearLayout instagramButton;
     private LinearLayout youtubeButton;
+    private LinearLayout googleButton;
+    private LinearLayout ugpageButton;
     private RecyclerView bannersView;
     private CustomBannerAdapter bannersAdapter;
     private LinearLayoutManager bannersManager;
+    private Button refreshButton;
     private Button filterButton;
     private ArrayList<Banner> banners;
     private ArrayList<Banner> filteredBanners;
@@ -116,8 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
         String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
         String lastTimestamp = readStringFromFile(this, "timestamp.txt");
-        String currentTimestamp = Long.toString(new Date().getTime()/1000);
-        System.out.println(lastTimestamp);
+        System.out.println("Timestamp desde archivo = " + lastTimestamp);
 
         //Connect with server to download all new banners
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
@@ -270,6 +272,33 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Abriendo...", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/user/televisionug")));
+            }
+        });
+
+        googleButton = (LinearLayout) findViewById(R.id.googleButton);
+        googleButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Abriendo...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://plus.google.com/+universidadguanajuato")));
+            }
+        });
+
+        ugpageButton = (LinearLayout) findViewById(R.id.ugpageButton);
+        ugpageButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Abriendo...", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ugto.mx/")));
+            }
+        });
+
+        refreshButton = (Button) findViewById(R.id.refreshButton);
+        refreshButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(getIntent());
             }
         });
 
