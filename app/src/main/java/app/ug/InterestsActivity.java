@@ -266,7 +266,7 @@ public class InterestsActivity extends Activity  {
         btnSigResults.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(InterestsActivity.this, AptitudesActivity.class);
+                Intent i = new Intent(InterestsActivity.this, WelcomeAptitudesActivity.class);
                 i.putExtra("max1", Integer.valueOf(sortedPair[0]));
                 i.putExtra("max2", Integer.valueOf(sortedPair[1]));
                 i.putExtra("max3", Integer.valueOf(sortedPair[2]));

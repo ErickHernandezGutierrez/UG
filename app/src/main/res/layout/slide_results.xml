@@ -8,23 +8,20 @@
     android:layout_height="match_parent">
 
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/results_title"
         android:layout_width="fill_parent"
-        android:layout_height="75dp"
+        android:layout_height="50dp"
         android:background="@color/pantone540c"
-        android:orientation="horizontal"
-        android:id="@+id/linearLayout">
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:gravity="center"/>
 
-        <TextView
-            android:id="@+id/results_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:paddingLeft="15dp"
-            android:textColor="@android:color/white"
-            android:textSize="22sp"/>
-
-    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@color/pantone451c"
+        android:layout_below="@+id/results_title"/>
 
     <RatingBar
         android:id="@+id/rating1"
