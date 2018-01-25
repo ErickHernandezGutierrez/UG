@@ -47,4 +47,14 @@
         android:orderInCategory="108"
         android:title="Mostrar Cine"/>
 
+    <item
+        android:id="@+id/actionShowSalud"
+        android:orderInCategory="109"
+        android:title="Mostrar Salud"/>
+
+    <item
+        android:id="@+id/actionShowGobierno"
+        android:orderInCategory="110"
+        android:title="Mostrar Gobierno"/>
+
 </menu>

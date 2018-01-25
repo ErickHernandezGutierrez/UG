@@ -336,6 +336,12 @@ public class MainActivity extends AppCompatActivity {
                         else if(optionOrder == 106) {
                             mask = 1<<5;
                         }
+                        else if(optionOrder == 107) {
+                            mask = 1<<6;
+                        }
+                        else if(optionOrder == 108) {
+                            mask = 1<<7;
+                        }
 
                         for(int i = 0; i < banners.size(); i++){
                             int tag = banners.get(i).getTag();
