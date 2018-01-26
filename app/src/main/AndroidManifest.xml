@@ -43,12 +43,6 @@
         <activity
             android:name=".InstructionsActivity"></activity>
         <activity
-            android:name=".MainTestActivity"></activity>
-        <activity
-            android:name=".WelcomeInteresesActivity"></activity>
-        <activity
-            android:name=".WelcomeAptitudesActivity"></activity>
-        <activity
             android:name=".InterestsActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"></activity>
@@ -56,6 +50,12 @@
             android:name=".AptitudesActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MainTestActivity"></activity>
+        <activity
+            android:name=".WelcomeInteresesActivity"></activity>
+        <activity
+            android:name=".WelcomeAptitudesActivity"></activity>
         <activity
             android:name=".CulturalActivity"></activity>
         <activity
