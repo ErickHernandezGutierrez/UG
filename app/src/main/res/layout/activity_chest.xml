@@ -8,11 +8,36 @@
     android:orientation="vertical"
     android:background="#D9D9D9">
 
-    <ImageView
+    <!-- <ImageView
         android:layout_width="fill_parent"
         android:layout_height="73.3dp"
         android:background="@color/pantone540c"
-        android:src="@drawable/escudohorizontal"/>
+        android:src="@drawable/escudohorizontal"/> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="73.3dp"
+        android:orientation="horizontal"
+        android:background="@color/pantone540c">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/clock"/>
+
+        <TextView
+            android:id="@+id/chestMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="Baúl de Memorias"
+            android:textColor="@android:color/white"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
 
     <View
         android:layout_width="fill_parent"
