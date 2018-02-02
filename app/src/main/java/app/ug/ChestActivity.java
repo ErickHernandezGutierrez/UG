@@ -5,9 +5,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.bumptech.glide.Glide;
 
@@ -26,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.ExecutionException;
 
-public class ChestActivity extends Activity {
+public class ChestActivity extends AppCompatActivity {
 
     private CustomMemoryAdapter memoriesAdapter;
     private LinearLayoutManager memoriesManager;
@@ -37,23 +39,39 @@ public class ChestActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest);
 
-        String serverURL = "http://reina.southcentralus.cloudapp.azure.com/BaulMemorias/getListMemories.php?timestamp=";
+        String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListMemories.php?timestamp=";
         String lastTimestamp = "1508487720";
 
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
         task.execute(serverURL + lastTimestamp);
     }
 
-    public void setupChest(ArrayList<Memory> memories){
-        //memories.add(new Memory("12/01/2017", "Guanajuato", "Título", "Descripción muy básica del evento."));
-        //memories.add(new Memory("24/09/2017", "Guanajuato", "Título", "Descripción muy básica del evento."));
-
+    public void setupChest(final ArrayList<Memory> memories){
+        //Setup Chest
         memoriesAdapter = new CustomMemoryAdapter(this, memories);
         memoriesManager = new LinearLayoutManager(this);
         memoriesManager.setOrientation(LinearLayoutManager.VERTICAL);
         memoriesView = (RecyclerView) findViewById(R.id.memoriesView);
         memoriesView.setAdapter(memoriesAdapter);
         memoriesView.setLayoutManager(memoriesManager);
+        memoriesView.addOnItemTouchListener(new CustomMemoryAdapter.RecyclerTouchListener(getApplicationContext(), memoriesView, new CustomMemoryAdapter.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                Bundle bundle = new Bundle();
+                bundle.putParcelableArrayList("images", memories.get(position).getImages());
+                bundle.putInt("position", position);
+
+                FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                ChestDialogFragment newFragment = ChestDialogFragment.newInstance();
+                newFragment.setArguments(bundle);
+                newFragment.show(ft, "slideshow");
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));//*/
     }
 
     public class HttpPostAsyncTask extends AsyncTask<String, Void, ArrayList<Memory>> {
@@ -87,6 +105,7 @@ public class ChestActivity extends Activity {
                 int statusCode = urlConnection.getResponseCode();
 
                 if (statusCode ==  200) {
+                    System.out.println("Chidote");
                     //Load content of JSON file
                     InputStream inputStream = urlConnection.getInputStream();
                     byte[] buffer = new byte[1024];

@@ -2,9 +2,12 @@ package app.ug;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -17,6 +20,12 @@ public class CustomMemoryAdapter extends RecyclerView.Adapter<CustomMemoryAdapte
     private ArrayList<Memory> memories;
     private CustomMemoryImageAdapter imageAdapter;
     private LinearLayoutManager imageManager;
+
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
+    }
 
     public class CustomViewHolder extends RecyclerView.ViewHolder {
         public TextView date;
@@ -32,6 +41,54 @@ public class CustomMemoryAdapter extends RecyclerView.Adapter<CustomMemoryAdapte
             title = (TextView) view.findViewById(R.id.memoryTitle);
             description = (TextView) view.findViewById(R.id.memoryDescription);
             images = (RecyclerView) view.findViewById(R.id.memoryImages);
+
+            date.setTypeface(Typeface.createFromAsset(context.getAssets(), "GandhiSerifRegular.otf"));
+            campus.setTypeface(Typeface.createFromAsset(context.getAssets(), "GandhiSerifRegular.otf"));
+            title.setTypeface(Typeface.createFromAsset(context.getAssets(), "GandhiSerifBold.otf"));
+            description.setTypeface(Typeface.createFromAsset(context.getAssets(), "GandhiSerifRegular.otf"));
+        }
+    }
+
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private CustomMemoryAdapter.ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final CustomMemoryAdapter.ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
         }
     }
 
