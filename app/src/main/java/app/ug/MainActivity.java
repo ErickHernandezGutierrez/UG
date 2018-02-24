@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView bannersView;
     private CustomBannerAdapter bannersAdapter;
     private LinearLayoutManager bannersManager;
+    private TextView bannersMessage;
     private Button refreshButton;
     private Button filterButton;
     private ArrayList<Banner> banners;
@@ -115,15 +116,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        getSupportActionBar().hide();
         //writeStringToFile(this, "1508487720", "timestamp.txt");
 
-        String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
+        //String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
+        String serverURL = "http://www.ofertaeducativayculturalcgto.ugto.mx/getListEvents.php?timestamp=";
         String lastTimestamp = readStringFromFile(this, "timestamp.txt");
         System.out.println("Timestamp desde archivo = " + lastTimestamp);
 
         //Connect with server to download all new banners
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
         task.execute(serverURL + lastTimestamp);
+        bannersMessage = (TextView) findViewById(R.id.bannersMessage);
+        bannersMessage.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        bannersMessage.setText("Cargando Ofertas...");
 
         //Set font for all TextViews
         culturalOffersTitle = (TextView) findViewById(R.id.culturalOffersTitle);
@@ -310,6 +316,8 @@ public class MainActivity extends AppCompatActivity {
                 popupMenu.getMenuInflater().inflate(R.menu.menu_filter, popupMenu.getMenu());
                 popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener(){
                     public boolean onMenuItemClick(MenuItem item){
+                        if(filteredBanners == null) return false;
+
                         int optionOrder = item.getOrder();
 
                         int mask = 0;
@@ -478,12 +486,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setupBanners(ArrayList<Banner> banners){
+        if(banners.size() == 0) {
+            bannersMessage.setText("No Hay Ofertas Disponibles.");
+            return;
+        }
+
         //Save banners for future
         this.banners = banners;
         this.filteredBanners = (ArrayList<Banner>) banners.clone();
         writeBannersToFile(this, banners, "banners.ser");
 
         //Show banners
+        bannersMessage.setText("");
         bannersAdapter = new CustomBannerAdapter(this, filteredBanners);
         bannersManager = new LinearLayoutManager(this);
         bannersManager.setOrientation(LinearLayoutManager.HORIZONTAL);

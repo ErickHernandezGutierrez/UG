@@ -1,9 +1,9 @@
 package app.ug;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
@@ -19,9 +19,12 @@ import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
+import java.io.File;
 import java.io.InputStream;
 import java.lang.reflect.Array;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -41,11 +44,13 @@ public class ChestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chest);
+        getSupportActionBar().hide();
 
         chestMainTitle = (TextView) findViewById(R.id.chestMainTitle);
         chestMainTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
 
-        String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListMemories.php?timestamp=";
+        //String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListMemories.php?timestamp=";
+        String serverURL = "http://www.ofertaeducativayculturalcgto.ugto.mx/getListMemories.php?timestamp=";
         String lastTimestamp = "1508487720";
 
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
@@ -136,15 +141,17 @@ public class ChestActivity extends AppCompatActivity {
 
                         //Parse each JSON object
                         for(int i = 0; i < arr.size(); i++) {
+
                             JSONObject jsonMemory = (JSONObject) arr.get(i);
                             Memory memory = new Memory();
 
+                            String date = (String) jsonMemory.get("creationdate");
                             String title = (String) jsonMemory.get("title");
                             String description = (String) jsonMemory.get("description");
-                            Long num_links = (Long) jsonMemory.get("urlcount");
-                            JSONArray jsonLinks = (JSONArray) jsonMemory.get("urls");
+                            //Long num_links = (Long) jsonMemory.get("urlcount");
+                            //JSONArray jsonLinks = (JSONArray) jsonMemory.get("urls");
 
-                            memory.setDate("12/01/2017");
+                            memory.setDate(date);
                             memory.setCampus("Guanajuato");
                             memory.setTitle(title);
                             memory.setDescription(description);
@@ -152,9 +159,10 @@ public class ChestActivity extends AppCompatActivity {
                             ArrayList<String> links = new ArrayList();
                             ArrayList<Bitmap> images = new ArrayList<>();
                             System.out.println("Links:");
-                            for(int j = 0; j < num_links; j++){
-                                String link = (String) jsonLinks.get(j);
+                            for(int j = 1; j <= 4; j++){
+                                String link = (String) jsonMemory.get("url" + Integer.toString(j));
                                 System.out.println(link);
+                                if(link == null) continue;
                                 links.add(link);
                                 images.add(Glide.with(context).load(link).asBitmap().into(500, 500).get());
                             }
