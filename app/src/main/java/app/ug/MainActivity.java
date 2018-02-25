@@ -45,6 +45,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.net.Uri;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
@@ -69,60 +70,26 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView culturalOffersTitle;
-    private TextView offersTitle;
-    private TextView chestTitle;
-    private TextView licenciaturaText;
-    private TextView especialidadText;
-    private TextView maestriaText;
-    private TextView doctoradoText;
-    private TextView testTitle;
-    private TextView instructionsText;
-    private TextView startTestText;
-    //private TextView storeTitle;
-    //private TextView storeText;
-    //private TextView paymentsText;
-    private TextView socialNetworksTitle;
-    private TextView facebookText;
-    private TextView twitterText;
-    private TextView instagramText;
-    private TextView youtubeText;
-    private LinearLayout chestButton;
-    private LinearLayout licenciaturaButton;
-    //private LinearLayout especialidadButton;
-    //private LinearLayout maestriaButton;
-    //private LinearLayout doctoradoButton;
-    private LinearLayout instructionsButton;
-    private LinearLayout startTestButton;
-    //private ImageButton storeButton;
-    //private ImageButton paymentsButton;
-    private LinearLayout facebookButton;
-    private LinearLayout twitterButton;
-    private LinearLayout instagramButton;
-    private LinearLayout youtubeButton;
-    private LinearLayout googleButton;
-    private LinearLayout ugpageButton;
     private RecyclerView bannersView;
     private CustomBannerAdapter bannersAdapter;
     private LinearLayoutManager bannersManager;
     private TextView bannersMessage;
-    private Button refreshButton;
-    private Button filterButton;
     private ArrayList<Banner> banners;
     private ArrayList<Banner> filteredBanners;
+    Button refreshButton;
+    Button filterButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         getSupportActionBar().hide();
+
         //writeStringToFile(this, "1508487720", "timestamp.txt");
 
         //String serverURL = "http://reina.southcentralus.cloudapp.azure.com/getListEvents.php?timestamp=";
         String serverURL = "http://www.ofertaeducativayculturalcgto.ugto.mx/getListEvents.php?timestamp=";
         String lastTimestamp = readStringFromFile(this, "timestamp.txt");
-        System.out.println("Timestamp desde archivo = " + lastTimestamp);
 
         //Connect with server to download all new banners
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
@@ -131,64 +98,188 @@ public class MainActivity extends AppCompatActivity {
         bannersMessage.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
         bannersMessage.setText("Cargando Ofertas...");
 
-        //Set font for all TextViews
-        culturalOffersTitle = (TextView) findViewById(R.id.culturalOffersTitle);
-        culturalOffersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        offersTitle = (TextView) findViewById(R.id.offersTitle);
-        offersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        chestTitle = (TextView) findViewById(R.id.chestTitle);
-        chestTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        licenciaturaText = (TextView) findViewById(R.id.licenciaturaText);
-        licenciaturaText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        especialidadText = (TextView) findViewById(R.id.especialidadText);
-        especialidadText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        maestriaText = (TextView) findViewById(R.id.maestriaText);
-        maestriaText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        doctoradoText = (TextView) findViewById(R.id.doctoradoText);
-        doctoradoText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));//*/
-
-        /*//Setup Store
-        storeTitle = (TextView) findViewById(R.id.storeTitle);
-        storeTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        storeText = (TextView) findViewById(R.id.storeText);
-        storeText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        paymentsText = (TextView) findViewById(R.id.paymentsText);
-        paymentsText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        storeButton = (ImageButton) findViewById(R.id.storeButton);
-        storeButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StoreActivity.class));
-            }
-        });
-        paymentsButton = (ImageButton) findViewById(R.id.paymentsButton);
-        paymentsButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible", Toast.LENGTH_SHORT).show();
-            }
-        });//*/
-
-        //Setup Test
-        testTitle = (TextView) findViewById(R.id.testTitle);
-        testTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        instructionsText = (TextView) findViewById(R.id.instructionsText);
-        instructionsText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        startTestText = (TextView) findViewById(R.id.startTestText);
-        startTestText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-
-        socialNetworksTitle = (TextView) findViewById(R.id.socialNetworksTitle);
-        socialNetworksTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
-        facebookText = (TextView) findViewById(R.id.facebookText);
-        facebookText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        twitterText = (TextView) findViewById(R.id.twitterText);
-        twitterText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        instagramText = (TextView) findViewById(R.id.instagramText);
-        instagramText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        youtubeText = (TextView) findViewById(R.id.youtubeText);
-        youtubeText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        //Setup all TextViews
+        setupTextViews();
 
         //Setup all Buttons
+        setupButtons();
+    }
+
+    private void writeBannersToFile(Context context, ArrayList<Banner> banners, String filename){
+        try{
+            FileOutputStream fileWriter = context.openFileOutput(filename, Context.MODE_PRIVATE);
+            ObjectOutputStream objectWriter = new ObjectOutputStream(fileWriter);
+
+            objectWriter.writeObject(banners);
+            objectWriter.close();
+            fileWriter.close();
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    private ArrayList<Banner> readBannersFromFile(Context context, String filename){
+        ArrayList<Banner> output;
+
+        try{
+            FileInputStream fileReader = context.openFileInput(filename);
+            ObjectInputStream objectReader = new ObjectInputStream(fileReader);
+
+            output = (ArrayList<Banner>) objectReader.readObject();
+            objectReader.close();
+        }
+        catch(FileNotFoundException fnfe){
+            output = new ArrayList<>();
+        }
+        catch(IOException e){
+            output = new ArrayList<>();
+        }
+        catch(ClassNotFoundException cnfe){
+            output = new ArrayList<>();
+        }
+
+        for(int i = 0; i < output.size(); i++)
+            output.get(i).setImage(readBitmapFromFile(context, output.get(i).getTitle()));
+
+        return output;
+    }
+
+    private void writeStringToFile(Context context, String data, String filename) {
+        try {
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(filename, Context.MODE_PRIVATE));
+            outputStreamWriter.write(data);
+            outputStreamWriter.close();
+        }
+        catch (IOException e) {}
+    }
+
+    private String readStringFromFile(Context context, String filename) {
+        String ret = "";
+
+        try {
+            InputStream inputStream = context.openFileInput(filename);
+
+            if (inputStream != null) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+                String receiveString = "";
+                StringBuilder stringBuilder = new StringBuilder();
+
+                while ( (receiveString = bufferedReader.readLine()) != null ) {
+                    stringBuilder.append(receiveString);
+                }
+
+                inputStream.close();
+                ret = stringBuilder.toString();
+            }
+        }
+        catch (FileNotFoundException e) {
+            ret = "1508487720";
+        } catch (IOException e) {
+            ret = "1508487720";
+        }
+
+        return ret;
+    }
+
+    private void writeBitmapToFile(Context context, Bitmap bitmapImage, String filename){
+        ContextWrapper contextWrapper = new ContextWrapper(context);
+        // path to /data/data/yourapp/app_data/imageDir
+        File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
+        File mypath=new File(directory, filename + ".jpg");
+
+        FileOutputStream fos = null;
+        try {
+            fos = new FileOutputStream(mypath);
+            bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, fos);
+        }
+        catch(Exception e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                fos.close();
+            }
+            catch(IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        //return directory.getAbsolutePath();
+        System.out.println("pakito = " + directory.getAbsolutePath());
+    }
+
+    private Bitmap readBitmapFromFile(Context context, String filename) {
+        try {
+            ContextWrapper contextWrapper = new ContextWrapper(context);
+            File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
+            File file = new File(directory, filename + ".jpg");
+            return BitmapFactory.decodeStream(new FileInputStream(file));
+        }
+        catch(FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    private void setupTextViews(){
+        TextView culturalOffersTitle = (TextView) findViewById(R.id.culturalOffersTitle);
+        TextView offersTitle = (TextView) findViewById(R.id.offersTitle);
+        TextView chestTitle = (TextView) findViewById(R.id.chestTitle);
+        TextView chestText = (TextView) findViewById(R.id.chestText);
+        TextView licenciaturaText = (TextView) findViewById(R.id.licenciaturaText);
+        TextView especialidadText = (TextView) findViewById(R.id.especialidadText);
+        TextView maestriaText = (TextView) findViewById(R.id.maestriaText);
+        TextView doctoradoText = (TextView) findViewById(R.id.doctoradoText);
+        TextView testTitle = (TextView) findViewById(R.id.testTitle);
+        TextView instructionsText = (TextView) findViewById(R.id.instructionsText);
+        TextView startTestText = (TextView) findViewById(R.id.startTestText);
+        TextView socialNetworksTitle = (TextView) findViewById(R.id.socialNetworksTitle);
+        TextView facebookText = (TextView) findViewById(R.id.facebookText);
+        TextView twitterText = (TextView) findViewById(R.id.twitterText);
+        TextView instagramText = (TextView) findViewById(R.id.instagramText);
+        TextView youtubeText = (TextView) findViewById(R.id.youtubeText);
+        TextView googleText = (TextView) findViewById(R.id.googleText);
+        TextView ugpageText = (TextView) findViewById(R.id.ugpageText);
+
+
+        culturalOffersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        offersTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        chestTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        chestText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        licenciaturaText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        especialidadText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        maestriaText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        doctoradoText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        testTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        instructionsText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        startTestText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        socialNetworksTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        facebookText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        twitterText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        instagramText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        youtubeText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        googleText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        ugpageText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+    }
+
+    private void setupButtons(){
+        LinearLayout chestButton;
+        LinearLayout licenciaturaButton;
+        LinearLayout especialidadButton;
+        LinearLayout maestriaButton;
+        LinearLayout doctoradoButton;
+        LinearLayout instructionsButton;
+        LinearLayout startTestButton;
+        LinearLayout facebookButton;
+        LinearLayout twitterButton;
+        LinearLayout instagramButton;
+        LinearLayout youtubeButton;
+        LinearLayout googleButton;
+        LinearLayout ugpageButton;
+
         chestButton = (LinearLayout) findViewById(R.id.chestButton);
         chestButton.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -205,29 +296,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        /*especialidadButton = (ImageButton) findViewById(R.id.especialidadButton);
+        especialidadButton = (LinearLayout) findViewById(R.id.especialidadButton);
         especialidadButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
             }
-        });//*/
+        });
 
-        /*maestriaButton = (ImageButton) findViewById(R.id.maestriaButton);
+        maestriaButton = (LinearLayout) findViewById(R.id.maestriaButton);
         maestriaButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
             }
-        });//*/
+        });
 
-        /*doctoradoButton = (ImageButton) findViewById(R.id.doctoradoButton);
+        doctoradoButton = (LinearLayout) findViewById(R.id.doctoradoButton);
         doctoradoButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
             }
-        });//*/
+        });
 
         instructionsButton = (LinearLayout) findViewById(R.id.instructionsButton);
         instructionsButton.setOnClickListener(new View.OnClickListener(){
@@ -366,123 +457,32 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void writeBannersToFile(Context context, ArrayList<Banner> banners, String filename){
-        try{
-            FileOutputStream fileWriter = context.openFileOutput(filename, Context.MODE_PRIVATE);
-            ObjectOutputStream objectWriter = new ObjectOutputStream(fileWriter);
+    private void setupStore(){
+        /*TextView storeTitle = (TextView) findViewById(R.id.storeTitle);
+        TextView storeText = (TextView) findViewById(R.id.storeText);
+        TextView paymentsText = (TextView) findViewById(R.id.paymentsText);
+        ImageButton storeButton;
+        ImageButton paymentsButton;
 
-            objectWriter.writeObject(banners);
-            objectWriter.close();
-            fileWriter.close();
-        }
-        catch(Exception e){
-            e.printStackTrace();
-        }
-    }
+        storeTitle.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifBold.otf"));
+        storeText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        paymentsText.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
 
-    private ArrayList<Banner> readBannersFromFile(Context context, String filename){
-        ArrayList<Banner> output;
-
-        try{
-            FileInputStream fileReader = context.openFileInput(filename);
-            ObjectInputStream objectReader = new ObjectInputStream(fileReader);
-
-            output = (ArrayList<Banner>) objectReader.readObject();
-            objectReader.close();
-        }
-        catch(FileNotFoundException fnfe){
-            output = new ArrayList<>();
-        }
-        catch(IOException e){
-            output = new ArrayList<>();
-        }
-        catch(ClassNotFoundException cnfe){
-            output = new ArrayList<>();
-        }
-
-        for(int i = 0; i < output.size(); i++)
-            output.get(i).setImage(readBitmapFromFile(context, output.get(i).getTitle()));
-
-        return output;
-    }
-
-    private void writeStringToFile(Context context, String data, String filename) {
-        try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(context.openFileOutput(filename, Context.MODE_PRIVATE));
-            outputStreamWriter.write(data);
-            outputStreamWriter.close();
-        }
-        catch (IOException e) {}
-    }
-
-    private String readStringFromFile(Context context, String filename) {
-        String ret = "";
-
-        try {
-            InputStream inputStream = context.openFileInput(filename);
-
-            if (inputStream != null) {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-                BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-                String receiveString = "";
-                StringBuilder stringBuilder = new StringBuilder();
-
-                while ( (receiveString = bufferedReader.readLine()) != null ) {
-                    stringBuilder.append(receiveString);
-                }
-
-                inputStream.close();
-                ret = stringBuilder.toString();
+        storeButton = (ImageButton) findViewById(R.id.storeButton);
+        storeButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StoreActivity.class));
             }
-        }
-        catch (FileNotFoundException e) {
-            ret = "1508487720";
-        } catch (IOException e) {
-            ret = "1508487720";
-        }
+        });
 
-        return ret;
-    }
-
-    private void writeBitmapToFile(Context context, Bitmap bitmapImage, String filename){
-        ContextWrapper contextWrapper = new ContextWrapper(context);
-        // path to /data/data/yourapp/app_data/imageDir
-        File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
-        File mypath=new File(directory, filename + ".jpg");
-
-        FileOutputStream fos = null;
-        try {
-            fos = new FileOutputStream(mypath);
-            bitmapImage.compress(Bitmap.CompressFormat.JPEG, 100, fos);
-        }
-        catch(Exception e) {
-            e.printStackTrace();
-        }
-        finally {
-            try {
-                fos.close();
+        paymentsButton = (ImageButton) findViewById(R.id.paymentsButton);
+        paymentsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "No disponible", Toast.LENGTH_SHORT).show();
             }
-            catch(IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        //return directory.getAbsolutePath();
-        System.out.println("pakito = " + directory.getAbsolutePath());
-    }
-
-    private Bitmap readBitmapFromFile(Context context, String filename) {
-        try {
-            ContextWrapper contextWrapper = new ContextWrapper(context);
-            File directory = contextWrapper.getDir("banners", Context.MODE_PRIVATE);
-            File file = new File(directory, filename + ".jpg");
-            return BitmapFactory.decodeStream(new FileInputStream(file));
-        }
-        catch(FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-        return null;
+        });//*/
     }
 
     public void setupBanners(ArrayList<Banner> banners){

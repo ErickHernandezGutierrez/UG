@@ -21,11 +21,11 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:background="#D9D9D9"
+        android:paddingBottom="10dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:background="#D9D9D9">
+        android:paddingTop="10dp">
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -36,51 +36,52 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/culturalOffersTitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
                         android:gravity="left|center"
                         android:text="Oferta Cultural"
                         android:textColor="#000000"
-                        android:textSize="14dp"/>
+                        android:textSize="@dimen/large_text_size" />
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <Button
                         android:id="@+id/refreshButton"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp"
-                        android:background="@drawable/icon_refresh"/>
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/icon_refresh" />
 
                     <Button
                         android:id="@+id/filterButton"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="10dp"
-                        android:background="@drawable/icon_filter"/>
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/icon_filter" />
 
                 </LinearLayout>
 
@@ -90,19 +91,20 @@
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="#FFDDDDDD"/>
-
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/bannersView"
-                    android:scrollbars="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:background="#FFDDDDDD" />
 
                 <TextView
                     android:id="@+id/bannersMessage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"/>
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/small_text_size" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bannersView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal" />
 
             </LinearLayout>
 
@@ -110,51 +112,51 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/offersTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="left|center"
                     android:text="Oferta Educativa"
                     android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:id="@+id/offersTitle"/>
+                    android:textSize="@dimen/large_text_size" />
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="#FFDDDDDD"/>
+                    android:background="#FFDDDDDD" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp">
+                    android:paddingTop="5dp">
 
                     <LinearLayout
                         android:id="@+id/licenciaturaButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/book"/>
+                            android:src="@drawable/book" />
 
                         <TextView
                             android:id="@+id/licenciaturaText"
@@ -163,37 +165,37 @@
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Licenciatura"
-                            android:textSize="12dp"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/especialidadButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/book"/>
+                            android:src="@drawable/book" />
 
                         <TextView
+                            android:id="@+id/especialidadText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Especialidad"
-                            android:textSize="12dp"
-                            android:id="@+id/especialidadText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
@@ -203,9 +205,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
                     android:paddingTop="5dp">
 
                     <LinearLayout
@@ -213,53 +215,53 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/book"/>
+                            android:src="@drawable/book" />
 
                         <TextView
+                            android:id="@+id/maestriaText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Maestría"
-                            android:textSize="12dp"
-                            android:id="@+id/maestriaText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/doctoradoButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/book"/>
+                            android:src="@drawable/book" />
 
                         <TextView
+                            android:id="@+id/doctoradoText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Doctorado"
-                            android:textSize="12dp"
-                            android:id="@+id/doctoradoText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
@@ -271,36 +273,36 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/testTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="left|center"
                     android:text="Examen Vocacional"
                     android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:id="@+id/testTitle"/>
+                    android:textSize="@dimen/large_text_size" />
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="#FFDDDDDD"/>
+                    android:background="#FFDDDDDD" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
                     android:paddingTop="5dp">
 
                     <LinearLayout
@@ -308,14 +310,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/bookmanual"/>
+                            android:src="@drawable/bookmanual" />
 
                         <TextView
                             android:id="@+id/instructionsText"
@@ -324,37 +326,37 @@
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Instrucciones"
-                            android:textSize="12dp" />
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/startTestButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:src="@drawable/bookline"/>
+                            android:src="@drawable/bookline" />
 
                         <TextView
+                            android:id="@+id/startTestText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="@string/inicio"
-                            android:textSize="12dp"
-                            android:id="@+id/startTestText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
@@ -366,28 +368,28 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:orientation="vertical"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/chestTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="left|center"
                     android:text="Baúl de Memorias"
                     android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:id="@+id/chestTitle"/>
+                    android:textSize="@dimen/large_text_size" />
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="#FFDDDDDD"/>
+                    android:background="#FFDDDDDD" />
 
                 <LinearLayout
                     android:id="@+id/chestButton"
@@ -396,14 +398,14 @@
                     android:layout_gravity="center"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:orientation="horizontal"
+                    android:background="?android:attr/selectableItemBackground"
                     android:clickable="true"
-                    android:background="?android:attr/selectableItemBackground">
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:src="@drawable/book"/>
+                        android:src="@drawable/chest"/>
 
                     <TextView
                         android:id="@+id/chestText"
@@ -412,7 +414,7 @@
                         android:gravity="left|center"
                         android:paddingLeft="5dp"
                         android:text="Baúl de Memorias"
-                        android:textSize="12dp"/>
+                        android:textSize="@dimen/standard_text_size" />
 
                 </LinearLayout>
 
@@ -503,36 +505,36 @@
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/border">
+                android:background="@drawable/border"
+                android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/socialNetworksTitle"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
                     android:gravity="left|center"
                     android:text="Síguenos"
                     android:textColor="#000000"
-                    android:textSize="14dp"
-                    android:id="@+id/socialNetworksTitle"/>
+                    android:textSize="@dimen/large_text_size" />
 
                 <View
                     android:layout_width="fill_parent"
                     android:layout_height="0.5dp"
                     android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
-                    android:background="#FFDDDDDD"/>
+                    android:background="#FFDDDDDD" />
 
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
                     android:paddingTop="5dp">
 
                     <LinearLayout
@@ -540,53 +542,53 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/facebook"/>
+                            android:src="@drawable/facebook" />
 
                         <TextView
+                            android:id="@+id/facebookText"
                             android:layout_width="100dp"
                             android:layout_height="35dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Facebook"
-                            android:textSize="12dp"
-                            android:id="@+id/facebookText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/twitterButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/twitter"/>
+                            android:src="@drawable/twitter" />
 
                         <TextView
+                            android:id="@+id/twitterText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Twitter"
-                            android:textSize="12dp"
-                            android:id="@+id/twitterText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
@@ -596,62 +598,62 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
-                    android:paddingRight="5dp"
-                    android:paddingBottom="5dp">
+                    android:paddingRight="5dp">
 
                     <LinearLayout
                         android:id="@+id/youtubeButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/youtube"/>
+                            android:src="@drawable/youtube" />
 
                         <TextView
+                            android:id="@+id/youtubeText"
                             android:layout_width="100dp"
                             android:layout_height="35dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="YouTube"
-                            android:textSize="12dp"
-                            android:id="@+id/youtubeText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/instagramButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/instagram"/>
+                            android:src="@drawable/instagram" />
 
                         <TextView
+                            android:id="@+id/instagramText"
                             android:layout_width="100dp"
                             android:layout_height="40dp"
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Instagram"
-                            android:textSize="12dp"
-                            android:id="@+id/instagramText"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
@@ -661,9 +663,9 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
+                    android:paddingBottom="5dp"
                     android:paddingLeft="10dp"
                     android:paddingRight="5dp"
-                    android:paddingBottom="5dp"
                     android:paddingTop="5dp">
 
                     <LinearLayout
@@ -671,14 +673,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/google"/>
+                            android:src="@drawable/google" />
 
                         <TextView
                             android:id="@+id/googleText"
@@ -687,28 +689,28 @@
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Google+"
-                            android:textSize="12dp"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
                     <View
                         android:layout_width="0dp"
                         android:layout_height="0dp"
-                        android:layout_weight="1"/>
+                        android:layout_weight="1" />
 
                     <LinearLayout
                         android:id="@+id/ugpageButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:orientation="horizontal"
+                        android:background="?android:attr/selectableItemBackground"
                         android:clickable="true"
-                        android:background="?android:attr/selectableItemBackground">
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:layout_width="35dp"
                             android:layout_height="35dp"
-                            android:src="@drawable/ugpage"/>
+                            android:src="@drawable/ugpage" />
 
                         <TextView
                             android:id="@+id/ugpageText"
@@ -717,7 +719,7 @@
                             android:gravity="left|center"
                             android:paddingLeft="5dp"
                             android:text="Página Oficial"
-                            android:textSize="12dp"/>
+                            android:textSize="@dimen/standard_text_size" />
 
                     </LinearLayout>
 
