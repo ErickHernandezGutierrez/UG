@@ -44,6 +44,13 @@
         android:layout_height="5dp"
         android:background="@color/pantone451c"/>
 
+    <TextView
+        android:id="@+id/chestMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp" />
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/memoriesView"
         android:scrollbars="vertical"

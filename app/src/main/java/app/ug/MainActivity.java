@@ -447,6 +447,9 @@ public class MainActivity extends AppCompatActivity {
                             if((mask & tag) > 0)
                                 filteredBanners.add(banners.get(i));
                         }
+                        if(filteredBanners.isEmpty()) {
+                            Toast.makeText(getApplicationContext(), "No hay eventos disponibles", Toast.LENGTH_SHORT).show();
+                        }
                         bannersAdapter.notifyDataSetChanged();
 
                         return true;
@@ -487,7 +490,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupBanners(ArrayList<Banner> banners){
         if(banners.size() == 0) {
-            bannersMessage.setText("No Hay Ofertas Disponibles.");
+            bannersMessage.setText("No hay eventos Disponibles. Revisa tu conexión a internet");
             return;
         }
 

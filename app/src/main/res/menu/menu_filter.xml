@@ -25,7 +25,7 @@
     <item
         android:id="@+id/actionShowDCSH"
         android:orderInCategory="104"
-        android:title="Mostrar Ciencia"/>
+        android:title="Mostrar Ciencia &amp; Tecnología"/>
 
     <item
         android:id="@+id/actionShowDDPG"
@@ -35,7 +35,7 @@
     <item
         android:id="@+id/actionShowDI"
         android:orderInCategory="106"
-        android:title="Mostrar Política"/>
+        android:title="Mostrar Académico"/>
 
     <item
         android:id="@+id/actionShowDIgdfg"
@@ -50,11 +50,11 @@
     <item
         android:id="@+id/actionShowSalud"
         android:orderInCategory="109"
-        android:title="Mostrar Salud"/>
+        android:title="Mostrar Política"/>
 
     <item
         android:id="@+id/actionShowGobierno"
         android:orderInCategory="110"
-        android:title="Mostrar Gobierno"/>
+        android:title="Mostrar Salud"/>
 
 </menu>

@@ -39,6 +39,7 @@ public class ChestActivity extends AppCompatActivity {
     private LinearLayoutManager memoriesManager;
     private RecyclerView memoriesView;
     private TextView chestMainTitle;
+    private TextView chestMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,10 +56,18 @@ public class ChestActivity extends AppCompatActivity {
 
         HttpPostAsyncTask task = new HttpPostAsyncTask(this);
         task.execute(serverURL + lastTimestamp);
+        chestMessage = (TextView) findViewById(R.id.chestMessage);
+        chestMessage.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
+        chestMessage.setText("Cargando...");
     }
 
     public void setupChest(final ArrayList<Memory> memories){
+        if(memories.size() == 0) {
+            chestMessage.setText("No hay eventos disponibles. Revisa tu conexión a internet");
+            return;
+        }
         //Setup Chest
+        chestMessage.setText("");
         memoriesAdapter = new CustomMemoryAdapter(this, memories);
         memoriesManager = new LinearLayoutManager(this);
         memoriesManager.setOrientation(LinearLayoutManager.VERTICAL);
