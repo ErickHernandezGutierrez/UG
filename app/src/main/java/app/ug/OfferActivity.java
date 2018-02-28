@@ -212,10 +212,16 @@ public class OfferActivity extends Activity {
         mapButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                Intent intent = new Intent(OfferActivity.this, MapsActivity.class);
+                /*Intent intent = new Intent(OfferActivity.this, MapsActivity.class);
                 intent.putExtra("latitud", offerLatitud);
                 intent.putExtra("longitud", offerLongitud);
-                startActivity(intent);
+                startActivity(intent);*/
+                Uri gmmIntentUri = Uri.parse("geo:"+offerLatitud+","+offerLongitud+"?q="+offerLatitud+","+offerLongitud);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                }
             }
         });
     }
