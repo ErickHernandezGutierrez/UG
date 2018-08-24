@@ -1,8 +1,8 @@
 package app.ug;
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-import android.content.Intent;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -45,7 +45,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Add a marker and move the camera
         LatLng offerLocation = new LatLng(latitud, longitud);
         mMap.addMarker(new MarkerOptions().position(offerLocation).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(offerLocation));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(offerLocation, 15.0f));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(offerLocation));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(offerLocation, 17.0f));
     }
 }

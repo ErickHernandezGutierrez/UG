@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">Oferta Educativa y cultural</string>
-
-
+    <string name="app_name">Oferta Educativa y Cultural</string>
 
     <!-- Strings for test -->
     <string name="start_test">Examen Vocacional</string>
