@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
         task.execute(serverURL + lastTimestamp);
         bannersMessage = (TextView) findViewById(R.id.bannersMessage);
         bannersMessage.setTypeface(Typeface.createFromAsset(getAssets(), "GandhiSerifRegular.otf"));
-        bannersMessage.setText("Cargando Ofertas...");
+        bannersMessage.setText("Cargando Eventos Culturales...");
 
         //Setup all TextViews
         setupTextViews();
@@ -490,7 +490,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void setupBanners(ArrayList<Banner> banners){
         if(banners.size() == 0) {
-            bannersMessage.setText("No hay eventos Disponibles. Revisa tu conexión a internet");
+            bannersMessage.setText("No hay eventos disponibles.");
             return;
         }
 
