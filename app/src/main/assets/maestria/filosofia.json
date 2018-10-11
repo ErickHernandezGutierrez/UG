@@ -1,0 +1,21 @@
+[
+    {
+        "titulo": "Filosofía",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "*La Maestría en Filosofía proveerá las condiciones y espacios formativos que permitirán al alumno profundizar su formación académica y de investigación en una de las cuatro áreas ofrecidas en el posgrado: Filosofía Social, Estética y Filosofía del Arte, Historia y Filosofía de la Ciencia y Racionalidad Contemporánea; con el fin de que al recibir el grado sea capaz de impartir docencia de alto nivel, y cuente con las destrezas indispensables para la investigación..",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "optativas": "-Seminario de Tesis\n-Seminario de Investigación\n-Curso temático\n-Seminario de presentación de avances de tesis.\n-Coloquio del Posgrado."
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Valenciana.",
+        "domicilio": "Exconvento de Valenciana s/n, Mineral de Valenciana",
+        "telefono": "7323908, 7320667, 7327424, 7329559 Ext. 5821 ",
+        "latitud": 21.042046, 
+        "longitud": -101.257894
+    }
+]

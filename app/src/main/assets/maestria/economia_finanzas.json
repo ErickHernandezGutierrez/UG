@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Economía y Finanzas",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "*Realizar análisis económico-financieros para diagnosticar, pronosticar y toma de decisiones a corto, mediano y largo plazo, utilizando fuentes de información oficiales y bases de datos confiables. La orientación del programa es profesionalizante basada en métodos formales en matemáticas, estadística y economía.",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Sistemas Financieros\n Microeconomía\n Matematicas para Economistas y Financieros\n Estadística.",
+                "2": "-Mercados e instrumentos de renta variable\n Macroeconomia\n Econometría\n Metodos para la investigación Cientifica y Aplicada",
+                "3": "-Administracion de Riesgos\n Macroeconometría\n Optativa de profundizacion I\n Optativa Profesional I",
+		"4": "-Diseño de protafolios de inversion en activos financieros.\n Teoria de Juegos.\n Optativa de profundizacion II\n Optativa Profesional II",
+                "optativas": "-Econometria Espacial\n Estrategia y Negociación\n Series de Tiempo\n Medio  ambiente  y  Desarrollo\n Microeconomía y Desarrollo\n Política Pública y Desarrollo.\n Recursos Naturales, Intercambio y Desarrollo Sustentable\n Macroeconomía Abierta y Desarrollo\n Economía Laboral\n Muestreo y Recolección de Datos"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Económico Administrativas",
+        "sede": "Sede Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250;",
+        "telefono": " 473 735 2900 Exts. 2689.",
+        "latitud": 21.004120,
+        "longitud": -101.270897
+    }
+]

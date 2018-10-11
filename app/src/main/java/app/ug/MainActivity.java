@@ -308,7 +308,8 @@ public class MainActivity extends AppCompatActivity {
         maestriaButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, MasterActivity.class));
+                //Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -316,7 +317,8 @@ public class MainActivity extends AppCompatActivity {
         doctoradoButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(MainActivity.this, PhdActivity.class));
+                //Toast.makeText(getApplicationContext(), "No disponible aún.", Toast.LENGTH_SHORT).show();
             }
         });
 

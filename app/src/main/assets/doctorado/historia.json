@@ -1,0 +1,29 @@
+[
+    {
+        "titulo": "Historia",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "El Doctorado en Historia busca formar investigadores con una visión amplia y profunda de los procesos histórico-socioculturales que les permita el ejercicio profesional y académico en centros de investigación, dependencias gubernamentales y organizaciones no gubernamentales ligadas a problemas y temas históricos y con un alto sentido de responsabilidad social.",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "-Seminario de Tesis I\n-Seminario de lecturas teórico-metodológicas\n-Teoría de la Historia",
+                "2": "-Seminario de Tesis II\n-Curso temático I\n-Corrientes historiográficas contemporáneas",
+                "3": "-Seminario de Tesis III\n-Curso temático II",
+                "4": "-Seminario de Tesis IV",
+		"5": "-Seminario de Tesis V",
+		"6": "-Seminario de Tesis VI",
+		"7": "-Seminario de Tesis VII",
+		"8": "-Seminario de Tesis VIII",
+                "optativas": "-"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Valenciana.",
+        "domicilio": "Exconvento de Valenciana s/n, Mineral de Valenciana",
+        "telefono": "7323908, 7320667, 7327424, 7329559 Ext. 5817",
+        "latitud": 21.042046, 
+        "longitud": -101.257894
+    }
+]

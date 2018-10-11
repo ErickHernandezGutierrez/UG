@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Historia (Estudios Históricos Interdisciplinarios)",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "*Este programa educativo forma profesionales en la investigación histórica con un enfoque interdisciplinario en un ambiente académico de alto nivel en el que se combinan la reflexión, la argumentación, la investigación, el diálogo y el debate desde distintos puntos de vista disciplinarios. Esto les permitirá analizar procesos históricos desde la interdisciplinariedad, pertinentes a la realidad actual, prioritariamente en la investigación, y de manera complementaria en la docencia.",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Curso temático La interdisciplina entre la historia y las ciencias sociales\n-Curso temático Epistemología de la historia, ss. XX y XXI\n-Seminario de investigación I\n-Seminario de tesis I\n-Curso monográfico\n-Coloquio de posgrado",
+                "2": "-Curso temático La interdisciplina entre la historia y las humanidades\n-Curso temático Historiografía occidental contemporánea\n-Seminario de investigación II\n-Seminario de tesis II\n-Curso monográfico\n-Coloquio de posgrado",
+                "3": "-Seminario Especializado I (Estancia de archivo o de investigación)*\n-Seminario de tesis III\n-Curso monográfico\n-Coloquio de posgrado",
+                "4": "-Seminario Especializado II\n-Seminario de tesis IV\n-Curso monográfico\n-Coloquio de posgrado",
+                "optativas": ""
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Valenciana",
+        "domicilio": "Exconvento de Valenciana s/n, Mineral de Valenciana",
+        "telefono": "(473) 7-32-06-67, 7-32-39-08 y 7-32-74-24 (Extensión 5827) ",
+        "latitud": 21.041315, 
+        "longitud": -101.2573448
+    }
+]

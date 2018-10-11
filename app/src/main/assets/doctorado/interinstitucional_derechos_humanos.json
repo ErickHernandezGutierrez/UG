@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Interinstitucional en Derechos Humanos",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "Contribuir a la formación de recursos de alto nivel, habilitados y con las competencias necesarias para que, a través de la investigación y desde una perspectiva de derechos humanos, problematicen el estado del arte en su área y produzcan conocimiento original en la materia.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-No disponible",
+                "2": "-",
+                "3": "-",
+                "4": "-",
+		"5": "- ",
+		"6": "-",
+                "optativas": "-Líneas de Generación y Aplicación del Conocimiento:\n\n Democracia, políticas públicas y derechos humanos.\n Sistemas de Justicia y derechoshumanos.\n Derechos económicos, sociales, culturales y ambientales.\n Violaciones graves a los derechos humanos.\n Derecho internacional de los derechoshumanos."
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Derecho, ´Política y Gobierno.",
+	"sede": "Centro.",
+    	"domicilio": "Lascuraín de Retana No. 5 Col. Centro  C.P. 36000",
+    	"telefono": "01 473 73 2 00 06 ext. 4268",
+    	"latitud": 21.017239,
+    	"longitud": -101.25327
+    }
+]

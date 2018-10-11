@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Lingüística Aplicada a la Enseñanza del Inglés",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "Formar profesionales altamente especializados y calificados en las áreas relacionadas a la docencia de del inglés con habilidades en investigación profesional sobre adquisición de lenguas, aplicables a las necesidades reales de las instituciones, buscando su eficiencia, competitividad y permanencia en un entorno nacional e internacional; con capacidad de interactuar con grupos multidisciplinarios y multiculturales mediante la comprensión de la cultura y el lenguaje.",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Lingüística Aplicada a la Enseñanza de Lenguas\n-Estrategias y técnicas de la lingüística aplicada\n-Procesos y formación del docente\n-Estancia profesional I\n-Optativa I",
+                "2": "-Diseño de programas de segunda lengua\n-Aplicación de teorías de adquisición y aprendizaje de lenguas\n-Estancia profesional II\nOptativa II",
+                "3": "-Análisis del Discurso Aplicado a la Práctica Profesional\n-Seminario de titulación\n-Estancia Profesional III\nOptativa III",
+                "4": "-Elaboración de trabajo de titulación\n-Estancia profesional IV\nOptativa IV",
+                "optativas": "-Bilingüismo y Educación Bilingüe\n-Lingüística Aplicada Crítica\n-Temas Selectos sobre Identidad\n-Lingüística Interaccional\n-Fundamentos de Administración y Gestión Financiera de Programas Educativos\n-Gramática Inglesa\n-Estadística en Ciencias Sociales\n-Sistemas Educativos\n-Diseño y Selección de Materiales Didácticos\n-Dimensiones de la Enseñanza de Lenguas\n-Teoría Sociocultural\n-Estudios Culturales\n-Teoría de la Actividad y CALL"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Departamento de Lenguas",
+        "domicilio": " Calzada de Guadalupe S/N, Col. Centro.",
+        "telefono": "473 732 00 06 ext. 8016",
+        "latitud": 21.018078,  
+        "longitud": -101.252068
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Dirección Estratégica del Capital Humano",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Cuatrimestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "*Formar personas que, con un enfoque sistémico, sean capaces de desarrollar las competencias que le permitan diseñar, coordinar y apoyar procesos efectivos y humanistas, aplicados a atraer, motivar, retener y desarrollar a las personas dentro de las organizaciones en concordancia estratégica e integral con los objetivos institucionales.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-Comportamiento organizacional\n Investigación Acción\n Dirección Estratégica de Recursos Humanos",
+                "2": "-Administración de procesos de negocios\n Atracción del Talento\n Entorno Jurídico del Trabajo",
+                "3": "-Estrategia de Compensaciones y Beneficios\n Desarrollo y Retención del Talento\n Evaluación del Desempeño",
+                "4": "-Consultoría y Diagnostico\n Estrategia y Diseño de la Organización\n Tecnologías de Información en RRHH",
+		"5": "Estrategia de Relaciones Laborales\n Optativa de Profundización I\n Optativa Profesional I",
+		"6": "Métrica para RRHH\n Optativa de Profundización II\n Optativa Profesional II ",
+		"optativas": "No disponible"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Económico Administrativas",
+        "sede": "Sede Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250;",
+        "telefono": "(473)73 5 29 00 EXT. 2818",
+        "latitud": 21.004120,
+        "longitud": -101.270897
+    }
+]

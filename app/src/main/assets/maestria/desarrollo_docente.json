@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Desarrollo Docente",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "*Formar profesionales con grado de Maestría en Desarrollo Docente quienes, con un sólido sustento científico-tecnológico, humanista, y con amplio compromiso social en la promoción de los valores humanos, logren, a través de la reflexión crítica y la integración de la teoría a su labor cotidiana, aplicar los avances y los nuevos enfoques de las ciencias de la educación, a fin de innovar la práctica educativa en función de los retos de la sociedad contemporánea.\n\n El programa de Maestría en Desarrollo Docente se dirige a profesores de formación (egresados de las Escuelas Normales y de las Universidades Pedagógicas) y profesionistas dedicados a la docencia o que estén desarrollando actividades directamente relacionadas con las funciones de investigación, docencia,extensión y difusión, y gestión académica, y que, por ende, estén prestando sus servicios en algún programa educativo, y que se interesen en mejorar su trabajo con alto sentido de calidad, equidad y pertinencia.",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Recuperación y análisis de la práctica docente\n-Modelos de intervención educativa\n-Optativa 1",
+                "2": "-Innovación de la práctica docente I\n-La persona del docente\n-Optiva 2\n- Selectiva 1",
+                "3": "-Innovación de la práctica docente II\n-El yo docente y el yo estudiante\n-Optativa 3\n-Selectiva 2",
+                "4": "-Seminario de titulación\n-Educación y trascendencia\n-Selectiva 3",
+                "optativas": "1. Reflexiones filosóficas y éticas de la educación\n2. La práctica docente en el contexto curricular\n3. La educación en contextos complejos\n Selectivas:\n1. Estrategias didácticas\n2. Diseño didáctico de cursos y elaboración de material didáctico\n3. Recursos y medios para el aprendizaje\n4. Tutoría académica\n5. Los ejes transversales en educación\n6. Temas transversales contemporáneos para la innovación educativa"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Yerbabuena.",
+        "domicilio": "Carr. Guanajuato-Juventino Rosas Km. 9.5",
+        "telefono": "01 (473) 733 0276 y 01 (473) 733 1269 Ext. 37 ",
+        "latitud": 20.960499,
+        "longitud": -101.274857
+    }
+]

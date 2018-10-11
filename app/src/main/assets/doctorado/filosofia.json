@@ -1,0 +1,29 @@
+[
+    {
+        "titulo": "Filosof[ia",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "El Doctorado en Filosofía provee las condiciones y elementos formativos que permiten al alumno realizar investigación original en una de las áreas contempladas en el programa con el fin de que al obtener el grado pueda desempeñarse solventemente como investigador en el área de su competencia, tanto en el ámbito nacional como internacional. Aunque este programa no contempla metas u objetivos relacionados expresamente con la docencia, la formación adquirida permite al alumno mejorar cualitativamente su rendimiento en este terreno. ",
+        "totalSemestres": 8,
+        "planEstudios":
+            [{
+                "1": "-Seminario de Tesis I\n-Seminario de Análisis y Crítica Filosófica",
+                "2": "-Seminario de Tesis II\n-Seminario de Análisis y Crítica Filosófica",
+                "3": "-Seminario de Tesis III\n-Seminario de Análisis y Crítica Filosófica",
+                "4": "-Seminario de Tesis VI\n-Seminario de Análisis y Crítica Filosófica",
+		"5": "-Seminario de Tesis V\n-Seminario de Análisis y Crítica Filosófica",
+		"6": "-Seminario de Tesis VI",
+		"7": "-Seminario de Tesis VII\n-Presentación de Trabajo de Tesis I",
+		"8": "-Seminario de Tesis VIII\n-Presentación de Trabajo de Tesis II\n-Tesis",
+                "optativas": "-Coloquio de Investigación Filosófica\n-Actividades Académicas Complementarias"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Valenciana.",
+        "domicilio": "Exconvento de Valenciana s/n, Mineral de Valenciana",
+        "telefono": "7323908, 7320667, 7327424, 7329559 Ext. 5817",
+        "latitud": 21.042046, 
+        "longitud": -101.257894
+    }
+]

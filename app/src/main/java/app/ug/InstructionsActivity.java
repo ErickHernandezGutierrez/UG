@@ -70,7 +70,7 @@ public class InstructionsActivity extends Activity {
         startTestButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(InstructionsActivity.this, InterestsActivity.class));
+                startActivity(new Intent(InstructionsActivity.this, WelcomeInteresesActivity.class));
             }
         });
     }

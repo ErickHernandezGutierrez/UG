@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Administración",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Cuatrimestral",
+        "periodoIngreso": "TP - 4 meses; TC - Anual",
+        "objetivos": "*Formar personas que, con una perspectiva analítica e innovadora en el ámbito administrativo, sean líderes en el diagnóstico de problemas y en el diseño e implementación de soluciones competitivas para organizaciones nacionales e internacionales y su entorno, con enfoque de mejora continua, sentido ético y responsabilidad social.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-Teoría y análisis de la organización\n Entorno Económico\n Métodos para la Investigación Científica y Aplicada",
+                "2": "-Pensamiento Estratégico\n Contabilidad y Costos\n Dirección Estratégica de Recursos Humanos",
+                "3": "-Marketing Estratégico\n Análisis de Datos para la Toma de Decisiones\n Gestión de la Innovación y la Tecnología",
+                "4": "-Administración Financiera\n Derecho y Negocios\n Evaluación y Emprendimiento de Proyectos",
+		"5": "Gestión de Proyectos\n Optativa de Profundización I\n Optativa Profesional I",
+		"6": "Desarrollo de Habilidades Gerenciales\n Optativa de Profundización II\n Optativa Profesional II",
+		"optativas": "No disponible"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Económico Administrativas",
+        "sede": "Sede Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250;",
+        "telefono": "01(473) 735 29 00 extensión 2654",
+        "latitud": 21.004120,
+        "longitud": -101.270897
+    }
+]

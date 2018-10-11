@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Literatura Hispanoamericana",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "La Maestría en Literatura Hispanoamericana tiene como objetivo principal ampliar, encauzar y cuestionar críticamente los conocimientos transmitidos en el marco de la Licenciatura en Letras Españolas del mismo departamento. La MLH se dirige primordialmente a egresados de una carrera en letras (españolas, hispanoamericanas o literatura comparada). Sin embargo, se aceptan candidatos de otras carreras, siempre que puedan comprobar conocimientos básicos en las siguientes áreas: Historia de la literatura hispanoamericana y Teoría literaria",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Narrativa hispanoamericana del siglo XX\n-Teoría literaria 1\n-Seminario de tesis 1",
+                "2": "-Poesía hispanoamericana del siglo XX\n-Teoría literaria 2\n-Seminario de tesis 2",
+                "3": "-Ensayo hispanoamericana del siglo XX\n-Crítica literaria\nSeminario de investigación 1\n-Seminario de tesis 3",
+                "4": "-Seminario de investigación 2\nSeminario de tesis 4",
+                "optativas": "-Básicas\n-Generales\n-Profesionales."
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Valenciana.",
+        "domicilio": "Exconvento de Valenciana s/n, Mineral de Valenciana",
+        "telefono": "7323908, 7320667, 7327424, 7329559 Ext. 5817",
+        "latitud": 21.042046, 
+        "longitud": -101.257894
+    }
+]

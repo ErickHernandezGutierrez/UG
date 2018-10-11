@@ -60,6 +60,14 @@
             android:name=".CulturalActivity"></activity>
         <activity
             android:name=".ChestActivity"></activity>
+        <activity
+            android:name=".MasterActivity"></activity>
+        <activity
+            android:name=".OfferActivityMaster"></activity>
+        <activity
+            android:name=".OfferActivityPhd"></activity>
+        <activity
+            android:name=".PhdActivity"></activity>
     </application>
 
 </manifest>

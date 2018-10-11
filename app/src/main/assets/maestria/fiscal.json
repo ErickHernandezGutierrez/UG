@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Fiscal",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Cuatrimestral",
+        "periodoIngreso": "No disponible",
+        "objetivos": "*Formar profesionales capaces de analizar, interpretar y sintetizar los diversos esquemas de la tributación nacional e internacional, que les permita proponer acciones para el cumplimiento de las obligaciones fiscales que resulten adecuadas y pertinentes entre el interés público  y privado de los contribuyentes.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-No disponible",
+		"2": "-",
+		"3": "-",
+		"4": "-",
+		"5": "-",
+		"6": "-",
+		"optativas": "No disponible"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Económico Administrativas",
+        "sede": "Sede Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250;",
+        "telefono": "01(473) 735 29 00 extensión 2870",
+        "latitud": 21.004120,
+        "longitud": -101.270897
+    }
+]

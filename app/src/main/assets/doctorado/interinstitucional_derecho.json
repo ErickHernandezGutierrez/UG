@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Interinstitucional en Derecho",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "Formar recursos humanos con un alto nivel académico capaces de realizar investigación científica original, de aplicar el conocimiento y de ejercer actividades docentes de calidad en la licenciatura y el posgrado en Derecho, y de asesorara a instituciones públicas y organismos privados en la solución de problemas jurídicos.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-Investigación I",
+                "2": "-Investigación II\n Temático I",
+                "3": "-Investigación III\n Temático II",
+                "4": "-Investigación IV\n Temático III",
+		"5": "- Investigación V\n Temático IV",
+		"6": "-Investigación VI",
+                "optativas": "-"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Derecho, ´Política y Gobierno.",
+	"sede": "Centro.",
+    	"domicilio": "Lascuraín de Retana No. 5 Col. Centro  C.P. 36000",
+    	"telefono": "Tel. (473) 732-00-06 Ext. 4034 ó 4168",
+    	"latitud": 21.017239,
+    	"longitud": -101.25327
+    }
+]

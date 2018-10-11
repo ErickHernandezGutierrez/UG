@@ -1,0 +1,27 @@
+[
+    {
+        "titulo": "Desarrollo Organizacional",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Cuatrimestral",
+        "periodoIngreso": "Cuatrimestral",
+        "objetivos": "*Formar personas que, con un enfoque sistémico e integral observan, entienden y reflexionan sobre las necesidades de las personas y de las organizaciones y que diseñan y facilitan procesos de cambio, desarrollo y transformación que posibilitan mejor calidad de vida para las personas, mayor prosperidad sostenible en las organizaciones y la construcción de mejores sociedades.",
+        "totalSemestres": 6,
+        "planEstudios":
+            [{
+                "1": "-Teoría y análisis de la organización\n Investigación Acción\n Uso Intencional del Self",
+                "2": "-Liderazgo y cambio\n Comportamiento Humano en la organización\n Estrategia y Diseño de la organización",
+                "3": "-Consultoría y Diagnóstico\n Teoría y Facilitación del Proceso Grupal\n Aprendizaje y Cultura Organizacional",
+                "4": "-Implementación del Cambio Planeado\n Coaching\n Poder y Política en las Organizaciones",
+		"5": "Diversidad y Multiculturalidad\n Optativa de Profundización I\n Optativa Profesional I",
+		"6": "Métodos y Enfoques Emergentes en DO\n Optativa de Profundización II\n Optativa Profesional II",
+		"optativas": "No disponible"
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Económico Administrativas",
+        "sede": "Sede Marfil.",
+        "domicilio": "Fraccionamiento 1; Col. El Establo S/N; C.P. 36250;",
+        "telefono": " (473) 735 29 00. Ext. UG. 2910 y 2872",
+        "latitud": 21.004120,
+        "longitud": -101.270897
+    }
+]

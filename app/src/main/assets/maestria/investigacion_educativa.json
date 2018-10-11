@@ -1,0 +1,25 @@
+[
+    {
+        "titulo": "Investigación Educativa",
+        "modalidad": "Escolarizada",
+        "periodoEstudio": "Semestral",
+        "periodoIngreso": "Anual",
+        "objetivos": "Formar profesionales con grado de maestría de alto nivel académico, en el complejo campo de la investigación educativa, reflexivos, con habilidades para la innovación científica y humanística, espíritu crítico y compromiso social, capaces de profundizar en el análisis de las teorías y las diferentes dimensiones de la educación para problematizar, conceptualizar y generar o aplicar creativamente el conocimiento sobre el fenómeno educativo, en la solución de problemas y atención de necesidades en diversos contextos.",
+        "totalSemestres": 4,
+        "planEstudios":
+            [{
+                "1": "-Seminario de Investigación I\n-Seminarios de Tesis I\n-Coloquio I\nElaboración de Proyectos de Investigación",
+                "2": "-Seminario de Investigación II\n-Seminarios de Tesis II\n-Coloquio II\nTaller de Elaboración de Instrumentos de Investigación",
+                "3": "- Seminario de Investigación III\n-Seminarios de Tesis III\n-Herramientas y Estrategias para el Análisis de los Datos",
+                "4": "-Seminario de Investigación IV\n-Seminarios de Tesis IV\n-Coloquio Titulación",
+                "optativas": ""
+            }],
+        "campus": "Guanajuato.",
+        "division": "División de Ciencias Sociales y Humanidades",
+        "sede": "Sede Yerbabuena.",
+        "domicilio": "Carr. Guanajuato-Juventino Rosas Km. 9.5",
+        "telefono": "01 (473) 733 0276 y 01 (473) 733 1269 Ext. 6519 ",
+        "latitud": 20.960499,
+        "longitud": -101.274857
+    }
+]
